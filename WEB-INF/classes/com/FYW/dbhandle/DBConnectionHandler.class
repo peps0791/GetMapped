@@ -1,0 +1,79 @@
+package com.FYW.dbhandle;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import org.ini4j.InvalidFileFormatException;
+import org.ini4j.Wini;
+
+public class DBConnectionHandler
+{
+  private static Connection con;
+  private static String dbServerIp;
+  private static String dbServerPort;
+  private static String dbService;
+  private static String userName;
+  private static String password;
+  private static String connectionString;
+
+  private static void init()
+    throws IOException
+  {
+    BufferedWriter bw = null;
+    FileWriter writer = null;
+    File file = null;
+    try {
+      file = new File("D:\\temp.log");
+      writer = new FileWriter(file, true);
+      bw = new BufferedWriter(writer);
+      bw.write("DBConfigurations\n");
+      Wini ini = new Wini(new File(".\\webapps\\FYW\\FYWConfig.ini"));
+      dbServerIp = ini.get("DBConfigurations", "DatabaseIP");
+      bw.write("server ip:" + dbServerIp + "\n");
+      dbServerPort = ini.get("DBConfigurations", "DatabasePort");
+      bw.write("server port:" + dbServerPort + "\n");
+      dbService = ini.get("DBConfigurations", "DatabaseServiceName");
+      bw.write("server service:" + dbService + "\n");
+      userName = ini.get("DBConfigurations", "UserName");
+      bw.write("username:" + userName + "\n");
+      password = ini.get("DBConfigurations", "Password");
+      bw.write("password:" + password + "\n");
+      bw.write("connectionstring" + connectionString);
+    } catch (InvalidFileFormatException e) {
+      e.printStackTrace();
+    } catch (IOException e) {
+      e.printStackTrace();
+    } finally {
+      bw.close();
+      writer.close();
+    }
+  }
+
+  public static Connection getConnection()
+    throws IOException, ClassNotFoundException, SQLException
+  {
+    File fil = new File("D:\\temp2.log");
+    FileWriter fw = new FileWriter(fil, true);
+    BufferedWriter bwe = new BufferedWriter(fw);
+    bwe.write("new twesfsdfsdf\n");
+    init();
+    if (con == null) {
+      bwe.write("Connection is null");
+      Class.forName("oracle.jdbc.driver.OracleDriver");
+      connectionString = "jdbc:oracle:thin:@" + dbServerIp + ":" + 
+        dbServerPort + "/" + dbService;
+      bwe.write("connection string" + connectionString);
+      con = DriverManager.getConnection(connectionString, userName, 
+        password);
+    } else {
+      bwe.write("Connection is not null...");
+    }
+
+    bwe.close();
+    return con;
+  }
+}
