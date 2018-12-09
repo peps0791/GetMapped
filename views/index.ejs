@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div id = "drawTable">
+    <img id = "myimg"  src="IMG_2109.JPG" alt="Responsive image" class="img-fluid. " style="max-width: 100%;height: 100%;">
+    <table id="grid" style="max-width: 100%;height: 100%;">
+    </table>
+</div>
+
+
+<!--<div id = "mymap">
+    <img id = "myimg"  src="IMG_2109.JPG" alt="Responsive image" class="img-fluid. " style="max-width: 100%;height: 100%;">
+</div>-->
+
+<!--<div id="myMap">
+    <table background="IMG_2109.JPG" style="background-size: auto;">
+        <tr><td>First column</td><td>Second column</td><td>Third column</td></tr>
+        <tr><td>First column</td><td>Second column</td><td>Third column</td></tr>
+        <tr><td>First column</td><td>Second column</td><td>Third column</td></tr>
+    </table>
+    Read more: https://html.com/attributes/table-background/#ixzz5ZDpu3fyi
+</div>-->
+<!--<div id="outer" style="position:relative">
+    <img id = "myimage"  src="IMG_2109.JPG" alt="Responsive image" class="img-fluid. " style="max-width: 100%;height: 100%;">
+    <div id="inner" style="position:absolute;top: 0px;left: 0px;">
+        <table id = "mytable">
+
+        </table>
+    </div>
+</div>-->
+</body>
+<script>
+
+    window.onload = function(){
+
+        var width = $(window).width(),
+            height = $(window).height()
+
+        console.log(width);
+        console.log(height);
+
+        var cellSize = 10
+        var numCols =  Math.floor(document.getElementById("myimg").clientWidth/cellSize);
+        var numRows = Math.floor(document.getElementById("myimg").clientHeight/cellSize)
+        console.log("number of rows->"+numRows)
+        console.log("number of columns->"+numCols)
+
+        var grid = document.getElementById("grid")
+        //grid.style.width = document.getElementById("myimg").clientWidth;
+        //grid.style.height = document.getElementById("myimg").clientHeight;
+
+        grid.style.maxHeight = "100%";
+        for(var i=0;i<numRows;i++){
+            var row = grid.insertRow()
+            for(var j=0;j<numCols;j++){
+                var cell = row.insertCell()
+                cell.style.maxHeight = "10px"
+                cell.style.maxWidth = "10px"
+                //cell.innerHTML = i+"-"+j
+            }
+        }
+
+        /*drawTable();
+
+        function drawTable() {
+            var x = 130;
+            var y = 120;
+            var t = '<table cellspacing="0" border="1" cellpadding="0" class="grxd">';
+            for (var i = 1; i <= (x * y); i++) {
+                t += (i == 1 ? '<tr>' : '');
+                t += '<td style="cursor:pointer;"></td>';
+                if (i == (x * y)) {
+                    t += '</tr>';
+                } else {
+                    t += (i % 130 === 0 ? '</tr><tr>' : '');
+                }
+
+            }
+            t += '</table>';
+            $("#drawTable").html(t);
+        }*/
+
+        /*var divSize = 10;
+        var imageElement=document.getElementById("myimg");
+        console.log(imageElement.clientWidth);
+        console.log(imageElement.clientHeight);
+        var ratioW = Math.floor(imageElement.clientWidth/divSize);
+        console.log('N','ratioW::' +ratioW);
+        var ratioH = Math.floor(imageElement.clientHeight/divSize);
+        console.log('N','ratioH::' +ratioH);*/
+
+
+        /*var lastClicked;
+        var grid = clickableGrid(142,92,function(el,row,col,i){
+            console.log("You clicked on element:",el);
+            console.log("You clicked on row:",row);
+            console.log("You clicked on col:",col);
+            console.log("You clicked on item #:",i);
+
+            el.className='clicked';
+            if (lastClicked) lastClicked.className='';
+            lastClicked = el;
+        });
+
+        document.body.appendChild(grid);
+        var imageSrc = document
+            .getElementById('mytable')
+            .style
+            .backgroundImage
+            .replace(/url\((['"])?(.*?)\1\)/gi, '$2')
+            .split(',')[0];
+
+        // I just broke it up on newlines for readability
+
+        var image = new Image();
+        image.src = imageSrc;
+
+        var width = $(window).width(),
+        height = $(window).height()
+
+        //var width = image.width,
+        //    height = image.height;
+
+        console.log('width =' + width + ', height = ' + height)
+
+        function clickableGrid(rows, cols, callback ){
+            var i=0;
+            var grid = document.createElement('table');
+            grid.id = "mytable"
+            grid.style.backgroundImage = "url('IMG_2109.JPG')";
+            //grid.style.backgroundSize = "100%"
+            //grid.style.background = "IMG_2109.JPG"
+            grid.style.width = "100%";
+            //grid.style.height = "100%";
+            grid.className = 'grid';
+            for (var r=0;r<rows;++r){
+                var tr = grid.appendChild(document.createElement('tr'));
+                for (var c=0;c<cols;++c){
+                    var cell = tr.appendChild(document.createElement('td'));
+                    //cell.style.width = "10px"
+                    //cell.style.height = "10px"
+                    //cell.innerHTML = ++i;
+                    cell.innerHTML = "-";
+                    cell.addEventListener('click',(function(el,r,c,i){
+                        return function(){
+                            callback(el,r,c,i);
+                        }
+                    })(cell,r,c,i),false);
+                }
+            }
+            return grid;
+        }*/
+
+    }
+</script>
+</html>

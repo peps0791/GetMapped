@@ -1,0 +1,31 @@
+.grid { margin:1em auto; border-collapse:collapse }
+.grid td {
+    cursor:pointer;
+    border:1px solid #ccc;
+    text-align:center;
+}
+.grid td.clicked {
+    background-color:yellow;
+    font-weight:bold; color:red;
+}
+
+#drawTable{
+    position:relative;
+    z-index : -1;
+}
+
+#grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td{
+    width: 10px;
+    height: 10px;
+}
