@@ -23,8 +23,6 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
 
-
-
   </head>
 
   <body id="page-top">
@@ -71,11 +69,17 @@
           <div id = "markedSeat">
             <span style="color: white">Selected Seat</span>
             <input id = "seatCoord" type="text"/>
+            <input id = "seatNo" type="text"/>
             <input id = "empName" type="text"/>
             <input id = "empPhone" type="text"/>
-            <input type="button" value="Save"/>
+            <input id = "saveSeatBtn" type="button" value="Save"/>
 
           </div>
+        </li>
+        <li class="nav-item">
+
+          <input id = "saveMapBtn" type="button" value="Save Map"/>
+
         </li>
 
       </ul>
@@ -146,7 +150,23 @@
 
     <script>
 
+
+        window.nodes = []
+
         window.onload = function(){
+
+
+
+
+            function populateMap(response){
+                console.log("populate response method called")
+
+                console.log("nodes ::", response.nodes)
+                for(var item of response.nodes){
+                    $("#"+item).toggleClass("highlighted");
+                }
+            }
+
 
             var width = $(window).width(),
                 height = $(window).height()
@@ -174,10 +194,46 @@
                 }
             }
 
+            populateMap(<%-JSON.stringify(response)%>)
+
             $('#clearAllBtn').click(function(){
 
                 //clear all highlighted buttons
                 console.log('clear all button clicked...')
+            });
+
+            $('#saveMapBtn').click(function(){
+
+                //clear all highlighted buttons
+                console.log('save map button clicked...')
+                //get all nodes highlighted
+                var nodes = []
+                var el_arr = $(".highlighted")
+                console.log(el_arr)
+                for(var item of el_arr){
+                    nodes.push(item.id)
+                }
+                console.log(nodes)
+                //ajax call for saving the map
+                $.post( "/saveMap",  { "nodes": nodes },  function( data ) {
+                    console.log("result from server:"+JSON.stringify(data))
+                });
+
+            });
+
+            $('#saveSeatBtn').click(function(){
+
+                //clear all highlighted buttons
+                console.log('save seat button clicked...')
+                var coordinates = $('#seatCoord').val()
+                var seat = $("#seatNo").val()
+                var empName = $("#empName").val()
+                var empPhone = $("#empPhone").val()
+
+                //ajax call for saving seat functionality
+                $.post( "/saveSeat",  { "coord": coordinates, "seatNo": seat, "empName":empName, "empPhone":empPhone },  function( data ) {
+                    console.log("result from server:"+JSON.stringify(data))
+                });
             });
 
             var isMouseDown = false;
@@ -191,6 +247,7 @@
                 var nodeid = $(this).attr('id');
                 console.log("id of node clicked::"+nodeid)
                 $("#seatCoord").val(nodeid)
+
                 return false; // prevent text selection
             }).mouseover(function () {
                 if (isMouseDown) {
@@ -200,6 +257,8 @@
                 isMouseDown = false;
             });
         }
+
+
     </script>
   </body>
 </html>
