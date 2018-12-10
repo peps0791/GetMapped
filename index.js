@@ -34,6 +34,10 @@ app.listen(port);
 app.get('/', (req, res)=> {
     res.status(200).render('dashboard');
 });
+
+app.get('/new', (req, res)=> {
+    res.status(200).render('upload-new');
+});
 //console.log('App server started at port ' + port);
 //logUtil.writeLog(scriptName, '', 'App server started at port ' + port);
 

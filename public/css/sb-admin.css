@@ -373,3 +373,28 @@ body.sidebar-toggled footer.sticky-footer {
     width: calc(100% - 90px);
   }
 }
+
+#drawTable{
+  position:relative;
+
+}
+
+#grid {
+  position: absolute;
+  top: 0;
+  left: 1%;
+
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td{
+  width: 10px;
+  height: 10px;
+}
+
+table td.highlighted {
+  background-color:yellow;
+}
