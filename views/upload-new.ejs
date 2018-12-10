@@ -24,6 +24,7 @@
     <link href="css/sb-admin.css" rel="stylesheet">
 
 
+
   </head>
 
   <body id="page-top">
@@ -49,7 +50,7 @@
       </form>
     </nav>
 
-    <div id="wrapper"">
+    <div id="wrapper">
 
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
@@ -62,12 +63,21 @@
         </li>
 
         <li class="nav-item">
-          <br><span style="color: white">Grid size</span><br>
-          <input id = "myrange" type="range" min="10" max="30" value="10">
-          <!--<a class="nav-link" href="/new">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Set Up New Map</span></a>-->
+
+          <input id = "clearAllBtn" type="button" value="Clear All Markings"/>
         </li>
+        <li class="nav-item">
+
+          <div id = "markedSeat">
+            <span style="color: white">Selected Seat</span>
+            <input id = "seatCoord" type="text"/>
+            <input id = "empName" type="text"/>
+            <input id = "empPhone" type="text"/>
+            <input type="button" value="Save"/>
+
+          </div>
+        </li>
+
       </ul>
 
       <div id="content-wrapper">
@@ -136,35 +146,6 @@
 
     <script>
 
-        /*$(document).click(function(event) {
-            var el = $(event.target);
-            console.log(el)
-            if (event.target.id == "grid" || $(event.target).parents("#grid").length) {
-                console.log("table clicked")
-            }
-        });*/
-
-        /*$(function () {
-            var isMouseDown = false;
-            $("#grid td")
-                .mousedown(function () {
-                    isMouseDown = true;
-                    $(this).toggleClass("highlighted");
-                    alert("something happened")
-                    return false; // prevent text selection
-                })
-                .mouseover(function () {
-                    if (isMouseDown) {
-                        $(this).toggleClass("highlighted");
-                    }
-                });
-
-            $(document)
-                .mouseup(function () {
-                    isMouseDown = false;
-                });
-        });*/
-
         window.onload = function(){
 
             var width = $(window).width(),
@@ -193,13 +174,23 @@
                 }
             }
 
+            $('#clearAllBtn').click(function(){
+
+                //clear all highlighted buttons
+                console.log('clear all button clicked...')
+            });
+
             var isMouseDown = false;
+
             $('#drawTable td').click(function(){
-                console.log('clicked')
+                //console.log('clicked')
+
             }).mousedown(function () {
                 isMouseDown = true;
                 $(this).toggleClass("highlighted");
-                console.log("something happened")
+                var nodeid = $(this).attr('id');
+                console.log("id of node clicked::"+nodeid)
+                $("#seatCoord").val(nodeid)
                 return false; // prevent text selection
             }).mouseover(function () {
                 if (isMouseDown) {
