@@ -88,7 +88,7 @@
 
     <div id="content-wrapper">
         <div class="container-fluid" id="drawTable">
-            <img id="myimg" src="IMG_2109.JPG" alt="Responsive image" class="img-fluid. "
+            <img id="myimg" alt="Responsive image" class="img-fluid. "
                  style="max-width: 100%;height: 100%;">
             <table id="grid" style="max-width: 100%;height: 100%;">
             </table>
@@ -156,21 +156,88 @@
 
 <script>
 
-    /*a star test*/
-    /*var graph = new Graph([
-      [1,1,1,1],
-      [0,1,1,0],
-      [0,0,1,1]
-    ]);
-    var start = graph.grid[0][0];
-    var end = graph.grid[1][2];
-    var pathresult = astar.search(graph, start, end);
-    console.log("result->"+pathresult)*/
+    var isMouseDown = false;
+
+    $(document).mousedown(function(event) {
+        console.log(event.target.nodeName)
+        if(event.target.nodeName === "TD"){
+            console.log($(event.target));
+            console.log(event.target.id);
+            isMouseDown = true;
+            $(event.target).toggleClass("highlighted");
+            //var nodeid = $(this).attr('id');
+            console.log("id of node clicked::" + event.target.id)
+            $("#seatCoord").val(event.target.id)
+        }
+    }).mouseover(function (event) {
+        if(event.target.nodeName === "TD"){
+            if (isMouseDown) {
+                $(event.target).toggleClass("highlighted");
+            }
+        }
+
+    }).mouseup(function (event) {
+        if(event.target.nodeName === "TD"){
+            isMouseDown = false;
+        }
+    })
 
 
     window.nodes = []
 
     window.onload = function () {
+
+
+
+        function populateImage(response) {
+
+            console.log("populate image called")
+            var img_name = response.filename
+            console.log("image name->" + img_name)
+
+
+            var img = document.getElementById("myimg")
+            img.onload = function () {
+                console.log("Height:" + this.clientHeight);
+                console.log("Width:" + this.clientWidth);
+
+                var width = $(window).width(),
+                    height = $(window).height()
+
+                console.log(width);
+                console.log(height);
+
+                var cellSize = 10
+
+                var numCols = Math.floor(document.getElementById("myimg").clientWidth / cellSize);
+                var numRows = Math.floor(document.getElementById("myimg").clientHeight / cellSize)
+
+
+                console.log("number of rows->" + numRows)
+                console.log("number of columns->" + numCols)
+
+                var grid = document.getElementById("grid")
+
+                grid.style.maxHeight = "100%";
+                for (var i = 0; i < numRows; i++) {
+                    var row = grid.insertRow()
+                    for (var j = 0; j < numCols; j++) {
+                        var cell = row.insertCell()
+                        cell.style.maxHeight = "10px"
+                        cell.style.maxWidth = "10px"
+                        cell.id = i + "-" + j
+                        //cell.innerHTML = i+"-"+j
+                    }
+                }
+
+                populateMap(<%- JSON.stringify(response) %>)
+
+            }
+
+
+            $("#myimg").attr("src", img_name)
+
+        }
 
         function populateMap(response) {
             console.log("populate response method called")
@@ -182,33 +249,8 @@
         }
 
 
-        var width = $(window).width(),
-            height = $(window).height()
+        populateImage(<%- JSON.stringify(response) %>)
 
-        console.log(width);
-        console.log(height);
-
-        var cellSize = 10
-        var numCols = Math.floor(document.getElementById("myimg").clientWidth / cellSize);
-        var numRows = Math.floor(document.getElementById("myimg").clientHeight / cellSize)
-        console.log("number of rows->" + numRows)
-        console.log("number of columns->" + numCols)
-
-        var grid = document.getElementById("grid")
-
-        grid.style.maxHeight = "100%";
-        for (var i = 0; i < numRows; i++) {
-            var row = grid.insertRow()
-            for (var j = 0; j < numCols; j++) {
-                var cell = row.insertCell()
-                cell.style.maxHeight = "10px"
-                cell.style.maxWidth = "10px"
-                cell.id = i + "-" + j
-                //cell.innerHTML = i+"-"+j
-            }
-        }
-
-        populateMap(<%- JSON.stringify(response) %>)
 
         $('#clearAllBtn').click(function () {
 
@@ -229,10 +271,9 @@
             }
             console.log(nodes)
             //ajax call for saving the map
-            $.post("/saveMap", {"nodes": nodes}, function (data) {
+            $.post("/saveMap", {"nodes": nodes, "mapname":localStorage.getItem("mapname")}, function (data) {
                 console.log("result from server:" + JSON.stringify(data))
             });
-
         });
 
         $('#saveSeatBtn').click(function () {
@@ -257,7 +298,9 @@
 
         $('#searchBtn').click(function () {
 
-
+            var cellSize = 10
+            var numCols = Math.floor(document.getElementById("myimg").clientWidth / cellSize);
+            var numRows = Math.floor(document.getElementById("myimg").clientHeight / cellSize)
             //console.log(nodes)
 
             //create graph
@@ -267,7 +310,7 @@
                 copy[i] = 0;
             }
 
-            for (var i=0; i < nodes.length; i++){
+            for (var i = 0; i < nodes.length; i++) {
                 nodes[i] = copy.slice(0);
             }
 
@@ -277,7 +320,7 @@
 
                 var x = parseInt(item.id.split("-")[0])
                 var y = parseInt(item.id.split("-")[1])
-                console.log("x->"+x + " y ->"+y)
+                console.log("x->" + x + " y ->" + y)
 
                 nodes[x][y] = 1
 
@@ -285,41 +328,22 @@
             }
 
             console.log(nodes)
-            console.log("debuging->"+nodes[0][0] + " --" + nodes[0][1] + " --" + nodes[0][9])
-            var graph = new Graph(nodes, { diagonal: true });
+            console.log("debuging->" + nodes[0][0] + " --" + nodes[0][1] + " --" + nodes[0][10])
+            var graph = new Graph(nodes, {diagonal: true});
             var start = graph.grid[0][0];
-            var end = graph.grid[31][78];
+            var end = graph.grid[0][10];
             var pathresult = astar.search(graph, start, end);
-            console.log("result->"+pathresult)
-            for(var resultitem of pathresult){
+            console.log("result->" + pathresult)
+            for (var resultitem of pathresult) {
                 console.log(resultitem)
                 var itemid = resultitem.x + "-" + resultitem.y
                 console.log(itemid)
-                console.log($( "#" +itemid ))
-                $( "#" +itemid ).addClass( "searchresult" );
+                console.log($("#" + itemid))
+                $("#" + itemid).addClass("searchresult");
             }
         });
 
-        var isMouseDown = false;
 
-        $('#drawTable td').click(function () {
-            //console.log('clicked')
-
-        }).mousedown(function () {
-            isMouseDown = true;
-            $(this).toggleClass("highlighted");
-            var nodeid = $(this).attr('id');
-            console.log("id of node clicked::" + nodeid)
-            $("#seatCoord").val(nodeid)
-
-            return false; // prevent text selection
-        }).mouseover(function () {
-            if (isMouseDown) {
-                $(this).toggleClass("highlighted");
-            }
-        }).mouseup(function () {
-            isMouseDown = false;
-        });
     }
 
 

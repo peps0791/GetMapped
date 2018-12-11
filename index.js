@@ -9,6 +9,8 @@ var morgan = require('morgan');
 const path = require('path');
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
+var multer  = require('multer');
+var upload = multer({ dest: 'uploads/' });
 
 
 const uri = 'mongodb://localhost:27017';  // mongodb://localhost - will fail
@@ -60,7 +62,7 @@ app.get('/', async (req, res) => {
     const cursor = mapCollection.find({});
     while(await cursor.hasNext()) {
         const doc = await cursor.next();
-        maps.push(doc.mapId);
+        maps.push(doc.mapName);
         // process doc here
     }
     console.log("maps->"+maps);
@@ -96,12 +98,34 @@ app.get('/new', (req, res) => {
     });
 });
 
+app.get("/getMap", (req, res)=>{
+
+    var mapName = req.query.mapname;
+    console.log("mapid->"+mapName);
+
+    //get nodes for current page
+    const mapCollection = db.collection('map');
+    mapCollection.findOne({"mapName": mapName}, function (err, result) {
+        if (err != null) {
+            console.log("some error occurred while fetching documents from mongodb::" + err);
+            res.status(500).render('upload-new');
+        } else {
+            console.log(JSON.stringify(result));
+            console.log(result["file-name"]);
+            res.status(200).render('upload-new', {response: {"nodes": result.nodes,  "filename": result["file-name"]}});
+        }
+    });
+
+});
+
 app.post("/saveMap", (req, res) => {
 
     var nodes = req.body.nodes;
     console.log("saving map::" + nodes);
+    var name = req.body.mapname;
+    console.log("saving map::" + name);
     const mapCollection = db.collection('map');
-    mapCollection.updateOne({"mapId": 1}, {"$set": {"nodes": nodes}}, {upsert: true}, function (err, results) {
+    mapCollection.updateOne({"mapName": name}, {"$set": {"nodes": nodes}}, {upsert: true}, function (err, results) {
         if (err != null) {
             console.log("some error occurred while updating db::" + err)
             res.status(500).json({'status': "FAIL"});
@@ -137,6 +161,36 @@ app.post('/saveSeat', (req, res) => {
             console.log("Inserted 1 document into the collection");
             res.status(200).json({'status': "SUCCESS"});
         });
+});
+
+app.get("/add-new-map",  (req, res)=>{
+    res.render("add-new")
+});
+
+app.post("/create-map", upload.single('exampleFormControlFile1'), (req, res)=>{
+
+    // req.file is the `avatar` file
+    var uploadedFile = req.file;
+    console.log(uploadedFile.originalname);
+
+    var mapName = req.body.mapName;
+    console.log("mapname->"+mapName);
+    // req.body will hold the text fields, if there were any
+    //create an entry in db
+    const mapCollection = db.collection('map');
+    mapCollection.updateOne({"mapName": mapName}, {"$set": {"mapName": mapName, "file-name": uploadedFile.originalname}}, {upsert: true}, function (err, results) {
+        if (err != null) {
+            console.log("some error occurred while updating db::" + err);
+            res.status(500).json({'status': "FAIL"});
+        } else {
+            //console.log(results);
+            console.log("Map updated");
+            res.status(200).render('upload-new', {response: {"nodes": [], "filename": uploadedFile.originalname}});
+        }
+
+    });
+
+
 });
 //console.log('App server started at port ' + port);
 //logUtil.writeLog(scriptName, '', 'App server started at port ' + port);
