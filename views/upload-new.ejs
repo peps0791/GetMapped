@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,242 +23,306 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
-    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="/">Home</a>
+    <a class="navbar-brand mr-1" href="/">Home</a>
 
-      <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
-      </button>
+    </button>
 
-      <!-- Navbar Search -->
-      <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+    <!-- Navbar Search -->
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="button">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
+            <input type="text" class="form-control" placeholder="Search for..." aria-label="Search"
+                   aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
         </div>
-      </form>
-    </nav>
+    </form>
+</nav>
 
-    <div id="wrapper">
+<div id="wrapper">
 
-      <!-- Sidebar -->
-      <ul class="sidebar navbar-nav">
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
         <li class="nav-item active">
 
-          <a class="nav-link" href="/">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span>
-          </a>
+            <a class="nav-link" href="/">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </a>
         </li>
 
         <li class="nav-item">
 
-          <input id = "clearAllBtn" type="button" value="Clear All Markings"/>
+            <input id="clearAllBtn" type="button" value="Clear All Markings"/>
         </li>
         <li class="nav-item">
 
-          <div id = "markedSeat">
-            <span style="color: white">Selected Seat</span>
-            <input id = "seatCoord" type="text"/>
-            <input id = "seatNo" type="text"/>
-            <input id = "empName" type="text"/>
-            <input id = "empPhone" type="text"/>
-            <input id = "saveSeatBtn" type="button" value="Save"/>
+            <div id="markedSeat">
+                <span style="color: white">Selected Seat</span>
+                <input id="seatCoord" type="text"/>
+                <input id="seatNo" type="text"/>
+                <input id="empName" type="text"/>
+                <input id="empPhone" type="text"/>
+                <input id="saveSeatBtn" type="button" value="Save"/>
 
-          </div>
+            </div>
         </li>
         <li class="nav-item">
-
-          <input id = "saveMapBtn" type="button" value="Save Map"/>
-
+            <input id="saveMapBtn" type="button" value="Save Map"/>
+        </li>
+        <li class="nav-item">
+            <input id="searchBtn" type="button" value="Search"/>
         </li>
 
-      </ul>
+    </ul>
 
-      <div id="content-wrapper">
-        <div class="container-fluid" id = "drawTable">
-          <img id = "myimg"  src="IMG_2109.JPG" alt="Responsive image" class="img-fluid. " style="max-width: 100%;height: 100%;">
-          <table id="grid" style="max-width: 100%;height: 100%;">
-          </table>
+    <div id="content-wrapper">
+        <div class="container-fluid" id="drawTable">
+            <img id="myimg" src="IMG_2109.JPG" alt="Responsive image" class="img-fluid. "
+                 style="max-width: 100%;height: 100%;">
+            <table id="grid" style="max-width: 100%;height: 100%;">
+            </table>
         </div>
 
         <!-- Sticky Footer -->
         <footer class="sticky-footer">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>Copyright © Peps0791 2018</span>
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright © Peps0791 2018</span>
+                </div>
             </div>
-          </div>
         </footer>
 
-      </div>
-      <!-- /.content-wrapper -->
     </div>
-    <!-- /#wrapper -->
+    <!-- /.content-wrapper -->
+</div>
+<!-- /#wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.ejs">Logout</a>
-          </div>
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.ejs">Logout</a>
+            </div>
         </div>
-      </div>
     </div>
+</div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Page level plugin JavaScript-->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+<!-- Page level plugin JavaScript-->
+<script src="vendor/chart.js/Chart.min.js"></script>
+<script src="vendor/datatables/jquery.dataTables.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin.min.js"></script>
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin.min.js"></script>
 
-    <!-- Demo scripts for this page-->
-    <script src="js/demo/datatables-demo.js"></script>
-    <script src="js/demo/chart-area-demo.js"></script>
+<!-- Demo scripts for this page-->
+<script src="js/demo/datatables-demo.js"></script>
+<script src="js/demo/chart-area-demo.js"></script>
 
-    <script>
+<script src="astar.js"></script>
+
+<script>
+
+    /*a star test*/
+    /*var graph = new Graph([
+      [1,1,1,1],
+      [0,1,1,0],
+      [0,0,1,1]
+    ]);
+    var start = graph.grid[0][0];
+    var end = graph.grid[1][2];
+    var pathresult = astar.search(graph, start, end);
+    console.log("result->"+pathresult)*/
 
 
-        window.nodes = []
+    window.nodes = []
 
-        window.onload = function(){
+    window.onload = function () {
 
+        function populateMap(response) {
+            console.log("populate response method called")
 
-
-
-            function populateMap(response){
-                console.log("populate response method called")
-
-                console.log("nodes ::", response.nodes)
-                for(var item of response.nodes){
-                    $("#"+item).toggleClass("highlighted");
-                }
+            console.log("nodes ::", response.nodes)
+            for (var item of response.nodes) {
+                $("#" + item).toggleClass("highlighted");
             }
-
-
-            var width = $(window).width(),
-                height = $(window).height()
-
-            console.log(width);
-            console.log(height);
-
-            var cellSize = 10
-            var numCols =  Math.floor(document.getElementById("myimg").clientWidth/cellSize);
-            var numRows = Math.floor(document.getElementById("myimg").clientHeight/cellSize)
-            console.log("number of rows->"+numRows)
-            console.log("number of columns->"+numCols)
-
-            var grid = document.getElementById("grid")
-
-            grid.style.maxHeight = "100%";
-            for(var i=0;i<numRows;i++){
-                var row = grid.insertRow()
-                for(var j=0;j<numCols;j++){
-                    var cell = row.insertCell()
-                    cell.style.maxHeight = "10px"
-                    cell.style.maxWidth = "10px"
-                    cell.id = i+"-"+j
-                    //cell.innerHTML = i+"-"+j
-                }
-            }
-
-            populateMap(<%-JSON.stringify(response)%>)
-
-            $('#clearAllBtn').click(function(){
-
-                //clear all highlighted buttons
-                console.log('clear all button clicked...')
-            });
-
-            $('#saveMapBtn').click(function(){
-
-                //clear all highlighted buttons
-                console.log('save map button clicked...')
-                //get all nodes highlighted
-                var nodes = []
-                var el_arr = $(".highlighted")
-                console.log(el_arr)
-                for(var item of el_arr){
-                    nodes.push(item.id)
-                }
-                console.log(nodes)
-                //ajax call for saving the map
-                $.post( "/saveMap",  { "nodes": nodes },  function( data ) {
-                    console.log("result from server:"+JSON.stringify(data))
-                });
-
-            });
-
-            $('#saveSeatBtn').click(function(){
-
-                //clear all highlighted buttons
-                console.log('save seat button clicked...')
-                var coordinates = $('#seatCoord').val()
-                var seat = $("#seatNo").val()
-                var empName = $("#empName").val()
-                var empPhone = $("#empPhone").val()
-
-                //ajax call for saving seat functionality
-                $.post( "/saveSeat",  { "coord": coordinates, "seatNo": seat, "empName":empName, "empPhone":empPhone },  function( data ) {
-                    console.log("result from server:"+JSON.stringify(data))
-                });
-            });
-
-            var isMouseDown = false;
-
-            $('#drawTable td').click(function(){
-                //console.log('clicked')
-
-            }).mousedown(function () {
-                isMouseDown = true;
-                $(this).toggleClass("highlighted");
-                var nodeid = $(this).attr('id');
-                console.log("id of node clicked::"+nodeid)
-                $("#seatCoord").val(nodeid)
-
-                return false; // prevent text selection
-            }).mouseover(function () {
-                if (isMouseDown) {
-                    $(this).toggleClass("highlighted");
-                }
-            }).mouseup(function () {
-                isMouseDown = false;
-            });
         }
 
 
-    </script>
-  </body>
+        var width = $(window).width(),
+            height = $(window).height()
+
+        console.log(width);
+        console.log(height);
+
+        var cellSize = 10
+        var numCols = Math.floor(document.getElementById("myimg").clientWidth / cellSize);
+        var numRows = Math.floor(document.getElementById("myimg").clientHeight / cellSize)
+        console.log("number of rows->" + numRows)
+        console.log("number of columns->" + numCols)
+
+        var grid = document.getElementById("grid")
+
+        grid.style.maxHeight = "100%";
+        for (var i = 0; i < numRows; i++) {
+            var row = grid.insertRow()
+            for (var j = 0; j < numCols; j++) {
+                var cell = row.insertCell()
+                cell.style.maxHeight = "10px"
+                cell.style.maxWidth = "10px"
+                cell.id = i + "-" + j
+                //cell.innerHTML = i+"-"+j
+            }
+        }
+
+        populateMap(<%- JSON.stringify(response) %>)
+
+        $('#clearAllBtn').click(function () {
+
+            //clear all highlighted buttons
+            console.log('clear all button clicked...')
+        });
+
+        $('#saveMapBtn').click(function () {
+
+            //clear all highlighted buttons
+            console.log('save map button clicked...')
+            //get all nodes highlighted
+            var nodes = []
+            var el_arr = $(".highlighted")
+            console.log(el_arr)
+            for (var item of el_arr) {
+                nodes.push(item.id)
+            }
+            console.log(nodes)
+            //ajax call for saving the map
+            $.post("/saveMap", {"nodes": nodes}, function (data) {
+                console.log("result from server:" + JSON.stringify(data))
+            });
+
+        });
+
+        $('#saveSeatBtn').click(function () {
+
+            //clear all highlighted buttons
+            console.log('save seat button clicked...')
+            var coordinates = $('#seatCoord').val()
+            var seat = $("#seatNo").val()
+            var empName = $("#empName").val()
+            var empPhone = $("#empPhone").val()
+
+            //ajax call for saving seat functionality
+            $.post("/saveSeat", {
+                "coord": coordinates,
+                "seatNo": seat,
+                "empName": empName,
+                "empPhone": empPhone
+            }, function (data) {
+                console.log("result from server:" + JSON.stringify(data))
+            });
+        });
+
+        $('#searchBtn').click(function () {
+
+
+            //console.log(nodes)
+
+            //create graph
+            var nodes = new Array(numRows);
+            var copy = new Array(numCols);
+            for (var i = 0; i < nodes.length; i++) {
+                copy[i] = 0;
+            }
+
+            for (var i=0; i < nodes.length; i++){
+                nodes[i] = copy.slice(0);
+            }
+
+            var el_arr = $(".highlighted")
+            console.log(el_arr)
+            for (var item of el_arr) {
+
+                var x = parseInt(item.id.split("-")[0])
+                var y = parseInt(item.id.split("-")[1])
+                console.log("x->"+x + " y ->"+y)
+
+                nodes[x][y] = 1
+
+
+            }
+
+            console.log(nodes)
+            console.log("debuging->"+nodes[0][0] + " --" + nodes[0][1] + " --" + nodes[0][9])
+            var graph = new Graph(nodes, { diagonal: true });
+            var start = graph.grid[0][0];
+            var end = graph.grid[31][78];
+            var pathresult = astar.search(graph, start, end);
+            console.log("result->"+pathresult)
+            for(var resultitem of pathresult){
+                console.log(resultitem)
+                var itemid = resultitem.x + "-" + resultitem.y
+                console.log(itemid)
+                console.log($( "#" +itemid ))
+                $( "#" +itemid ).addClass( "searchresult" );
+            }
+        });
+
+        var isMouseDown = false;
+
+        $('#drawTable td').click(function () {
+            //console.log('clicked')
+
+        }).mousedown(function () {
+            isMouseDown = true;
+            $(this).toggleClass("highlighted");
+            var nodeid = $(this).attr('id');
+            console.log("id of node clicked::" + nodeid)
+            $("#seatCoord").val(nodeid)
+
+            return false; // prevent text selection
+        }).mouseover(function () {
+            if (isMouseDown) {
+                $(this).toggleClass("highlighted");
+            }
+        }).mouseup(function () {
+            isMouseDown = false;
+        });
+    }
+
+
+</script>
+</body>
 </html>

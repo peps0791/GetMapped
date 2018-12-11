@@ -398,3 +398,7 @@ td{
 table td.highlighted {
   background-color:yellow;
 }
+
+table td.searchresult {
+  background-color:blue;
+}
