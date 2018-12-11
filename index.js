@@ -51,8 +51,34 @@ MongoClient.connect(uri, {useNewUrlParser: true})
         console.log("some error occurred::" + err)
     });
 
-app.get('/', (req, res) => {
-    res.status(200).render('dashboard');
+app.get('/', async (req, res) => {
+
+    //get floor info
+    const mapCollection = db.collection('map');
+
+    var maps = [];
+    const cursor = mapCollection.find({});
+    while(await cursor.hasNext()) {
+        const doc = await cursor.next();
+        maps.push(doc.mapId);
+        // process doc here
+    }
+    console.log("maps->"+maps);
+
+    const empCollection = db.collection('employee');
+
+    var employees = [];
+    const cursor1 = empCollection.find({});
+    while(await cursor1.hasNext()) {
+        const doc = await cursor1.next();
+        employees.push(doc);
+        // process doc here
+    }
+    console.log("maps->"+maps);
+    console.log("employees->"+employees);
+
+    res.status(200).render('dashboard', {response: {"maps": maps, "emp":employees}});
+
 });
 
 app.get('/new', (req, res) => {
