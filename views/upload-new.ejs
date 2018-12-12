@@ -83,6 +83,9 @@
         <li class="nav-item">
             <input id="searchBtn" type="button" value="Search"/>
         </li>
+        <li class="nav-item">
+            <input id="removeBtn" type="button" value="Remove Map"/>
+        </li>
 
     </ul>
 
@@ -187,7 +190,6 @@
 
     window.onload = function () {
 
-
         function populateImage(response) {
 
             console.log("populate image called")
@@ -248,7 +250,6 @@
             }
         }
 
-
         populateImage(<%- JSON.stringify(response) %>)
 
 
@@ -295,6 +296,17 @@
                 console.log("result from server:" + JSON.stringify(data))
             });
         });
+
+        $('#removeBtn').click(function () {
+
+            $.post("/remove", {
+                "mapname": localStorage.getItem("mapname"),
+            }, function (data) {
+                console.log("result from server:" + JSON.stringify(data))
+                alert("Map successfully removed")
+                window.location.href = "/"
+            });
+        })
 
         $('#searchBtn').click(function () {
 

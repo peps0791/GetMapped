@@ -109,6 +109,24 @@ app.get('/new', (req, res) => {
     });
 });
 
+app.post("/remove", (req, res)=>{
+
+    var mapName = req.body.mapname;
+    console.log("mapname->"+mapName);
+
+    const mapCollection = db.collection('map');
+    mapCollection.remove({"mapName":mapName}, function(err, result){
+
+        if (err != null) {
+            console.log("some error occurred while removing documents from mongodb::" + err)
+            res.status(500).json({response:{'error':'Error removing map'}});
+        } else {
+            console.log(JSON.stringify(result));
+            res.status(200).json({response:{'status':'SUCCESS'}});
+        }
+    });
+});
+
 app.get("/getMap", (req, res)=>{
 
     var mapName = req.query.mapname;
