@@ -10,7 +10,18 @@ const path = require('path');
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 var multer  = require('multer');
-var upload = multer({ dest: 'uploads/' });
+
+
+var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, 'public/uploads')
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname)
+    }
+});
+
+var upload = multer({ storage: storage });
 
 
 const uri = 'mongodb://localhost:27017';  // mongodb://localhost - will fail
