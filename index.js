@@ -112,7 +112,7 @@ app.get("/getMap", (req, res)=>{
         } else {
             console.log(JSON.stringify(result));
             console.log(result["file-name"]);
-            res.status(200).render('upload-new', {response: {"nodes": result.nodes,  "filename": result["file-name"]}});
+            res.status(200).render('upload-new', {response: {"nodes": result.nodes,  "mapname":mapName,  "filename": result["file-name"]}});
         }
     });
 
@@ -185,7 +185,7 @@ app.post("/create-map", upload.single('exampleFormControlFile1'), (req, res)=>{
         } else {
             //console.log(results);
             console.log("Map updated");
-            res.status(200).render('upload-new', {response: {"nodes": [], "filename": uploadedFile.originalname}});
+            res.status(200).render('upload-new', {response: {"nodes": [], "mapname": mapName, "filename": uploadedFile.originalname}});
         }
 
     });

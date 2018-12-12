@@ -188,13 +188,13 @@
     window.onload = function () {
 
 
-
         function populateImage(response) {
 
             console.log("populate image called")
             var img_name = response.filename
             console.log("image name->" + img_name)
 
+            localStorage.setItem("mapname", response.mapname)
 
             var img = document.getElementById("myimg")
             img.onload = function () {
@@ -321,10 +321,7 @@
                 var x = parseInt(item.id.split("-")[0])
                 var y = parseInt(item.id.split("-")[1])
                 console.log("x->" + x + " y ->" + y)
-
                 nodes[x][y] = 1
-
-
             }
 
             console.log(nodes)
