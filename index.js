@@ -64,6 +64,22 @@ MongoClient.connect(uri, {useNewUrlParser: true})
         console.log("some error occurred::" + err)
     });
 
+app.get('/getMaps', async (req, res)=>{
+
+    //get floor info
+    const mapCollection = db.collection('map');
+
+    var maps = [];
+    const cursor = mapCollection.find({});
+    while(await cursor.hasNext()) {
+        const doc = await cursor.next();
+        maps.push(doc.mapName);
+    }
+    console.log("maps->"+maps);
+    res.status(200).render('map-dashboard', {response: {"maps": maps}});
+
+});
+
 app.get('/', async (req, res) => {
 
     //get floor info

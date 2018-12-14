@@ -274,6 +274,7 @@
             //ajax call for saving the map
             $.post("/saveMap", {"nodes": nodes, "mapname":localStorage.getItem("mapname")}, function (data) {
                 console.log("result from server:" + JSON.stringify(data))
+                alert("Map saved successfully!")
             });
         });
 
@@ -294,18 +295,21 @@
                 "empPhone": empPhone
             }, function (data) {
                 console.log("result from server:" + JSON.stringify(data))
+                alert("Map saved")
             });
         });
 
         $('#removeBtn').click(function () {
 
-            $.post("/remove", {
-                "mapname": localStorage.getItem("mapname"),
-            }, function (data) {
-                console.log("result from server:" + JSON.stringify(data))
-                alert("Map successfully removed")
-                window.location.href = "/"
-            });
+            if(window.confirm("Are you sure you want to remove this map?")){
+                $.post("/remove", {
+                    "mapname": localStorage.getItem("mapname"),
+                }, function (data) {
+                    console.log("result from server:" + JSON.stringify(data))
+                    alert("Map successfully removed!\n Redirecting to the home page...")
+                    window.location.href = "/"
+                });
+            }
         })
 
         $('#searchBtn').click(function () {
