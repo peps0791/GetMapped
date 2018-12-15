@@ -1,0 +1,52 @@
+2018-12-15T05:41:52.080Z info: 	index.js::::::App server started at port 3000
+2018-12-15T05:43:46.691Z info: 	index.js::::::App server started at port 3000
+2018-12-15T06:03:06.341Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T06:03:06.356Z info: 	index.js::::::App server started at port 3000
+2018-12-15T06:10:58.466Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T06:10:58.481Z info: 	index.js::::::App server started at port 3000
+2018-12-15T06:11:13.614Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T06:11:13.628Z info: 	index.js::::::App server started at port 3000
+2018-12-15T06:11:42.376Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T06:11:42.389Z info: 	index.js::::::App server started at port 3000
+2018-12-15T06:15:09.615Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T06:15:09.626Z info: 	index.js::::::App server started at port 3000
+2018-12-15T06:17:12.488Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T06:17:12.499Z info: 	index.js::::::App server started at port 3000
+2018-12-15T06:20:35.229Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T06:20:35.290Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T06:20:35.292Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+2018-12-15T06:20:35.293Z info: 	index.js::::::Some error occurred while connecting to DB DB_INIT_FAILMongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+2018-12-15T06:20:35.293Z info: 	index.js::::::Exiting application!!!
+2018-12-15T06:20:49.676Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T06:20:49.763Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T06:20:49.771Z info: 	index.js::::::App server started at port 3000
+2018-12-15T06:29:22.817Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T06:29:22.883Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T06:29:22.889Z info: 	index.js::::::App server started at port 3000
+2018-12-15T06:51:15.454Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T06:51:15.550Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T06:51:15.559Z info: 	index.js::::::App server started at port 3000
+2018-12-15T06:51:21.302Z info: 	db-util.js:::getFromDB:::getFromDB() function called
+2018-12-15T06:51:21.315Z info: 	db-util.js:::getFromDB:::getFromDB() function called
+2018-12-15T07:12:26.944Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:12:27.032Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:12:27.042Z info: 	index.js::::::App server started at port 3000
+2018-12-15T07:12:33.076Z info: 	index.js:::/:::/ endpoint hit
+2018-12-15T07:12:33.081Z info: 	db-util.js:::getFromDB:::getFromDB() function called
+2018-12-15T07:12:33.111Z info: 	db-util.js:::getFromDB:::getFromDB() function called
+2018-12-15T07:15:09.159Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:15:09.238Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:15:09.246Z info: 	index.js::::::App server started at port 3000
+2018-12-15T07:16:20.263Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:16:20.312Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:16:20.317Z info: 	index.js::::::App server started at port 3000

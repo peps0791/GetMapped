@@ -3,66 +3,48 @@
 // set up ======================================================================
 // get all the tools we need
 'use strict';
-var express = require('express');
-var bodyParser = require('body-parser');
-var morgan = require('morgan');
+const express = require('express');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const multer  = require('multer');
 const path = require('path');
-const MongoClient = require('mongodb').MongoClient;
-const assert = require('assert');
-var multer  = require('multer');
+const config = require("./config/config");
+
+const logUtil = require("./util/log-util");
+const dbUtil = require("./util/db-util");
+const miscUtil = require("./util/misc-util");
 
 
-var storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        cb(null, 'public/uploads')
-    },
-    filename: function (req, file, cb) {
-        cb(null, file.originalname)
-    }
-});
+const scriptName = path.basename(__filename);
 
-var upload = multer({ storage: storage });
+let upload = multer({ storage: multer.diskStorage(config.multerConfig.storage)});
 
 
-const uri = 'mongodb://localhost:27017';  // mongodb://localhost - will fail
-
-// Database Name
-const dbName = 'getMappedDB';
-
-
-var app = express();
-var port = process.env.PORT || 3000;
-var db;
+const app = express();
+const port = process.env.PORT || 3000;
 
 // set up our express application
-app.use(morgan('dev')); // log every request to the console
+app.use(morgan('dev'));
 app.use(express.static('public'));
-//app.use(cookieParser()); // read cookies (needed for auth)
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-//app.use(bodyParser.json());
 
 app.set('views', __dirname + '/views/');
-app.set('view engine', 'ejs'); // set up ejs for templating
+app.set('view engine', 'ejs');
 
 // routes ======================================================================
 //require('./routes/routes.js')(app); // load our routes and pass in our app and fully configured passport
 
-// launch ======================================================================
-MongoClient.connect(uri, {useNewUrlParser: true})
-    .then(function (client) { // <- db as first argument
-        //console.log(client)
-        console.log("connected successfully to the db server");
-        db = client.db(dbName);
-        //console.log(db);
+dbUtil.initDB().then(function(){
+    app.listen(port);
+    logUtil.writeLog(scriptName, '', 'App server started at port ' + port);
+}).catch(function(error){
+    logUtil.writeLog(scriptName, '', 'Some error occurred while connecting to DB '+error);
+    logUtil.writeLog(scriptName, '', 'Exiting application!!!');
+});
 
-        app.listen(port);
 
-    })
-    .catch(function (err) {
-        console.log("some error occurred::" + err)
-    });
 
 app.get('/getMaps', async (req, res)=>{
 
@@ -107,48 +89,22 @@ app.post('/renameMap', async (req, res)=>{
 
 app.get('/', async (req, res) => {
 
-    //get floor info
-    const mapCollection = db.collection('map');
-
-    var maps = [];
-    const cursor = mapCollection.find({});
-    while(await cursor.hasNext()) {
-        const doc = await cursor.next();
-        maps.push(doc.mapName);
-        // process doc here
+    logUtil.writeLog(scriptName, "/",  '/ endpoint hit');
+    try{
+        // get maps from db
+        let maps = await miscUtil.getMapsFromDB();
+        logUtil.writeLog(scriptName, "/",  'maps fetched form DB->'+maps);
+        // get employees from db
+        let employees = await miscUtil.getEmployeesFromDB();
+        logUtil.writeLog(scriptName, "/",  'employees fetched from DB->'+employees);
+        // render the list back to the frontend
+        res.status(200).render('dashboard', {response: {"maps": maps, "emp":employees}});
+    }catch(err){
+        logUtil.writeLog(scriptName, "/", 'Error thrown to the endpoint' + err.code + '::' + err.message, true,  err);
+        res.status(500).render('error', {response: {'errorcode': err.code, 'errormsg': err.message}});
     }
-    console.log("maps->"+maps);
-
-    const empCollection = db.collection('employee');
-
-    var employees = [];
-    const cursor1 = empCollection.find({});
-    while(await cursor1.hasNext()) {
-        const doc = await cursor1.next();
-        employees.push(doc);
-        // process doc here
-    }
-    console.log("maps->"+maps);
-    console.log("employees->"+employees);
-
-    res.status(200).render('dashboard', {response: {"maps": maps, "emp":employees}});
-
 });
 
-app.get('/new', (req, res) => {
-
-    //get nodes for current page
-    const mapCollection = db.collection('map');
-    mapCollection.findOne({"mapId": 1}, function (err, result) {
-        if (err != null) {
-            console.log("some error occurred while fetching documents from mongodb::" + err)
-            res.status(500).render('upload-new');
-        } else {
-            console.log(JSON.stringify(result));
-            res.status(200).render('upload-new', {response: {"nodes": result.nodes}});
-        }
-    });
-});
 
 app.post("/remove", (req, res)=>{
 
@@ -262,8 +218,6 @@ app.post("/create-map", upload.single('exampleFormControlFile1'), (req, res)=>{
 
 
 });
-//console.log('App server started at port ' + port);
-//logUtil.writeLog(scriptName, '', 'App server started at port ' + port);
 
 //expose this to write test cases
-//module.exports = app;
+module.exports = app;
