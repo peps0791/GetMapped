@@ -80,6 +80,31 @@ app.get('/getMaps', async (req, res)=>{
 
 });
 
+app.post('/renameMap', async (req, res)=>{
+
+
+    var mapName = req.body.mapname;
+    console.log("map name->"+mapName);
+
+    var newName = req.body.newname;
+    console.log("map name->"+newName);
+
+    //get floor info
+    const mapCollection = db.collection('map');
+
+    mapCollection.updateOne({"mapName": mapName}, {"$set": {"mapName": newName}}, function (err, results) {
+        if (err != null) {
+            console.log("some error occurred while renaming map::" + err);
+            res.status(500).json({'status': "FAIL"});
+        } else {
+            //console.log(results);
+            console.log("Map renamed");
+            res.status(200).json({'status': "SUCCESS"});
+        }
+    });
+
+});
+
 app.get('/', async (req, res) => {
 
     //get floor info
