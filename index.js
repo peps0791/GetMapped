@@ -8,16 +8,11 @@ const morgan = require('morgan');
 
 const path = require('path');
 
-
 const logUtil = require("./util/log-util");
 const dbUtil = require("./util/db-util");
 const miscUtil = require("./util/misc-util");
 
-
 const scriptName = path.basename(__filename);
-
-
-
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -89,26 +84,6 @@ app.post('/renameMap', async (req, res)=>{
 
 
 
-app.post("/remove", (req, res)=>{
-
-    var mapName = req.body.mapname;
-    console.log("mapname->"+mapName);
-
-    const mapCollection = db.collection('map');
-    mapCollection.remove({"mapName":mapName}, function(err, result){
-
-        if (err != null) {
-            console.log("some error occurred while removing documents from mongodb::" + err)
-            res.status(500).json({response:{'error':'Error removing map'}});
-        } else {
-            console.log(JSON.stringify(result));
-            res.status(200).json({response:{'status':'SUCCESS'}});
-        }
-    });
-});
-
-
-
 app.post("/saveMap", (req, res) => {
 
     var nodes = req.body.nodes;
@@ -154,9 +129,7 @@ app.post('/saveSeat', (req, res) => {
         });
 });
 
-app.get("/add-new-map",  (req, res)=>{
-    res.render("add-new", {response:null})
-});
+
 
 //expose this to write test cases
 module.exports = app;

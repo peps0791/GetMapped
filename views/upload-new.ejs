@@ -302,7 +302,7 @@
         $('#removeBtn').click(function () {
 
             if(window.confirm("Are you sure you want to remove this map?")){
-                $.post("/remove", {
+                $.post("/remove-map", {
                     "mapname": localStorage.getItem("mapname"),
                 }, function (data) {
                     console.log("result from server:" + JSON.stringify(data))

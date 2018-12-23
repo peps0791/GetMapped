@@ -1064,3 +1064,326 @@
     at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:162:40)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:01:16.827Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-23T16:01:16.828Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T16:01:16.829Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T16:01:16.831Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:01:16.833Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:01:16.844Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1f94c1457ec743908f25d7","mapName":"test-map","file-name":"IMG_2109.JPG"},{"_id":"5c1faecfa0cae96fcef3a12d","mapName":"test-mapp","file-name":"test-file"}]
+2018-12-23T16:01:16.844Z info: 	routes.js:::/:::maps fetched form DB->test-map,test-mapp
+2018-12-23T16:01:16.845Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-23T16:01:16.846Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-23T16:01:16.846Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-23T16:01:16.846Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:01:16.849Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:01:16.849Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-23T16:01:29.683Z info: 	routes.js:::/getMap:::/getMap  endpoint hit
+2018-12-23T16:01:29.687Z info: 	routes.js:::/getMap:::map name->test-mapp
+2018-12-23T16:01:29.688Z info: 	verify-util.js:::validate::: called with parameters "test-mapp"
+2018-12-23T16:01:29.689Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2018-12-23T16:01:29.690Z info: 	verify-util.js:::validate::: called with parameters "test-mapp"
+2018-12-23T16:01:29.690Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"test-mapp"}
+2018-12-23T16:01:29.690Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:01:29.691Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:01:29.707Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1faecfa0cae96fcef3a12d","mapName":"test-mapp","file-name":"test-file"}]
+2018-12-23T16:08:18.897Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T16:08:18.954Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T16:08:18.956Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-23T16:08:18.972Z info: 	index.js::::::App server started at port 3000
+2018-12-23T16:08:21.207Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-23T16:08:21.209Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T16:08:21.210Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T16:08:21.213Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:08:21.216Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:08:21.233Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1f94c1457ec743908f25d7","mapName":"test-map","file-name":"IMG_2109.JPG"},{"_id":"5c1faecfa0cae96fcef3a12d","mapName":"test-mapp","file-name":"test-file"}]
+2018-12-23T16:08:21.234Z info: 	routes.js:::/:::maps fetched form DB->test-map,test-mapp
+2018-12-23T16:08:21.234Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-23T16:08:21.235Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-23T16:08:21.235Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-23T16:08:21.235Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:08:21.238Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:08:21.239Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-23T16:08:26.077Z info: 	routes.js:::/get-map:::/get-map  endpoint hit
+2018-12-23T16:08:26.077Z info: 	routes.js:::/get-map:::map name->test-map
+2018-12-23T16:08:26.078Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:08:26.078Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2018-12-23T16:08:26.079Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:08:26.079Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"test-map"}
+2018-12-23T16:08:26.079Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:08:26.080Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:08:26.084Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1f94c1457ec743908f25d7","mapName":"test-map","file-name":"IMG_2109.JPG"}]
+2018-12-23T16:08:32.840Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-23T16:08:32.840Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T16:08:32.840Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T16:08:32.841Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:08:32.841Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:08:32.843Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1f94c1457ec743908f25d7","mapName":"test-map","file-name":"IMG_2109.JPG"},{"_id":"5c1faecfa0cae96fcef3a12d","mapName":"test-mapp","file-name":"test-file"}]
+2018-12-23T16:08:32.843Z info: 	routes.js:::/:::maps fetched form DB->test-map,test-mapp
+2018-12-23T16:08:32.843Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-23T16:08:32.844Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-23T16:08:32.844Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-23T16:08:32.844Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:08:32.846Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:08:32.846Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-23T16:08:36.558Z info: 	routes.js:::/get-map:::/get-map  endpoint hit
+2018-12-23T16:08:36.559Z info: 	routes.js:::/get-map:::map name->test-mapp
+2018-12-23T16:08:36.560Z info: 	verify-util.js:::validate::: called with parameters "test-mapp"
+2018-12-23T16:08:36.560Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2018-12-23T16:08:36.561Z info: 	verify-util.js:::validate::: called with parameters "test-mapp"
+2018-12-23T16:08:36.561Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"test-mapp"}
+2018-12-23T16:08:36.562Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:08:36.562Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:08:36.571Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1faecfa0cae96fcef3a12d","mapName":"test-mapp","file-name":"test-file"}]
+2018-12-23T16:08:42.288Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-23T16:08:42.288Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T16:08:42.290Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T16:08:42.290Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:08:42.291Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:08:42.296Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1f94c1457ec743908f25d7","mapName":"test-map","file-name":"IMG_2109.JPG"},{"_id":"5c1faecfa0cae96fcef3a12d","mapName":"test-mapp","file-name":"test-file"}]
+2018-12-23T16:08:42.297Z info: 	routes.js:::/:::maps fetched form DB->test-map,test-mapp
+2018-12-23T16:08:42.297Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-23T16:08:42.297Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-23T16:08:42.298Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-23T16:08:42.298Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:08:42.301Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:08:42.301Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-23T16:22:26.974Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T16:22:27.017Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T16:22:27.019Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-23T16:22:27.031Z info: 	index.js::::::App server started at port 3000
+2018-12-23T16:22:31.937Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-23T16:22:31.938Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T16:22:31.944Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T16:22:31.945Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:22:31.947Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:22:31.973Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1f94c1457ec743908f25d7","mapName":"test-map","file-name":"IMG_2109.JPG"},{"_id":"5c1faecfa0cae96fcef3a12d","mapName":"test-mapp","file-name":"test-file"}]
+2018-12-23T16:22:31.974Z info: 	routes.js:::/:::maps fetched form DB->test-map,test-mapp
+2018-12-23T16:22:31.975Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-23T16:22:31.975Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-23T16:22:31.975Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-23T16:22:31.976Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:22:31.982Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:22:31.984Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-23T16:22:35.294Z info: 	routes.js:::/get-map:::/get-map  endpoint hit
+2018-12-23T16:22:35.296Z info: 	routes.js:::/get-map:::map name->test-mapp
+2018-12-23T16:22:35.296Z info: 	verify-util.js:::validate::: called with parameters "test-mapp"
+2018-12-23T16:22:35.297Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2018-12-23T16:22:35.299Z info: 	verify-util.js:::validate::: called with parameters "test-mapp"
+2018-12-23T16:22:35.300Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"test-mapp"}
+2018-12-23T16:22:35.301Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:22:35.301Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:22:35.307Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1faecfa0cae96fcef3a12d","mapName":"test-mapp","file-name":"test-file"}]
+2018-12-23T16:22:39.170Z info: 	routes.js:::/remove-map:::/remove-map  endpoint hit
+2018-12-23T16:22:39.170Z info: 	routes.js:::/remove-map:::mapName->test-mapp
+2018-12-23T16:22:39.171Z info: 	verify-util.js:::validate::: called with parameters "test-mapp"
+2018-12-23T16:22:39.171Z info: 	misc-util.js:::removeMap():::removeMap()  function called
+2018-12-23T16:22:39.171Z info: 	verify-util.js:::validate::: called with parameters "test-mapp"
+2018-12-23T16:22:39.172Z info: 	db-util.js:::removeFromDB:::removeFromDB function called with parameters:: collection name::map :: query::[object Object]
+2018-12-23T16:22:39.172Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:22:39.173Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp"}
+2018-12-23T16:22:39.173Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:22:39.180Z info: 	verify-util.js:::validate::: called with parameters undefined
+2018-12-23T16:22:39.180Z info: 	misc-util.js:::removeMap():::Inside Catch block
+2018-12-23T16:22:39.181Z error: 	misc-util.js:::removeMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:139:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:24:39.176Z info: 	routes.js:::/remove-map:::/remove-map  endpoint hit
+2018-12-23T16:24:39.177Z info: 	routes.js:::/remove-map:::mapName->test-mapp
+2018-12-23T16:24:39.177Z info: 	verify-util.js:::validate::: called with parameters "test-mapp"
+2018-12-23T16:24:39.178Z info: 	misc-util.js:::removeMap():::removeMap()  function called
+2018-12-23T16:24:39.178Z info: 	verify-util.js:::validate::: called with parameters "test-mapp"
+2018-12-23T16:24:39.179Z info: 	db-util.js:::removeFromDB:::removeFromDB function called with parameters:: collection name::map :: query::[object Object]
+2018-12-23T16:24:39.179Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:24:39.180Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp"}
+2018-12-23T16:24:39.180Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:24:39.183Z info: 	verify-util.js:::validate::: called with parameters undefined
+2018-12-23T16:24:39.183Z info: 	misc-util.js:::removeMap():::Inside Catch block
+2018-12-23T16:24:39.184Z error: 	misc-util.js:::removeMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:139:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:25:30.365Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T16:25:30.420Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T16:25:30.422Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-23T16:25:30.436Z info: 	index.js::::::App server started at port 3000
+2018-12-23T16:25:34.932Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-23T16:25:34.933Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T16:25:34.935Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T16:25:34.936Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:25:34.940Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:25:34.965Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1f94c1457ec743908f25d7","mapName":"test-map","file-name":"IMG_2109.JPG"}]
+2018-12-23T16:25:34.966Z info: 	routes.js:::/:::maps fetched form DB->test-map
+2018-12-23T16:25:34.967Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-23T16:25:34.969Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-23T16:25:34.969Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-23T16:25:34.970Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:25:34.978Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:25:34.979Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-23T16:25:38.954Z info: 	routes.js:::/get-map:::/get-map  endpoint hit
+2018-12-23T16:25:38.956Z info: 	routes.js:::/get-map:::map name->test-map
+2018-12-23T16:25:38.956Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:25:38.957Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2018-12-23T16:25:38.958Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:25:38.959Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"test-map"}
+2018-12-23T16:25:38.959Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:25:38.960Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:25:38.965Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1f94c1457ec743908f25d7","mapName":"test-map","file-name":"IMG_2109.JPG"}]
+2018-12-23T16:25:45.291Z info: 	routes.js:::/remove-map:::/remove-map  endpoint hit
+2018-12-23T16:25:45.292Z info: 	routes.js:::/remove-map:::mapName->test-map
+2018-12-23T16:25:45.292Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:25:45.293Z info: 	misc-util.js:::removeMap():::removeMap()  function called
+2018-12-23T16:25:45.294Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:25:45.294Z info: 	db-util.js:::removeFromDB:::removeFromDB function called with parameters:: collection name::map :: query::[object Object]
+2018-12-23T16:25:45.295Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:25:45.295Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-map"}
+2018-12-23T16:25:45.296Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:25:45.301Z info: 	verify-util.js:::validate::: called with parameters {"ok":1,"n":1}
+2018-12-23T16:25:45.302Z info: 	misc-util.js:::removeMap():::removeMap()  remove status::{"ok":1,"n":1}
+2018-12-23T16:25:47.455Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-23T16:25:47.455Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T16:25:47.455Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T16:25:47.456Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:25:47.456Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:25:47.459Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:25:47.460Z info: 	routes.js:::/:::maps fetched form DB->
+2018-12-23T16:25:47.461Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-23T16:25:47.462Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-23T16:25:47.462Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-23T16:25:47.463Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:25:47.466Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:25:47.466Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-23T16:28:13.989Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T16:28:14.044Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T16:28:14.045Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-23T16:28:14.058Z info: 	index.js::::::App server started at port 3000
+2018-12-23T16:28:16.428Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-23T16:28:16.429Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T16:28:16.431Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T16:28:16.432Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:28:16.435Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:28:16.455Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:28:16.455Z info: 	routes.js:::/:::maps fetched form DB->
+2018-12-23T16:28:16.456Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-23T16:28:16.457Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-23T16:28:16.458Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-23T16:28:16.458Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:28:16.462Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:28:16.463Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-23T16:28:19.351Z info: 	routes.js:::/add-new-map:::/add-new-map  endpoint hit
+2018-12-23T16:28:28.485Z info: 	routes.js:::/create-map:::/create-map  endpoint hit
+2018-12-23T16:28:28.485Z info: 	routes.js:::/create-map:::uploaded file->[object Object]
+2018-12-23T16:28:28.485Z info: 	verify-util.js:::validate::: called with parameters {"fieldname":"exampleFormControlFile1","originalname":"IMG_2109_1.JPG","encoding":"7bit","mimetype":"image/jpeg","destination":"public/uploads","filename":"IMG_2109_1.JPG","path":"public/uploads/IMG_2109_1.JPG","size":2715706}
+2018-12-23T16:28:28.485Z info: 	routes.js:::/create-map:::map name->test-map
+2018-12-23T16:28:28.486Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:28:28.486Z info: 	misc-util.js:::createNewMap():::createNewMap()  function called
+2018-12-23T16:28:28.486Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:28:28.487Z info: 	verify-util.js:::validate::: called with parameters "IMG_2109_1.JPG"
+2018-12-23T16:28:28.487Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-23T16:28:28.487Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:28:28.488Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-map","file-name":"IMG_2109_1.JPG"}
+2018-12-23T16:28:28.488Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:28:28.495Z info: 	verify-util.js:::validate::: called with parameters "5c1fb7ac1684fb02debc742e"
+2018-12-23T16:28:28.496Z info: 	misc-util.js:::createNewMap():::createNewMap()  inserted map id::5c1fb7ac1684fb02debc742e
+2018-12-23T16:28:34.628Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-23T16:28:34.628Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T16:28:34.628Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T16:28:34.628Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:28:34.629Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:28:34.631Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1fb7ac1684fb02debc742e","mapName":"test-map","file-name":"IMG_2109_1.JPG"}]
+2018-12-23T16:28:34.631Z info: 	routes.js:::/:::maps fetched form DB->test-map
+2018-12-23T16:28:34.631Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-23T16:28:34.632Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-23T16:28:34.632Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-23T16:28:34.632Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:28:34.633Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:28:34.633Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-23T16:28:37.603Z info: 	routes.js:::/get-map:::/get-map  endpoint hit
+2018-12-23T16:28:37.604Z info: 	routes.js:::/get-map:::map name->test-map
+2018-12-23T16:28:37.606Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:28:37.608Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2018-12-23T16:28:37.609Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:28:37.609Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"test-map"}
+2018-12-23T16:28:37.610Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:28:37.610Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:28:37.615Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c1fb7ac1684fb02debc742e","mapName":"test-map","file-name":"IMG_2109_1.JPG"}]
+2018-12-23T16:28:41.650Z info: 	routes.js:::/remove-map:::/remove-map  endpoint hit
+2018-12-23T16:28:41.650Z info: 	routes.js:::/remove-map:::mapName->test-map
+2018-12-23T16:28:41.650Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:28:41.651Z info: 	misc-util.js:::removeMap():::removeMap()  function called
+2018-12-23T16:28:41.651Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:28:41.651Z info: 	db-util.js:::removeFromDB:::removeFromDB function called with parameters:: collection name::map :: query::[object Object]
+2018-12-23T16:28:41.652Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:28:41.652Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-map"}
+2018-12-23T16:28:41.652Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:28:41.654Z info: 	verify-util.js:::validate::: called with parameters {"ok":1,"n":1}
+2018-12-23T16:28:41.656Z info: 	misc-util.js:::removeMap():::Inside Catch block
+2018-12-23T16:28:41.656Z error: 	misc-util.js:::removeMap():::Inside Catch block => AssertionError: Unspecified AssertionError
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:146:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:28:41.656Z info: 	routes.js:::/remove-map:::Error thrown to the endpointundefined::Unspecified AssertionError
+2018-12-23T16:28:41.657Z error: 	routes.js:::/remove-map:::Error thrown to the endpointundefined::Unspecified AssertionError => AssertionError: Unspecified AssertionError
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:146:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:29:04.626Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T16:29:04.679Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T16:29:04.680Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-23T16:29:04.695Z info: 	index.js::::::App server started at port 3000
+2018-12-23T16:29:08.651Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-23T16:29:08.652Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T16:29:08.654Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T16:29:08.656Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:29:08.661Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:29:08.689Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:29:08.690Z info: 	routes.js:::/:::maps fetched form DB->
+2018-12-23T16:29:08.691Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-23T16:29:08.692Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-23T16:29:08.692Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-23T16:29:08.693Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:29:08.699Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:29:08.700Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-23T16:29:11.415Z info: 	routes.js:::/add-new-map:::/add-new-map  endpoint hit
+2018-12-23T16:29:20.164Z info: 	routes.js:::/create-map:::/create-map  endpoint hit
+2018-12-23T16:29:20.164Z info: 	routes.js:::/create-map:::uploaded file->[object Object]
+2018-12-23T16:29:20.164Z info: 	verify-util.js:::validate::: called with parameters {"fieldname":"exampleFormControlFile1","originalname":"IMG_2109_1.JPG","encoding":"7bit","mimetype":"image/jpeg","destination":"public/uploads","filename":"IMG_2109_1.JPG","path":"public/uploads/IMG_2109_1.JPG","size":2715706}
+2018-12-23T16:29:20.165Z info: 	routes.js:::/create-map:::map name->test-map
+2018-12-23T16:29:20.165Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:29:20.165Z info: 	misc-util.js:::createNewMap():::createNewMap()  function called
+2018-12-23T16:29:20.165Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:29:20.166Z info: 	verify-util.js:::validate::: called with parameters "IMG_2109_1.JPG"
+2018-12-23T16:29:20.166Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-23T16:29:20.166Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:29:20.167Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-map","file-name":"IMG_2109_1.JPG"}
+2018-12-23T16:29:20.167Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:29:20.171Z info: 	verify-util.js:::validate::: called with parameters "5c1fb7e0419baf0367084b36"
+2018-12-23T16:29:20.171Z info: 	misc-util.js:::createNewMap():::createNewMap()  inserted map id::5c1fb7e0419baf0367084b36
+2018-12-23T16:29:26.681Z info: 	routes.js:::/remove-map:::/remove-map  endpoint hit
+2018-12-23T16:29:26.682Z info: 	routes.js:::/remove-map:::mapName->test-map
+2018-12-23T16:29:26.682Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:29:26.682Z info: 	misc-util.js:::removeMap():::removeMap()  function called
+2018-12-23T16:29:26.682Z info: 	verify-util.js:::validate::: called with parameters "test-map"
+2018-12-23T16:29:26.683Z info: 	db-util.js:::removeFromDB:::removeFromDB function called with parameters:: collection name::map :: query::[object Object]
+2018-12-23T16:29:26.683Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:29:26.683Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-map"}
+2018-12-23T16:29:26.684Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:29:26.688Z info: 	verify-util.js:::validate::: called with parameters {"ok":1,"n":1}
+2018-12-23T16:29:26.688Z info: 	misc-util.js:::removeMap():::removeMap()  remove status::{"ok":1,"n":1}
+2018-12-23T16:29:28.131Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-23T16:29:28.132Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T16:29:28.134Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T16:29:28.136Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T16:29:28.140Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:29:28.149Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:29:28.160Z info: 	routes.js:::/:::maps fetched form DB->
+2018-12-23T16:29:28.161Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-23T16:29:28.162Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-23T16:29:28.163Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-23T16:29:28.164Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T16:29:28.257Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-23T16:29:28.259Z info: 	routes.js:::/:::employees fetched from DB->

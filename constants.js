@@ -1,7 +1,9 @@
 module.exports = Object.freeze({
     LABEL_API_ROOT: '/',
-    LABEL_API_GET_MAP: '/getMap',
-    LABEL_API_CREATE_MAP: '/createMap',
+    LABEL_API_GET_MAP: '/get-map',
+    LABEL_API_CREATE_MAP: '/create-map',
+    LABEL_API_ADD_NEW:'/add-new-map',
+    LABEL_API_REMOVE_MAP:'/remove-map',
 
     LOGIN_API_LABEL:'/login',
     SIGNUP_API_LABEL:'/signup',

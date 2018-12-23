@@ -39,11 +39,11 @@ module.exports = function (app) {
     });
 
     /*
-    * @api: '/getMap'
+    * @api: '/get-map'
     * @description: gets the specified map from the database
     * @renders: upload-new.ejs
     */
-    app.get("/getMap", async (req, res)=>{
+    app.get("/get-map", async (req, res)=>{
 
         logUtil.writeLog(scriptName, constants.LABEL_API_GET_MAP,  constants.LABEL_API_GET_MAP + '  endpoint hit');
         let mapName = req.query.mapname;
@@ -57,6 +57,17 @@ module.exports = function (app) {
             res.status(500).render('error', {response: {'errorCode': err.code, 'errorMsg': err.message}});
         }
 
+    });
+
+    /*
+    * @api: '/add-new-map'
+    * @description: renders the page for adding new map
+    * @renders: add-new.ejs
+    */
+    app.get("/add-new-map",  (req, res)=>{
+
+        logUtil.writeLog(scriptName, constants.LABEL_API_ADD_NEW,  constants.LABEL_API_ADD_NEW + '  endpoint hit');
+        res.render("add-new", {response:null})
     });
 
     /*
@@ -91,5 +102,30 @@ module.exports = function (app) {
             }
 
         }
+    });
+
+
+    /*
+    * @api: '/remove-map'
+    * @description: removes map from the database
+    * @renders: None
+    */
+    app.post("/remove-map", async (req, res)=>{
+
+        logUtil.writeLog(scriptName, constants.LABEL_API_REMOVE_MAP,  constants.LABEL_API_REMOVE_MAP + '  endpoint hit');
+
+        try{
+            let mapName = req.body.mapname;
+            logUtil.writeLog(scriptName, constants.LABEL_API_REMOVE_MAP,  'mapName->'+mapName);
+            verify.validate(mapName);
+
+            await miscUtil.removeMap(mapName);
+            res.status(200).json({response:{'status':'SUCCESS'}});
+        }catch(err){
+            logUtil.writeLog(scriptName, constants.LABEL_API_REMOVE_MAP, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
+            res.status(500).render('error', {response: {'errorCode': err.code, 'errorMsg': err.message}});
+        }
+
+
     });
 };

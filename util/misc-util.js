@@ -121,5 +121,35 @@ module.exports = {
                 reject(err)
             }
         });
+    },
+
+
+    /*
+   * @name: removeMap()
+   * @description: removes map from the database
+   * @params: mapName (::String)
+   * @returns: Promise object
+   */
+    removeMap: (mapName)=>{
+
+        let currentFuncName = 'removeMap()';
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  function called');
+
+        return new Promise(async (resolve, reject)=>{
+
+            try{
+                verify.validate(mapName);
+                let query = {"mapName":mapName};
+
+                let removeStatus = await dbUtil.removeFromDB(constants.COLLECTION_MAP, query);
+                verify.validate(removeStatus);
+                logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  remove status::'+removeStatus);
+                resolve();
+            }catch(err){
+                logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
+                reject(err)
+            }
+        });
+
     }
 };

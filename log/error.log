@@ -181,3 +181,23 @@
     at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:162:40)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:22:39.181Z error: 	misc-util.js:::removeMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:139:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:24:39.184Z error: 	misc-util.js:::removeMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:139:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:28:41.656Z error: 	misc-util.js:::removeMap():::Inside Catch block => AssertionError: Unspecified AssertionError
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:146:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:28:41.657Z error: 	routes.js:::/remove-map:::Error thrown to the endpointundefined::Unspecified AssertionError => AssertionError: Unspecified AssertionError
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:146:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
