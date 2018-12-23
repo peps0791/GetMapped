@@ -1,0 +1,1526 @@
+2018-12-15T07:38:13.691Z info: 	db-util.js:::getFromDB:::getFromDB() function called
+2018-12-15T07:38:13.693Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:38:13.700Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T07:38:13.701Z error: 	db-util.js:::getFromDB:::Inside Catch block => TypeError: Cannot read property 'collection' of null
+    at /home/peps/misc/GetMapped/util/db-util.js:64:42
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:61:16)
+    at /home/peps/misc/GetMapped/util/misc-util.js:24:42
+    at new Promise (<anonymous>)
+    at Object.getMapsFromDB (/home/peps/misc/GetMapped/util/misc-util.js:22:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/misc-util-test.js:15:31)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-15T07:38:13.767Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:40:59.252Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T07:40:59.254Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:40:59.263Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T07:40:59.263Z error: 	db-util.js:::getFromDB:::Inside Catch block => TypeError: Cannot read property 'collection' of null
+    at /home/peps/misc/GetMapped/util/db-util.js:64:42
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:61:16)
+    at /home/peps/misc/GetMapped/util/misc-util.js:24:42
+    at new Promise (<anonymous>)
+    at Object.getMapsFromDB (/home/peps/misc/GetMapped/util/misc-util.js:22:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/misc-util-test.js:15:31)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-15T07:40:59.329Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:43:04.487Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T07:43:04.488Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:43:04.496Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T07:43:04.497Z error: 	db-util.js:::getFromDB:::Inside Catch block => TypeError: Cannot read property 'collection' of null
+    at /home/peps/misc/GetMapped/util/db-util.js:65:42
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:61:16)
+    at /home/peps/misc/GetMapped/util/misc-util.js:24:42
+    at new Promise (<anonymous>)
+    at Object.getMapsFromDB (/home/peps/misc/GetMapped/util/misc-util.js:22:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/misc-util-test.js:15:31)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-15T07:43:04.549Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:44:24.341Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T07:44:24.343Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:44:24.352Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T07:44:24.352Z error: 	db-util.js:::getFromDB:::Inside Catch block => TypeError: Cannot read property 'collection' of null
+    at /home/peps/misc/GetMapped/util/db-util.js:65:42
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:61:16)
+    at /home/peps/misc/GetMapped/util/misc-util.js:24:42
+    at new Promise (<anonymous>)
+    at Object.getMapsFromDB (/home/peps/misc/GetMapped/util/misc-util.js:22:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/misc-util-test.js:15:31)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-15T07:44:24.429Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:47:21.568Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T07:47:21.570Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:47:21.579Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T07:47:21.580Z error: 	db-util.js:::getFromDB:::Inside Catch block => TypeError: Cannot read property 'collection' of null
+    at /home/peps/misc/GetMapped/util/db-util.js:65:42
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:61:16)
+    at /home/peps/misc/GetMapped/util/misc-util.js:24:42
+    at new Promise (<anonymous>)
+    at Object.getMapsFromDB (/home/peps/misc/GetMapped/util/misc-util.js:22:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/misc-util-test.js:15:31)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-15T07:47:21.630Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:49:05.284Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T07:49:05.286Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:49:05.295Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T07:49:05.296Z error: 	db-util.js:::getFromDB:::Inside Catch block => TypeError: db.collection is not a function
+    at /home/peps/misc/GetMapped/util/db-util.js:65:42
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:61:16)
+    at /home/peps/misc/GetMapped/util/misc-util.js:24:42
+    at new Promise (<anonymous>)
+    at Object.getMapsFromDB (/home/peps/misc/GetMapped/util/misc-util.js:22:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/misc-util-test.js:15:31)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-15T07:49:05.352Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:50:21.787Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T07:50:21.789Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:50:21.798Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T07:50:21.798Z error: 	db-util.js:::getFromDB:::Inside Catch block => TypeError: db.collection is not a function
+    at /home/peps/misc/GetMapped/util/db-util.js:65:42
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:61:16)
+    at /home/peps/misc/GetMapped/util/misc-util.js:24:42
+    at new Promise (<anonymous>)
+    at Object.getMapsFromDB (/home/peps/misc/GetMapped/util/misc-util.js:22:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/misc-util-test.js:15:31)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-15T07:50:21.835Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:53:14.052Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T07:53:14.057Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:53:14.140Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:53:42.817Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T07:53:42.818Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:53:42.889Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T07:57:24.839Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T07:57:24.841Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T07:57:24.916Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T08:00:29.405Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:00:29.407Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:00:29.490Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T08:00:29.501Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:01:19.308Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:01:19.309Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:01:19.403Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T08:01:19.414Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:01:33.754Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:01:33.755Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:01:33.822Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T08:01:33.836Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:03:28.829Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:03:28.830Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:03:28.834Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:03:28.835Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoParseError: Invalid connection string
+    at parseConnectionString (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/uri_parser.js:412:21)
+    at connect (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/mongo_client_ops.js:180:3)
+    at connectOp (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/mongo_client_ops.js:284:3)
+    at /home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:437:24
+    at new Promise (<anonymous>)
+    at executeOperation (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:432:10)
+    at MongoClient.connect (/home/peps/misc/GetMapped/node_modules/mongodb/lib/mongo_client.js:168:10)
+    at Function.MongoClient.connect (/home/peps/misc/GetMapped/node_modules/mongodb/lib/mongo_client.js:372:22)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:37:29)
+    at new Promise (<anonymous>)
+    at Object.initDB (/home/peps/misc/GetMapped/util/db-util.js:35:16)
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:79:25)
+    at /home/peps/misc/GetMapped/util/db-util.js:62:38
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:60:16)
+    at /home/peps/misc/GetMapped/util/misc-util.js:24:42
+    at new Promise (<anonymous>)
+    at Object.getMapsFromDB (/home/peps/misc/GetMapped/util/misc-util.js:22:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/misc-util-test.js:20:31)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate._onImmediate (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-15T08:03:28.835Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:03:28.835Z error: 	db-util.js:::getFromDB:::Inside Catch block => undefined
+2018-12-15T08:03:54.075Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:03:54.077Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:03:54.132Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:03:54.133Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:03:54.133Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:03:54.133Z error: 	db-util.js:::getFromDB:::Inside Catch block => undefined
+2018-12-15T08:04:23.119Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:04:23.120Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:04:23.197Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:04:23.199Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:04:23.200Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:04:23.200Z error: 	db-util.js:::getFromDB:::Inside Catch block => undefined
+2018-12-15T08:04:30.695Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:04:30.697Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:04:30.757Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:04:30.758Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:04:30.758Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:04:30.758Z error: 	db-util.js:::getFromDB:::Inside Catch block => undefined
+2018-12-15T08:04:32.716Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:04:32.716Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:04:32.754Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:04:32.755Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:04:32.755Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:04:32.755Z error: 	db-util.js:::getFromDB:::Inside Catch block => undefined
+2018-12-15T08:05:59.842Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:05:59.844Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:05:59.886Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:05:59.886Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:05:59.887Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:05:59.887Z error: 	db-util.js:::getFromDB:::Inside Catch block => undefined
+2018-12-15T08:06:01.864Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:06:01.864Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:06:01.902Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:06:01.903Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:06:01.904Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:06:01.904Z error: 	db-util.js:::getFromDB:::Inside Catch block => undefined
+2018-12-15T08:06:59.212Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:06:59.214Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:06:59.257Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:06:59.258Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:06:59.259Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:06:59.259Z error: 	db-util.js:::getFromDB:::Inside Catch block => undefined
+2018-12-15T08:07:01.228Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:07:01.229Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:07:01.266Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:07:01.267Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:07:01.267Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:07:01.267Z error: 	db-util.js:::getFromDB:::Inside Catch block => undefined
+2018-12-15T08:11:30.514Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:11:30.516Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:11:30.568Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:11:30.569Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:11:30.570Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:11:30.570Z error: 	db-util.js:::getFromDB:::Inside Catch block => undefined
+2018-12-15T08:11:32.533Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:11:32.534Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:11:32.570Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:11:32.570Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:11:32.571Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:11:32.571Z error: 	db-util.js:::getFromDB:::Inside Catch block => undefined
+2018-12-15T08:14:16.710Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:14:16.713Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() function called 
+2018-12-15T08:14:16.713Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:14:16.780Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:14:16.783Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:14:16.783Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() error 
+2018-12-15T08:14:16.784Z error: 	db-util.js:::getConnectionObj:::getConnectionObj() error  => undefined
+2018-12-15T08:14:16.786Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:14:16.786Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error: DB_INIT_FAIL::MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:87:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-15T08:14:18.731Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:14:18.732Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() function called 
+2018-12-15T08:14:18.732Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:14:18.768Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:14:18.769Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:14:18.769Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() error 
+2018-12-15T08:14:18.769Z error: 	db-util.js:::getConnectionObj:::getConnectionObj() error  => undefined
+2018-12-15T08:14:18.770Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:14:18.770Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error: DB_INIT_FAIL::MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:87:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-15T08:16:32.360Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:16:32.362Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() function called 
+2018-12-15T08:16:32.362Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:16:32.420Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T08:17:59.756Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:17:59.757Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() function called 
+2018-12-15T08:17:59.758Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:17:59.804Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:17:59.805Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:17:59.805Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() error 
+2018-12-15T08:17:59.806Z error: 	db-util.js:::getConnectionObj:::getConnectionObj() error  => undefined
+2018-12-15T08:17:59.807Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:17:59.807Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error: DB_INIT_FAIL::MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:87:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-15T08:17:59.808Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:17:59.811Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:17:59.811Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() function called 
+2018-12-15T08:17:59.812Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:17:59.882Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T08:17:59.888Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T08:18:41.191Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:18:41.193Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() function called 
+2018-12-15T08:18:41.193Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:18:41.273Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:18:41.275Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:18:41.276Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() error 
+2018-12-15T08:18:41.276Z error: 	db-util.js:::getConnectionObj:::getConnectionObj() error  => undefined
+2018-12-15T08:18:41.279Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:18:41.279Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error: DB_INIT_FAIL::MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:87:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-15T08:18:41.282Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:18:41.288Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:18:41.289Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() function called 
+2018-12-15T08:18:41.289Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:18:41.342Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T08:18:41.344Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T08:18:56.950Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:18:56.952Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() function called 
+2018-12-15T08:18:56.953Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:18:57.000Z info: 	db-util.js:::initDB:::some error occurred while connecting to db
+2018-12-15T08:18:57.002Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-15T08:18:57.003Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() error 
+2018-12-15T08:18:57.003Z error: 	db-util.js:::getConnectionObj:::getConnectionObj() error  => undefined
+2018-12-15T08:18:57.005Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-15T08:18:57.006Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error: DB_INIT_FAIL::MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:87:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-15T08:18:57.007Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:18:57.011Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-15T08:18:57.011Z info: 	db-util.js:::getConnectionObj:::getConnectionObj() function called 
+2018-12-15T08:18:57.011Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-15T08:18:57.049Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-15T08:18:57.057Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T07:52:01.560Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T07:52:01.563Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T07:52:01.590Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T07:52:01.592Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T07:52:01.592Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T07:52:01.603Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T07:52:01.609Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T07:52:01.610Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T08:03:52.131Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-23T08:03:52.135Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T08:03:52.135Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T08:03:52.155Z info: 	db-util.js:::initDB:::Some error occurred while connecting to db
+2018-12-23T08:03:52.156Z error: 	db-util.js:::initDB:::Some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T08:03:52.156Z info: 	db-util.js:::getConnectionObj:::getConnectionObj  Error 
+2018-12-23T08:03:52.156Z error: 	db-util.js:::getConnectionObj:::getConnectionObj  Error  => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T08:03:52.159Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T08:03:52.159Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error: MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:90:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T08:03:52.160Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T08:03:52.170Z info: 	db-util.js:::getFromDB:::getFromDB() function called with parameters::collection name->map :: queryObj{}
+2018-12-23T08:03:52.170Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T08:03:52.171Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T08:03:52.195Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T08:03:52.198Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:10:41.616Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:10:41.618Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:10:41.635Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:10:41.636Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:10:41.636Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:10:41.642Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:10:41.646Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:10:41.646Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:10:41.647Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:10:41.647Z error: 	db-util.js:::getFromDB:::Inside Catch block => ReferenceError: errFile is not defined
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:13)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:57:20)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:10:41.650Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:10:41.650Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:11:56.745Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:11:56.747Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:11:56.762Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:11:56.763Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:11:56.763Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:11:56.772Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:11:56.775Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:11:56.776Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:11:56.776Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:11:56.777Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:11:56.777Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:11:56.777Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:57:20)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:13:09.347Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:13:09.349Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:13:09.364Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:13:09.365Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:13:09.365Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:13:09.369Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:13:09.372Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:13:09.373Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:13:09.373Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:13:09.373Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:13:09.373Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:13:09.374Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:58:20)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:14:09.597Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:14:09.598Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:14:09.615Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:14:09.616Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:14:09.616Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:14:09.621Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:14:09.624Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:14:09.625Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:14:09.625Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:14:09.625Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:14:09.626Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:14:09.626Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:58:20)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:15:25.746Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:15:25.748Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:15:25.763Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:15:25.764Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:15:25.764Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:15:25.769Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:15:25.773Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:15:25.773Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:15:25.773Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:15:25.774Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:15:25.774Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:15:25.776Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:16:04.755Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:16:04.757Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:16:04.773Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:16:04.774Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:16:04.774Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:16:04.781Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:16:04.784Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:16:04.784Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:16:04.784Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:16:04.785Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:16:04.785Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:16:04.785Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:16:04.786Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:16:04.787Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:16:04.787Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:16:04.787Z error: 	db-util.js:::getFromDB:::Inside Catch block => ReferenceError: assert is not defined
+    at /home/peps/misc/GetMapped/util/db-util.js:76:17
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:69:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:16:40.853Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:16:40.855Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:16:40.872Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:16:40.873Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:16:40.873Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:16:40.880Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:16:40.883Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:16:40.883Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:16:40.884Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:16:40.884Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:16:40.884Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:16:40.884Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:16:40.886Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:16:40.886Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:16:40.887Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:16:40.887Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: Unspecified AssertionError
+    at /home/peps/misc/GetMapped/util/db-util.js:76:17
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:69:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:19:33.511Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:19:33.513Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:19:33.528Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:19:33.529Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:19:33.529Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:19:33.535Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:19:33.538Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:19:33.538Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:19:33.539Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:19:33.539Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:19:33.539Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:19:33.540Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:19:33.541Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:19:33.541Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:19:33.542Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:19:33.542Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:69:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:20:53.975Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:20:53.977Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:20:53.995Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:20:53.996Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:20:53.996Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:20:54.002Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:20:54.006Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:20:54.007Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:20:54.007Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:20:54.008Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:20:54.008Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:20:54.008Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:20:54.010Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:20:54.010Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:20:54.012Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:20:54.012Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:69:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:21:44.513Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:21:44.515Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:21:44.529Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:21:44.530Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:21:44.530Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:21:44.537Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:21:44.541Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:21:44.541Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:21:44.542Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:21:44.542Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:21:44.542Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:21:44.543Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:21:44.544Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:21:44.544Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:21:44.545Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:21:44.546Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:69:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:23:03.609Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:23:03.611Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:23:03.626Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:23:03.627Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:23:03.627Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:23:03.632Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:23:03.636Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:23:03.637Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:23:03.637Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:23:03.637Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:23:03.638Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:23:03.638Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:23:03.639Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:23:03.640Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:23:03.641Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:23:03.641Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:67:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:23:03.642Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->randomcollection :: queryObjnull
+2018-12-23T10:23:03.642Z info: 	verify-util.js:::validate::: called with parameters "randomcollection"
+2018-12-23T10:23:03.642Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:23:03.642Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:76:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:23:26.408Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:23:26.410Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:23:26.424Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:23:26.425Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:23:26.426Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:23:26.432Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:23:26.435Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:23:26.435Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:23:26.436Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:23:26.436Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:23:26.436Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:23:26.437Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:23:26.438Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:23:26.438Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:23:26.440Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:23:26.440Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:67:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:23:26.441Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->randomcollection :: queryObj{}
+2018-12-23T10:23:26.441Z info: 	verify-util.js:::validate::: called with parameters "randomcollection"
+2018-12-23T10:23:26.441Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:24:01.561Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:24:01.563Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:24:01.578Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:24:01.580Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:24:01.580Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:24:01.586Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:24:01.590Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:24:01.590Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:24:01.590Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:24:01.591Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:24:01.591Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:24:01.591Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:24:01.593Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:24:01.593Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:24:01.594Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:24:01.594Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.<anonymous> (/home/peps/misc/GetMapped/test/db-util-test.js:67:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:24:01.595Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->randomcollection :: queryObj{}
+2018-12-23T10:24:01.595Z info: 	verify-util.js:::validate::: called with parameters "randomcollection"
+2018-12-23T10:24:01.595Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:40:51.975Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:40:51.977Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:40:51.992Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:40:51.993Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:40:51.993Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:40:51.998Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:40:52.001Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:40:52.002Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:40:52.002Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:40:52.002Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:40:52.003Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:40:52.005Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:40:52.006Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:40:52.006Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:40:52.007Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:40:52.007Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:67:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:40:52.008Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:40:52.008Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:40:52.008Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:40:52.008Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:75:37)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:41:52.480Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:41:52.482Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:41:52.498Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:41:52.499Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:41:52.499Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:41:52.504Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:41:52.508Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:41:52.509Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:41:52.509Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:41:52.510Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:41:52.510Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:41:52.511Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:41:52.512Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:41:52.512Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:41:52.514Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:41:52.514Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:67:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:41:52.515Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:41:52.515Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:41:52.515Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:41:52.515Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:75:37)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:42:31.910Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:42:31.912Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:42:31.927Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:42:31.929Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:42:31.929Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:42:31.934Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:42:31.937Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:42:31.938Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:42:31.938Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-23T10:42:31.938Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-23T10:42:31.939Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:42:31.939Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:58:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:42:31.940Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-23T10:42:31.940Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:42:31.941Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:42:31.942Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at /home/peps/misc/GetMapped/util/db-util.js:76:24
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:72:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:67:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-23T10:42:31.942Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T10:42:31.943Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:42:31.943Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:42:31.949Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c130372fab1b19b26340cf8","mapName":"new floor 1","file-name":"IMG_2109.JPG","nodes":["0-0","1-0","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","15-18","16-0","17-0","18-0","19-0","20-0","21-0","22-0","23-0","24-0","25-0","26-0","27-0","28-0","29-0","30-0","31-0","32-0","33-0","34-0","35-0","36-0","37-0","38-0","39-0","40-0","41-0","42-0","43-0","44-0","45-0","46-0","47-0","48-0","49-0","50-0","51-0","52-0","53-0","54-0","55-0","56-0","57-0","58-0","59-0","60-0","61-0","62-0","63-0","64-0","65-0","66-0","67-0","68-0","69-0","70-0","73-0","74-0"]},{"_id":"5c1303b0fab1b19b26340cf9","mapName":"floor 2 map","file-name":"IMG_2109_1.JPG","nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-22","0-23","0-24","0-25","0-27","0-28","0-29","0-30","0-31","0-32","0-33","0-34","0-35","0-36","0-38","0-39","0-40","0-41","0-51","0-52","0-53","0-54","0-55","0-56","0-74","0-75","1-14","1-15","1-16","1-17","1-18","1-19","1-20","1-21","1-22","1-56","1-75","2-56","2-75","3-56","3-75","4-56","4-57","4-75","5-57","5-75","6-57","6-75","7-57","7-75","8-57","8-75","9-57","9-75","10-57","10-75","11-57","11-75","12-57","12-59","12-60","12-61","12-62","12-63","12-64","12-65","12-66","12-67","12-68","12-69","12-70","12-71","12-72","12-73","12-74","12-75","13-57","13-58","13-59"]},{"_id":"5c130412fab1b19b26340cfa","mapName":"floor 4","file-name":"office_image.jpg","nodes":["1-53","1-54","1-55","1-56","1-57","1-58","1-59","1-60","1-61","2-4","2-5","2-6","2-7","2-8","2-10","2-11","2-12","2-13","2-14","2-15","2-16","2-17","2-18","2-19","2-20","2-21","2-22","2-23","2-24","2-25","2-26","2-33","2-34","2-35","2-36","2-37","2-38","2-39","2-40","2-41","2-42","2-43","2-44","2-51","2-52","2-53","2-61","3-4","3-27","3-28","3-29","3-30","3-31","3-32","3-33","3-44","3-45","3-46","3-47","3-48","3-49","3-50","3-61","4-4","4-61","5-4","5-61","6-4","6-61","7-4","7-61","8-4","8-61","9-4","9-61","10-4","10-61","10-62","10-63","11-4","11-63","11-64","12-4","12-64","13-4","13-64","14-4","14-64","15-4","15-64","16-4","16-64","17-4","17-63","17-64","18-4","18-62","18-63","19-4","19-62","20-4","20-62","21-4","21-62","22-4","22-62","23-4","23-62","24-4","24-62","25-4","25-62","26-4","26-62","27-4","27-62","28-5","28-62","29-5","29-62","30-62","31-62","32-62","33-62","34-62","34-63","34-64","34-66","34-67","34-68","34-69","35-65","35-69","36-65","36-69","37-69","37-70","38-71","38-72"]},{"_id":"5c13048dfab1b19b26340cfb","mapName":"floor 5","file-name":"office_image2.png","nodes":["14-23","15-23","16-23","17-23","17-31","18-23","18-24","18-25","18-26","18-27","18-28","18-29","18-30","18-31","19-31","19-32","19-33","20-31","21-31","21-33","22-31","22-33","22-34","22-37","22-38","22-39","22-40","22-41","22-42","22-43","22-44","22-46","22-47","22-48","22-49","22-51","22-52","22-53","22-55","22-56","22-57","22-59","22-60","22-62","22-63","22-64","22-65","22-66","22-67","23-31","23-33","23-67","24-31","24-67","25-31","25-67","26-14","26-15","26-16","26-17","26-18","26-19","26-20","26-21","26-22","26-23","26-24","26-25","26-26","26-27","26-28","26-29","26-30","26-31","26-67","27-31","27-67","28-31","28-67","29-31","29-67","30-31","30-67","31-31","31-67","32-31","33-31","33-67","34-31","34-67","35-31","35-67","36-31","36-67","37-31","37-67","38-25","38-26","38-27","38-28","38-29","38-30","38-31","38-67","43-67","45-67","48-67","49-67","51-67","52-67","53-67","54-67","56-67","66-68"]},{"_id":"5c1493aff42fa852d2f3161d","mapName":"floor 00","file-name":"IMG_2109.JPG","nodes":null}]
+2018-12-23T10:53:12.772Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:53:12.791Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:53:35.080Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T10:53:35.081Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T10:53:35.082Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:53:35.082Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:53:35.083Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:53:35.098Z info: 	db-util.js:::initDB:::Some error occurred while connecting to db
+2018-12-23T10:53:35.098Z error: 	db-util.js:::initDB:::Some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T10:53:35.098Z info: 	db-util.js:::getConnectionObj:::getConnectionObj  Error 
+2018-12-23T10:53:35.098Z error: 	db-util.js:::getConnectionObj:::getConnectionObj  Error  => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T10:53:35.099Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:53:35.099Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error: MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:115:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T10:53:35.099Z info: 	misc-util.js:::getMapsNamesFromDB():::Inside Catch block
+2018-12-23T10:53:35.099Z error: 	misc-util.js:::getMapsNamesFromDB():::Inside Catch block => Error: MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:115:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T10:53:35.099Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:53:35.109Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:53:46.013Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T10:53:46.015Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T10:53:46.015Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:53:46.016Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:53:46.016Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:53:46.032Z info: 	db-util.js:::initDB:::Some error occurred while connecting to db
+2018-12-23T10:53:46.032Z error: 	db-util.js:::initDB:::Some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T10:53:46.033Z info: 	db-util.js:::getConnectionObj:::getConnectionObj  Error 
+2018-12-23T10:53:46.033Z error: 	db-util.js:::getConnectionObj:::getConnectionObj  Error  => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T10:53:46.033Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:53:46.033Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error: MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:115:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T10:53:46.033Z info: 	misc-util.js:::getMapsNamesFromDB():::Inside Catch block
+2018-12-23T10:53:46.033Z error: 	misc-util.js:::getMapsNamesFromDB():::Inside Catch block => Error: MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:115:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T10:53:46.034Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:53:46.036Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T10:53:46.036Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T10:53:46.036Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:53:46.036Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:53:46.036Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:53:46.045Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:53:46.047Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:53:46.055Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c130372fab1b19b26340cf8","mapName":"new floor 1","file-name":"IMG_2109.JPG","nodes":["0-0","1-0","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","15-18","16-0","17-0","18-0","19-0","20-0","21-0","22-0","23-0","24-0","25-0","26-0","27-0","28-0","29-0","30-0","31-0","32-0","33-0","34-0","35-0","36-0","37-0","38-0","39-0","40-0","41-0","42-0","43-0","44-0","45-0","46-0","47-0","48-0","49-0","50-0","51-0","52-0","53-0","54-0","55-0","56-0","57-0","58-0","59-0","60-0","61-0","62-0","63-0","64-0","65-0","66-0","67-0","68-0","69-0","70-0","73-0","74-0"]},{"_id":"5c1303b0fab1b19b26340cf9","mapName":"floor 2 map","file-name":"IMG_2109_1.JPG","nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-22","0-23","0-24","0-25","0-27","0-28","0-29","0-30","0-31","0-32","0-33","0-34","0-35","0-36","0-38","0-39","0-40","0-41","0-51","0-52","0-53","0-54","0-55","0-56","0-74","0-75","1-14","1-15","1-16","1-17","1-18","1-19","1-20","1-21","1-22","1-56","1-75","2-56","2-75","3-56","3-75","4-56","4-57","4-75","5-57","5-75","6-57","6-75","7-57","7-75","8-57","8-75","9-57","9-75","10-57","10-75","11-57","11-75","12-57","12-59","12-60","12-61","12-62","12-63","12-64","12-65","12-66","12-67","12-68","12-69","12-70","12-71","12-72","12-73","12-74","12-75","13-57","13-58","13-59"]},{"_id":"5c130412fab1b19b26340cfa","mapName":"floor 4","file-name":"office_image.jpg","nodes":["1-53","1-54","1-55","1-56","1-57","1-58","1-59","1-60","1-61","2-4","2-5","2-6","2-7","2-8","2-10","2-11","2-12","2-13","2-14","2-15","2-16","2-17","2-18","2-19","2-20","2-21","2-22","2-23","2-24","2-25","2-26","2-33","2-34","2-35","2-36","2-37","2-38","2-39","2-40","2-41","2-42","2-43","2-44","2-51","2-52","2-53","2-61","3-4","3-27","3-28","3-29","3-30","3-31","3-32","3-33","3-44","3-45","3-46","3-47","3-48","3-49","3-50","3-61","4-4","4-61","5-4","5-61","6-4","6-61","7-4","7-61","8-4","8-61","9-4","9-61","10-4","10-61","10-62","10-63","11-4","11-63","11-64","12-4","12-64","13-4","13-64","14-4","14-64","15-4","15-64","16-4","16-64","17-4","17-63","17-64","18-4","18-62","18-63","19-4","19-62","20-4","20-62","21-4","21-62","22-4","22-62","23-4","23-62","24-4","24-62","25-4","25-62","26-4","26-62","27-4","27-62","28-5","28-62","29-5","29-62","30-62","31-62","32-62","33-62","34-62","34-63","34-64","34-66","34-67","34-68","34-69","35-65","35-69","36-65","36-69","37-69","37-70","38-71","38-72"]},{"_id":"5c13048dfab1b19b26340cfb","mapName":"floor 5","file-name":"office_image2.png","nodes":["14-23","15-23","16-23","17-23","17-31","18-23","18-24","18-25","18-26","18-27","18-28","18-29","18-30","18-31","19-31","19-32","19-33","20-31","21-31","21-33","22-31","22-33","22-34","22-37","22-38","22-39","22-40","22-41","22-42","22-43","22-44","22-46","22-47","22-48","22-49","22-51","22-52","22-53","22-55","22-56","22-57","22-59","22-60","22-62","22-63","22-64","22-65","22-66","22-67","23-31","23-33","23-67","24-31","24-67","25-31","25-67","26-14","26-15","26-16","26-17","26-18","26-19","26-20","26-21","26-22","26-23","26-24","26-25","26-26","26-27","26-28","26-29","26-30","26-31","26-67","27-31","27-67","28-31","28-67","29-31","29-67","30-31","30-67","31-31","31-67","32-31","33-31","33-67","34-31","34-67","35-31","35-67","36-31","36-67","37-31","37-67","38-25","38-26","38-27","38-28","38-29","38-30","38-31","38-67","43-67","45-67","48-67","49-67","51-67","52-67","53-67","54-67","56-67","66-68"]},{"_id":"5c1493aff42fa852d2f3161d","mapName":"floor 00","file-name":"IMG_2109.JPG","nodes":null}]
+2018-12-23T10:54:13.136Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T10:54:13.138Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T10:54:13.138Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:54:13.139Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:54:13.139Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:54:13.153Z info: 	db-util.js:::initDB:::Some error occurred while connecting to db
+2018-12-23T10:54:13.154Z error: 	db-util.js:::initDB:::Some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T10:54:13.154Z info: 	db-util.js:::getConnectionObj:::getConnectionObj  Error 
+2018-12-23T10:54:13.154Z error: 	db-util.js:::getConnectionObj:::getConnectionObj  Error  => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:66:8)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T10:54:13.154Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-23T10:54:13.154Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error: MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:115:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T10:54:13.154Z info: 	misc-util.js:::getMapsNamesFromDB():::Inside Catch block
+2018-12-23T10:54:13.154Z error: 	misc-util.js:::getMapsNamesFromDB():::Inside Catch block => Error: MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Object.getConnectionObj (/home/peps/misc/GetMapped/util/db-util.js:115:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T10:54:13.155Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:54:13.157Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-23T10:54:13.157Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-23T10:54:13.157Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-23T10:54:13.157Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-23T10:54:13.157Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-23T10:54:13.167Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:54:13.170Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-23T10:54:13.176Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c130372fab1b19b26340cf8","mapName":"new floor 1","file-name":"IMG_2109.JPG","nodes":["0-0","1-0","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","15-18","16-0","17-0","18-0","19-0","20-0","21-0","22-0","23-0","24-0","25-0","26-0","27-0","28-0","29-0","30-0","31-0","32-0","33-0","34-0","35-0","36-0","37-0","38-0","39-0","40-0","41-0","42-0","43-0","44-0","45-0","46-0","47-0","48-0","49-0","50-0","51-0","52-0","53-0","54-0","55-0","56-0","57-0","58-0","59-0","60-0","61-0","62-0","63-0","64-0","65-0","66-0","67-0","68-0","69-0","70-0","73-0","74-0"]},{"_id":"5c1303b0fab1b19b26340cf9","mapName":"floor 2 map","file-name":"IMG_2109_1.JPG","nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-22","0-23","0-24","0-25","0-27","0-28","0-29","0-30","0-31","0-32","0-33","0-34","0-35","0-36","0-38","0-39","0-40","0-41","0-51","0-52","0-53","0-54","0-55","0-56","0-74","0-75","1-14","1-15","1-16","1-17","1-18","1-19","1-20","1-21","1-22","1-56","1-75","2-56","2-75","3-56","3-75","4-56","4-57","4-75","5-57","5-75","6-57","6-75","7-57","7-75","8-57","8-75","9-57","9-75","10-57","10-75","11-57","11-75","12-57","12-59","12-60","12-61","12-62","12-63","12-64","12-65","12-66","12-67","12-68","12-69","12-70","12-71","12-72","12-73","12-74","12-75","13-57","13-58","13-59"]},{"_id":"5c130412fab1b19b26340cfa","mapName":"floor 4","file-name":"office_image.jpg","nodes":["1-53","1-54","1-55","1-56","1-57","1-58","1-59","1-60","1-61","2-4","2-5","2-6","2-7","2-8","2-10","2-11","2-12","2-13","2-14","2-15","2-16","2-17","2-18","2-19","2-20","2-21","2-22","2-23","2-24","2-25","2-26","2-33","2-34","2-35","2-36","2-37","2-38","2-39","2-40","2-41","2-42","2-43","2-44","2-51","2-52","2-53","2-61","3-4","3-27","3-28","3-29","3-30","3-31","3-32","3-33","3-44","3-45","3-46","3-47","3-48","3-49","3-50","3-61","4-4","4-61","5-4","5-61","6-4","6-61","7-4","7-61","8-4","8-61","9-4","9-61","10-4","10-61","10-62","10-63","11-4","11-63","11-64","12-4","12-64","13-4","13-64","14-4","14-64","15-4","15-64","16-4","16-64","17-4","17-63","17-64","18-4","18-62","18-63","19-4","19-62","20-4","20-62","21-4","21-62","22-4","22-62","23-4","23-62","24-4","24-62","25-4","25-62","26-4","26-62","27-4","27-62","28-5","28-62","29-5","29-62","30-62","31-62","32-62","33-62","34-62","34-63","34-64","34-66","34-67","34-68","34-69","35-65","35-69","36-65","36-69","37-69","37-70","38-71","38-72"]},{"_id":"5c13048dfab1b19b26340cfb","mapName":"floor 5","file-name":"office_image2.png","nodes":["14-23","15-23","16-23","17-23","17-31","18-23","18-24","18-25","18-26","18-27","18-28","18-29","18-30","18-31","19-31","19-32","19-33","20-31","21-31","21-33","22-31","22-33","22-34","22-37","22-38","22-39","22-40","22-41","22-42","22-43","22-44","22-46","22-47","22-48","22-49","22-51","22-52","22-53","22-55","22-56","22-57","22-59","22-60","22-62","22-63","22-64","22-65","22-66","22-67","23-31","23-33","23-67","24-31","24-67","25-31","25-67","26-14","26-15","26-16","26-17","26-18","26-19","26-20","26-21","26-22","26-23","26-24","26-25","26-26","26-27","26-28","26-29","26-30","26-31","26-67","27-31","27-67","28-31","28-67","29-31","29-67","30-31","30-67","31-31","31-67","32-31","33-31","33-67","34-31","34-67","35-31","35-67","36-31","36-67","37-31","37-67","38-25","38-26","38-27","38-28","38-29","38-30","38-31","38-67","43-67","45-67","48-67","49-67","51-67","52-67","53-67","54-67","56-67","66-68"]},{"_id":"5c1493aff42fa852d2f3161d","mapName":"floor 00","file-name":"IMG_2109.JPG","nodes":null}]

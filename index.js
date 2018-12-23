@@ -1,7 +1,6 @@
-// server.js
+// index.js
 
 // set up ======================================================================
-// get all the tools we need
 'use strict';
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -34,7 +33,7 @@ app.set('views', __dirname + '/views/');
 app.set('view engine', 'ejs');
 
 // routes ======================================================================
-//require('./routes/routes.js')(app); // load our routes and pass in our app and fully configured passport
+require('./routes/routes.js')(app); // load our routes and pass in our app
 
 dbUtil.initDB().then(function(){
     app.listen(port);
@@ -87,23 +86,7 @@ app.post('/renameMap', async (req, res)=>{
 
 });
 
-app.get('/', async (req, res) => {
 
-    logUtil.writeLog(scriptName, "/",  '/ endpoint hit');
-    try{
-        // get maps from db
-        let maps = await miscUtil.getMapsFromDB();
-        logUtil.writeLog(scriptName, "/",  'maps fetched form DB->'+maps);
-        // get employees from db
-        let employees = await miscUtil.getEmployeesFromDB();
-        logUtil.writeLog(scriptName, "/",  'employees fetched from DB->'+employees);
-        // render the list back to the frontend
-        res.status(200).render('dashboard', {response: {"maps": maps, "emp":employees}});
-    }catch(err){
-        logUtil.writeLog(scriptName, "/", 'Error thrown to the endpoint' + err.code + '::' + err.message, true,  err);
-        res.status(500).render('error', {response: {'errorcode': err.code, 'errormsg': err.message}});
-    }
-});
 
 
 app.post("/remove", (req, res)=>{
@@ -215,8 +198,6 @@ app.post("/create-map", upload.single('exampleFormControlFile1'), (req, res)=>{
         }
 
     });
-
-
 });
 
 //expose this to write test cases

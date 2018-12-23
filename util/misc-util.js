@@ -10,41 +10,63 @@
 const logUtil = require('./log-util');
 const dbUtil = require("./db-util");
 const path = require('path');
+const constants = require("../constants");
 
 const scriptName = path.basename(__filename);
 
 module.exports = {
 
-    getMapsFromDB: function () {
+    /*
+    * @name: getMapsNamesFromDB()
+    * @description: fetched list of map names from the database
+    * @params: None
+    * @returns: Promise object containing array of map names
+    */
+    getMapsNamesFromDB: ()=> {
+
+        let currentFuncName = 'getMapsNamesFromDB()';
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  function called');
 
         let maps = [];
-
-        return new Promise(async function (resolve, reject) {
-
-            let mapCursor = await dbUtil.getFromDB("map", {});
-            while (await mapCursor.hasNext()) {
-                const doc = await mapCursor.next();
-                maps.push(doc.mapName);
+        return new Promise(async (resolve, reject)=> {
+            try {
+                let docs = await dbUtil.getFromDB(constants.COLLECTION_MAP, {});
+                for(let doc of docs){
+                    maps.push(doc.mapName);
+                }
+                resolve(maps)
+            } catch (err) {
+                logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
+                reject(err)
             }
-            resolve(maps)
         });
     },
 
-    getEmployeesFromDB: function () {
+    /*
+    * @name: getEmployeesFromDB()
+    * @description: fetched list of employees from the database
+    * @params: None
+    * @returns: Promise object containing array of employee objects
+    */
+    getEmployeesFromDB: ()=> {
+
+        let currentFuncName = 'getEmployeesFromDB()';
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  function called');
 
         let employees = [];
-
-        return new Promise(async function (resolve, reject) {
-
-            let empCursor = await dbUtil.getFromDB("employee", {});
-            while(await empCursor.hasNext()) {
-                const doc = await empCursor.next();
-                employees.push(doc);
+        return new Promise(async (resolve, reject)=> {
+            try{
+                let docs = await dbUtil.getFromDB("employee", {});
+                for(let doc of docs){
+                    employees.push(doc);
+                }
+                resolve(employees)
+            }catch(err){
+                logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
+                reject(err)
             }
-            resolve(employees)
         });
     }
-
 
 
 };

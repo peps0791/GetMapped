@@ -9,3 +9,15 @@
     at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
     at Object.onceWrapper (events.js:315:30)
     at emitOne (events.js:116:13)
+2018-12-23T08:08:22.910Z error: 	db-util.js:::getFromDB:::Inside Catch block => TypeError: Converting circular structure to JSON
+    at JSON.stringify (<anonymous>)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:23:89)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T08:08:22.912Z error: 	routes.js:::/:::Error thrown to the endpointundefined::Converting circular structure to JSON => TypeError: Converting circular structure to JSON
+    at JSON.stringify (<anonymous>)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:23:89)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
