@@ -5,9 +5,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
-const multer  = require('multer');
+
 const path = require('path');
-const config = require("./config/config");
+
 
 const logUtil = require("./util/log-util");
 const dbUtil = require("./util/db-util");
@@ -16,7 +16,7 @@ const miscUtil = require("./util/misc-util");
 
 const scriptName = path.basename(__filename);
 
-let upload = multer({ storage: multer.diskStorage(config.multerConfig.storage)});
+
 
 
 const app = express();
@@ -107,25 +107,7 @@ app.post("/remove", (req, res)=>{
     });
 });
 
-app.get("/getMap", (req, res)=>{
 
-    var mapName = req.query.mapname;
-    console.log("mapid->"+mapName);
-
-    //get nodes for current page
-    const mapCollection = db.collection('map');
-    mapCollection.findOne({"mapName": mapName}, function (err, result) {
-        if (err != null) {
-            console.log("some error occurred while fetching documents from mongodb::" + err);
-            res.status(500).render('upload-new');
-        } else {
-            console.log(JSON.stringify(result));
-            console.log(result["file-name"]);
-            res.status(200).render('upload-new', {response: {"nodes": result.nodes,  "mapname":mapName,  "filename": result["file-name"]}});
-        }
-    });
-
-});
 
 app.post("/saveMap", (req, res) => {
 
@@ -173,31 +155,7 @@ app.post('/saveSeat', (req, res) => {
 });
 
 app.get("/add-new-map",  (req, res)=>{
-    res.render("add-new")
-});
-
-app.post("/create-map", upload.single('exampleFormControlFile1'), (req, res)=>{
-
-    // req.file is the `avatar` file
-    var uploadedFile = req.file;
-    console.log(uploadedFile.originalname);
-
-    var mapName = req.body.mapName;
-    console.log("mapname->"+mapName);
-    // req.body will hold the text fields, if there were any
-    //create an entry in db
-    const mapCollection = db.collection('map');
-    mapCollection.updateOne({"mapName": mapName}, {"$set": {"mapName": mapName, "file-name": uploadedFile.originalname}}, {upsert: true}, function (err, results) {
-        if (err != null) {
-            console.log("some error occurred while updating db::" + err);
-            res.status(500).json({'status': "FAIL"});
-        } else {
-            //console.log(results);
-            console.log("Map updated");
-            res.status(200).render('upload-new', {response: {"nodes": [], "mapname": mapName, "filename": uploadedFile.originalname}});
-        }
-
-    });
+    res.render("add-new", {response:null})
 });
 
 //expose this to write test cases

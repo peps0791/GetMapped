@@ -1,5 +1,8 @@
 module.exports = Object.freeze({
-    ROOT_API_LABEL: '/',
+    LABEL_API_ROOT: '/',
+    LABEL_API_GET_MAP: '/getMap',
+    LABEL_API_CREATE_MAP: '/createMap',
+
     LOGIN_API_LABEL:'/login',
     SIGNUP_API_LABEL:'/signup',
     HOME_API_LABEL: '/home',
@@ -29,7 +32,7 @@ module.exports = Object.freeze({
 
 
     //ERROR CODES
-    USER_ALREADY_PRSENT_ERRORCODE: 'USERNAME_TAKEN_ERROR',
+    ITEM_ALREADY_PRSENT_ERRORCODE: 'DUPLICATE_ITEM_ERROR',
     USER_NOT_FOUND_ERRORCODE: 'USERNAME_NOT_FOUND',
     INVALID_PARAM_ERRORCODE: 'INVALID_PARAM',
     DB_ERRORCODE: 'DB_ERROR',
@@ -42,5 +45,6 @@ module.exports = Object.freeze({
     PARAM_TO_BE_RETRIEVED_NOT_RECOGNIZED: "INVALID REQUEST PARAMETER",
 
     //COLLECTION NAMES
-    COLLECTION_MAP :"map"
+    COLLECTION_MAP :"map",
+    COLLECTION_EMP:"employee"
 });

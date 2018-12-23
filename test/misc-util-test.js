@@ -8,9 +8,10 @@ const assert = require('chai').assert;
 const util = require('../util/misc-util');
 const dbUtil = require('../util/db-util');
 const config = require('../config/config');
+const constants = require("../constants");
 
 
-describe('getMapsFromDB()', ()=>{
+describe('getMapsNamesFromDB()', ()=>{
 
     it('should throw error if db not connected', async ()=>{
 
@@ -34,6 +35,87 @@ describe('getMapsFromDB()', ()=>{
         assert(Array.isArray(maps));
 
     });
+
+});
+
+
+describe('getMapFromDB()', ()=>{
+
+    it('should throw error if db not connected', async ()=>{
+
+        let originalDBUri = config.dbConfig.uri;
+        config.dbConfig.uri = "mongodb://localhost:2701";
+
+        try{
+            await util.getMapsNamesFromDB();
+        }catch(err){
+            console.log("test::"+err.message);
+            assert(err.code === err.code)
+        }finally{
+            config.dbConfig.uri = originalDBUri;
+            dbUtil.initDB()
+        }
+    });
+
+    it('should return map when the parameters are correct', async ()=>{
+
+        let map = await util.getMapFromDB("floor 4");
+        console.log(map);
+        assert.notEqual(map, null);
+
+    });
+
+    it('should throw error if map name is empty', async ()=>{
+
+        try{
+            await util.getMapFromDB("");
+        }catch(err){
+            assert.equal(err.code, constants.INVALID_PARAM_ERRORCODE );
+        }
+
+    });
+
+    it('should throw error if map name is null', async ()=>{
+
+        try{
+            await util.getMapFromDB();
+        }catch(err){
+            assert.equal(err.code, constants.INVALID_PARAM_ERRORCODE );
+        }
+
+    });
+
+    it('should throw error if map name is incorrect', async ()=>{
+
+        try{
+            await util.getMapFromDB("random map");
+        }catch(err){
+            assert.equal(err.name, "AssertionError");
+        }
+
+    });
+});
+
+
+describe('getMapFromDB()', ()=> {
+
+    it('should throw error if db not connected', async () => {
+
+        let originalDBUri = config.dbConfig.uri;
+        config.dbConfig.uri = "mongodb://localhost:2701";
+
+        try {
+            await util.getMapsNamesFromDB();
+        } catch (err) {
+            console.log("test::" + err.message);
+            assert(err.code === err.code)
+        } finally {
+            config.dbConfig.uri = originalDBUri;
+            dbUtil.initDB()
+        }
+    });
+
+});
 
 
 
@@ -127,4 +209,3 @@ describe('getMapsFromDB()', ()=>{
         }
     });*/
 
-});

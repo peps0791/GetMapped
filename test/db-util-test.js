@@ -79,6 +79,47 @@ describe('getFromDB', ()=> {
     });
 });
 
+
+describe('insertInDB', ()=> {
+
+    it('should throw error when collectionName is empty', async ()=>{
+
+        try{
+            await dbUtil.insertInDB(null, {})
+        }catch(err){
+            assert.equal(err.code, constants.INVALID_PARAM_ERRORCODE)
+        }
+    });
+
+    it('should throw error when doc is mull', async ()=>{
+
+        try{
+            await dbUtil.insertInDB("map", null)
+        }catch(err){
+            assert.equal(err.code, constants.INVALID_PARAM_ERRORCODE)
+        }
+    });
+
+    it('should return valid data when parameters are correct', async ()=>{
+
+        let doc = {"mapName":"test-mapp", "file-name":"test-file"};
+        let insertId =  await dbUtil.insertInDB("map", doc);
+        assert.notEqual(insertId, null)
+
+    });
+
+    it('should trow error on duplicate data', async ()=>{
+
+        let doc = {"mapName":"test-map", "file-name":"test-file"};
+        try{
+            await dbUtil.insertInDB("map", doc);
+        }catch(err){
+            assert.equal(err.message, constants.ITEM_ALREADY_PRSENT_ERRORCODE)
+        }
+
+    });
+});
+
 /*describe('executeQuery()', function () {
 
     it('should execute a given select query successfully', async () => {

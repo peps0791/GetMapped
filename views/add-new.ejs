@@ -150,6 +150,17 @@
 
         $(this).unbind('submit').submit(); // continue the submit unbind preventDefault
     })
+
+    function populateAlert(response){
+        if(response && response.errCode === "DUPLICATE_ITEM_ERROR"){
+            alert("A map with the same name already present in the database. \nPlease enter some other name.");
+        }
+    }
+
+    window.onload = function(){
+
+        populateAlert(<%- JSON.stringify(response) %>)
+    }
 </script>
 
 </body>
