@@ -204,10 +204,10 @@
       <path value="$PROJECT_DIR$/public/vendor/fontawesome-free/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="296" />
-    <option name="y" value="156" />
-    <option name="width" value="1393" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="619" />
+    <option name="y" value="183" />
+    <option name="width" value="1383" />
     <option name="height" value="792" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
