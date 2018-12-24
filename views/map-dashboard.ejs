@@ -2,7 +2,6 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,11 +17,9 @@
     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
-
   </head>
 
   <body id="page-top">
-
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
       <a class="navbar-brand mr-1" href="/">Home</a>
 
@@ -32,14 +29,6 @@
 
       <!-- Navbar Search -->
       <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="button">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
       </form>
     </nav>
 
@@ -84,7 +73,7 @@
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Peps0791 2018</span>
+              <span>Copyright © https://thebotspeaks.com/ 2018</span>
             </div>
           </div>
         </footer>
@@ -107,40 +96,40 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Page level plugin JavaScript-->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
-
-    <!-- Demo scripts for this page-->
-    <script src="js/demo/datatables-demo.js"></script>
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="map_dashboard.js"></script>
+    <script src="js/map_dashboard.js"></script>
     <script>
         window.onload = function(){
             populateDashBoard(<%- JSON.stringify(response) %>)
 
             $("button").click(function(){
-                console.log("clicked....")
-                var currentId = $(this).attr('id');
+
+                let currentId = $(this).attr('id');
+                console.log("Current element ID::"+currentId);
 
                 //get text of outer div
-                var ele = $(this).parent().parent().parent().children('.card-body').children('.mr-5').children('h4')
-                var el = ele.html();
+                let ele = $(this).parent().parent().parent().children('.card-body').children('.mr-5').children('h4')
+                let elText = ele.html();
 
                 //get new text
-                var textboxid = "#input-"+currentId.substring(currentId.indexOf("-")+1);
-                console.log($(textboxid))
-                var text = $(textboxid).val();
-                console.log(text)
-                $.post("/rename-map", {"mapname": el, "newname": text}, function(err, res){
-                    console.log(res)
-                    console.log(ele);
-                    ele.html(text);
+                let textBoxId = "#input-"+currentId.substring(currentId.indexOf("-")+1);
+                let text = $(textBoxId).val();
 
+                $.post("/rename-map", {"mapname": elText, "newname": text}, function(res){
+
+                    if(res.status && res.status === "SUCCESS"){
+
+                        console.log("Response from server::"+JSON.stringify(res));
+                        ele.html(text);
+
+                        let linkId = "#collapseLink"+currentId.substring(currentId.indexOf("-")+1);
+                        $(linkId).click();
+
+                    }else{
+                        alert("Some error occurred during this operation. \n You will be redirected to the home page now...")
+                        window.location.href = "/";
+                    }
                 })
             });
         }

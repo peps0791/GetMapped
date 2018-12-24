@@ -47,7 +47,7 @@ function createDiv(text){
 
     var link = $(document.createElement('a'))
     link.addClass("card-footer text-white clearfix small z-1")
-    link.id = "collapseLink"+currentTimeStamp.toString()
+    link.attr("id", "collapseLink"+currentTimeStamp.toString());
     link.attr("href", "#collapseEl"+currentTimeStamp.toString())
     link.attr("data-toggle", "collapse")
     link.attr("aria-expanded", "false")
@@ -93,7 +93,21 @@ function createDiv(text){
 
     var link = $(document.createElement('a'))
     link.addClass("card-footer text-white clearfix small z-1")
-    link.attr("href", "#")
+    link.attr("href", "#");
+    link.click(function(){
+        console.log("clicked");
+
+        console.log("name:::"+text);
+        if(window.confirm("Are you sure you want to remove this map?")){
+            $.post("/remove-map", {
+                "mapname": text,
+            }, function (data) {
+                console.log("result from server:" + JSON.stringify(data))
+                alert("Map successfully removed!\n Redirecting to the home page...")
+                window.location.href = "/"
+            });
+        }
+    })
 
     outDiv.append(link)
 
@@ -119,15 +133,13 @@ function createDiv(text){
 }
 
 function populateDashBoard(response) {
-    console.log("populate response method called")
-    console.log(response.maps)
 
     if (response.maps && response.maps.length===0){
         console.log("No items on display...")
         $("#noitemdiv").attr("hidden", false)
     }
-    for(var item of response.maps){
-        var createdDiv = createDiv(item)
+    for(let item of response.maps){
+        let createdDiv = createDiv(item)
         $(".container-fluid .row").append(createdDiv)
     }
 }
