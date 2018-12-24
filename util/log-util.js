@@ -56,4 +56,4 @@ module.exports = {
       logger.error(file + ":::" + label + ":::" + msg + " => " +err.stack);
     } 
   }
-}
+};

@@ -404,8 +404,11 @@ table td.searchresult {
 }
 
 #collapseExample{
-  color: black
-;
+  color: black;
+}
+
+img {
+  background: url('../images/spinner.gif') no-repeat center;
 }
 
 

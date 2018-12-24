@@ -101,7 +101,7 @@
     <script src="js/map_dashboard.js"></script>
     <script>
         window.onload = function(){
-            populateDashBoard(<%- JSON.stringify(response) %>)
+            populateDashBoard(<%- JSON.stringify(response) %>);
 
             $("button").click(function(){
 
@@ -109,7 +109,7 @@
                 console.log("Current element ID::"+currentId);
 
                 //get text of outer div
-                let ele = $(this).parent().parent().parent().children('.card-body').children('.mr-5').children('h4')
+                let ele = $(this).parent().parent().parent().children('.card-body').children('.mr-5').children('h4');
                 let elText = ele.html();
 
                 //get new text

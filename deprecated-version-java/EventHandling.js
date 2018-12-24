@@ -44,12 +44,12 @@ var showDialog = function() {
 	$(function() {
 		createGrid('dialogImage',10,'forClient');
 	});
-}
+};
 
 //function to close dialog, probably called by a button in the dialog
 var closeDialog = function() {
 	$myWindow.dialog("close");
-}
+};
 
 function doPostAjax(url, operation)
 {
@@ -212,7 +212,7 @@ function doPostAjax(url, operation)
 		var finalRowNum = parseInt(rowNum) +1;
 		var destinationSeat = document.getElementById('searchTable').rows[finalRowNum].cells[3].innerHTML;
 		customAlert('N','destination seat = '+destinationSeat);
-		sParam = 'sourceSeat=' +sourceSeat + '&destinationSeat=' +destinationSeat + '&operation=FindMap'
+		sParam = 'sourceSeat=' +sourceSeat + '&destinationSeat=' +destinationSeat + '&operation=FindMap';
 		customAlert('N','sParam = '+sParam);
 	}
 	else if(operation == 'SearchResult'){
@@ -222,7 +222,7 @@ function doPostAjax(url, operation)
 		customAlert('N','employeeTeam = ' +employeeTeam);
 		var employeeExtension = document.getElementById('extension').value;
 		customAlert('N','employeeExtension = ' +employeeExtension);
-		sParam = 'name=' +employeeName +'&team=' + employeeTeam + '&extension=' +employeeExtension
+		sParam = 'name=' +employeeName +'&team=' + employeeTeam + '&extension=' +employeeExtension;
 		customAlert('N','sParam = '+sParam);
 	}
 	
@@ -354,23 +354,23 @@ function doPostAjax(url, operation)
 		/*Add Headings to the Table */
 		rowElem = document.createElement('tr');
 		colElem = document.createElement('td');
-		colElem.innerHTML = 'Name'
+		colElem.innerHTML = 'Name';
         rowElem.appendChild(colElem);
 		tableElem.appendChild(rowElem);
 		colElem = document.createElement('td');
-		colElem.innerHTML = 'Team'
+		colElem.innerHTML = 'Team';
         rowElem.appendChild(colElem);
 		tableElem.appendChild(rowElem);
 		colElem = document.createElement('td');
-		colElem.innerHTML = 'Extension'
+		colElem.innerHTML = 'Extension';
         rowElem.appendChild(colElem);
 		tableElem.appendChild(rowElem);
 		colElem = document.createElement('td');
-		colElem.innerHTML = 'Seat Number'
+		colElem.innerHTML = 'Seat Number';
         rowElem.appendChild(colElem);
 		tableElem.appendChild(rowElem);
 		colElem = document.createElement('td');
-		colElem.innerHTML = ''
+		colElem.innerHTML = '';
         rowElem.appendChild(colElem);
 		tableElem.appendChild(rowElem);
 		
@@ -400,7 +400,7 @@ function doPostAjax(url, operation)
 					doPostAjax('MaptoDBOperations.jsp','GetMap');
 					return false;
 				}
-			}
+			};
 			colElem.innerHTML= "stalk";
 			rowElem.appendChild(colElem);
 			tableElem.appendChild(rowElem);

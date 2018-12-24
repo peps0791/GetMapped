@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,19 +9,14 @@
     <meta name="author" content="">
 
     <title>GetMapped - New Map</title>
-
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
     <!-- Page level plugin CSS-->
     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
@@ -94,7 +88,7 @@
         <footer class="sticky-footer">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright © Peps0791 2018</span>
+                    <span>Copyright © https://thebotspeaks.com/ 2018</span>
                 </div>
             </div>
         </footer>
@@ -119,31 +113,11 @@
 
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin.min.js"></script>
-
+<script src="js/add_new.js"></script>
 <script>
-    $('#uploadform').submit(function(event) {
-
-        event.preventDefault(); //this will prevent the default submit
-
-        // your code here (But not asynchronous code such as Ajax because it does not wait for response and move to next line.)
-        //alert("my code"+$("#mapName").val())
-        localStorage.setItem("mapname", $("#mapName").val());
-
-        $(this).unbind('submit').submit(); // continue the submit unbind preventDefault
-    })
-
-    function populateAlert(response){
-        if(response && response.errCode === "DUPLICATE_ITEM_ERROR"){
-            alert("A map with the same name already present in the database. \nPlease enter some other name.");
-        }
-    }
-
     window.onload = function(){
-
         populateAlert(<%- JSON.stringify(response) %>)
     }
 </script>
-
 </body>
-
 </html>

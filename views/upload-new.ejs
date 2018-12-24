@@ -8,29 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Get Mapped-Dashboard</title>
-
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
     <!-- Page level plugin CSS-->
     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
 
 <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-
     <a class="navbar-brand mr-1" href="/">Home</a>
-
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
     </button>
@@ -91,7 +83,7 @@
 
     <div id="content-wrapper">
         <div class="container-fluid" id="drawTable">
-            <img id="myimg" alt="Responsive image" class="img-fluid. "
+            <img id="myimg"          alt="Map image" class="img-fluid. "
                  style="max-width: 100%;height: 100%;">
             <table id="grid" style="max-width: 100%;height: 100%;">
             </table>
@@ -116,87 +108,67 @@
     <i class="fas fa-angle-up"></i>
 </a>
 
-
 <!-- Bootstrap core JavaScript-->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 <!-- Core plugin JavaScript-->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Page level plugin JavaScript-->
-<script src="vendor/chart.js/Chart.min.js"></script>
-<script src="vendor/datatables/jquery.dataTables.js"></script>
-<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin.min.js"></script>
+<script defer>
+    window.nodes = [];
 
-<!-- Demo scripts for this page-->
-<script src="js/demo/datatables-demo.js"></script>
-<script src="js/demo/chart-area-demo.js"></script>
+    let img_load_fn = function(){
 
-<script src="astar.js"></script>
-<script>
-    window.nodes = []
+        console.log("img_load_fn called:::");
+        console.log("Height:" + this.clientHeight + " width::"+ this.clientWidth);
+
+        let cellSize = 10;
+
+        let numCols = Math.floor(document.getElementById("myimg").clientWidth / cellSize);
+        let numRows = Math.floor(document.getElementById("myimg").clientHeight / cellSize);
+
+        console.log("Rows->" + numRows + " Cols->"+numCols);
+
+        let grid = document.getElementById("grid");
+
+        grid.style.maxHeight = "100%";
+        for (let i = 0; i < numRows; i++) {
+            let row = grid.insertRow();
+            for (let j = 0; j < numCols; j++) {
+                let cell = row.insertCell();
+                cell.style.maxHeight = "10px";
+                cell.style.maxWidth = "10px";
+                cell.id = i + "-" + j
+            }
+        }
+        populateMap(<%- JSON.stringify(response) %>)
+    }
+
     function populateImage(response) {
 
-        console.log("populate image called")
-        var img_name = response.filename
-        console.log("image name->" + img_name)
+        console.log("populate image called with parameters::"+JSON.stringify(response));
+        let img_name = response.filename;
 
-        localStorage.setItem("mapname", response.mapname)
+        localStorage.setItem("mapname", response.mapname);
 
-        var img = document.getElementById("myimg")
-        img.onload = function () {
-            console.log("Height:" + this.clientHeight);
-            console.log("Width:" + this.clientWidth);
-
-            var width = $(window).width(),
-                height = $(window).height()
-
-            console.log(width);
-            console.log(height);
-
-            var cellSize = 10
-
-            var numCols = Math.floor(document.getElementById("myimg").clientWidth / cellSize);
-            var numRows = Math.floor(document.getElementById("myimg").clientHeight / cellSize)
-
-
-            console.log("number of rows->" + numRows)
-            console.log("number of columns->" + numCols)
-
-            var grid = document.getElementById("grid")
-
-            grid.style.maxHeight = "100%";
-            for (var i = 0; i < numRows; i++) {
-                var row = grid.insertRow()
-                for (var j = 0; j < numCols; j++) {
-                    var cell = row.insertCell()
-                    cell.style.maxHeight = "10px"
-                    cell.style.maxWidth = "10px"
-                    cell.id = i + "-" + j
-                    //cell.innerHTML = i+"-"+j
-                }
-            }
-            populateMap(<%- JSON.stringify(response) %>)
-        }
+        let img = document.getElementById("myimg");
+        img.onload = img_load_fn;
         $("#myimg").attr("src", 'uploads/'+img_name)
 
     }
     function populateMap(response) {
-        console.log("populate response method called")
+        console.log("populate response method called");
 
-        console.log("nodes ::", response.nodes)
-        for (var item of response.nodes) {
+        console.log("nodes ::", response.nodes);
+        for (let item of response.nodes) {
             $("#" + item).toggleClass("highlighted");
         }
     }
 
     populateImage(<%- JSON.stringify(response) %>)
 </script>
-<script src="uploadnew.js"></script>
-
+<script defer src="js/uploadnew.js"></script>
+<script defer src="js/astar.js"></script>
 </body>
 </html>

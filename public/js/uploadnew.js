@@ -59,7 +59,7 @@ $('#saveSeatBtn').click(function () {
         "empName": empName,
         "empPhone": empPhone
     }, function (data) {
-        console.log("result from server:" + JSON.stringify(data))
+        console.log("result from server:" + JSON.stringify(data));
         alert("Map saved")
     });
 });
@@ -70,12 +70,12 @@ $('#removeBtn').click(function () {
         $.post("/remove-map", {
             "mapname": localStorage.getItem("mapname"),
         }, function (data) {
-            console.log("result from server:" + JSON.stringify(data))
-            alert("Map successfully removed!\n Redirecting to the home page...")
+            console.log("result from server:" + JSON.stringify(data));
+            alert("Map successfully removed!\n Redirecting to the home page...");
             window.location.href = "/"
         });
     }
-})
+});
 
 $('#searchBtn').click(function () {
 
@@ -106,7 +106,7 @@ $('#searchBtn').click(function () {
     }
 
     console.log(nodes);
-    console.log("debuging->" + nodes[0][0] + " --" + nodes[0][1] + " --" + nodes[0][10])
+    console.log("debuging->" + nodes[0][0] + " --" + nodes[0][1] + " --" + nodes[0][10]);
     let graph = new Graph(nodes, {diagonal: true});
     let start = graph.grid[0][0];
     let end = graph.grid[0][10];
@@ -115,7 +115,7 @@ $('#searchBtn').click(function () {
     for (let resultitem of pathresult) {
         console.log(resultitem);
         let itemid = resultitem.x + "-" + resultitem.y;
-        console.log(itemid)
+        console.log(itemid);
         console.log($("#" + itemid));
         $("#" + itemid).addClass("searchresult");
     }

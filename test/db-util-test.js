@@ -4,7 +4,7 @@
 * Test cases for db-util.js.
 * */
 
-'use strict'
+'use strict';
 
 const assert = require('chai').assert;
 const dbUtil = require('../util/db-util');

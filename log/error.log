@@ -463,3 +463,13 @@
     at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
     at _combinedTickCallback (internal/process/next_tick.js:132:7)
     at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T21:17:54.996Z error: 	misc-util.js:::createNewMap():::Inside Catch block => Error: DUPLICATE_ITEM_ERROR
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:171:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-24T21:18:20.207Z error: 	misc-util.js:::createNewMap():::Inside Catch block => Error: DUPLICATE_ITEM_ERROR
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:171:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
