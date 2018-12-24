@@ -296,7 +296,7 @@
                 console.log($(textboxid))
                 var text = $(textboxid).val();
                 console.log(text)
-                $.post("/renameMap", {"mapname": el, "newname": text}, function(err, res){
+                $.post("/rename-map", {"mapname": el, "newname": text}, function(err, res){
                     console.log(res)
                     console.log(ele);
                     ele.html(text);

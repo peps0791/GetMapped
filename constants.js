@@ -7,6 +7,7 @@ module.exports = Object.freeze({
     LABEL_API_SAVE_MAP:'/save-map',
     LABEL_API_SAVE_SEAT:'/save-seat',
     LABEL_API_GET_MAPS:'/get-maps',
+    LABEL_API_RENAME_MAP:'/rename-map',
 
     LOGIN_API_LABEL:'/login',
     SIGNUP_API_LABEL:'/signup',

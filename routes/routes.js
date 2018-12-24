@@ -183,6 +183,7 @@ module.exports = function (app) {
      */
     app.get('/get-maps', async (req, res)=>{
 
+        logUtil.writeLog(scriptName, constants.LABEL_API_GET_MAPS,  constants.LABEL_API_GET_MAPS + '  endpoint hit');
         try{
             // get maps from db
             let maps = await miscUtil.getMapsNamesFromDB();
@@ -195,32 +196,29 @@ module.exports = function (app) {
         }
     });
 
-    app.post('/renameMap', async (req, res)=>{
+    /*
+     * @api: '/rename-map'
+     * @description: renames map
+     * @renders: None
+     */
+    app.post('/rename-map', async (req, res)=>{
 
+        logUtil.writeLog(scriptName, constants.LABEL_API_RENAME_MAP,  constants.LABEL_API_RENAME_MAP + '  endpoint hit');
         try{
+            let mapName = req.body.mapname;
+            logUtil.writeLog(scriptName, constants.LABEL_API_RENAME_MAP,  'map name::'+mapName);
+            verify.validate(mapName);
+
+            let newName = req.body.newname;
+            logUtil.writeLog(scriptName, constants.LABEL_API_RENAME_MAP,  'new name::'+newName);
+            verify.validate(newName);
+
+            await miscUtil.renameMap(mapName, newName);
+            res.status(200).json({'status': "SUCCESS"});
 
         }catch(err){
-
+            logUtil.writeLog(scriptName, constants.LABEL_API_RENAME_MAP, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
+            res.status(500).json({'status': "FAIL"});
         }
-
-        var mapName = req.body.mapname;
-        console.log("map name->"+mapName);
-
-        var newName = req.body.newname;
-        console.log("map name->"+newName);
-
-        //get floor info
-        const mapCollection = db.collection('map');
-
-        mapCollection.updateOne({"mapName": mapName}, {"$set": {"mapName": newName}}, function (err, results) {
-            if (err != null) {
-                console.log("some error occurred while renaming map::" + err);
-                res.status(500).json({'status': "FAIL"});
-            } else {
-                //console.log(results);
-                console.log("Map renamed");
-                res.status(200).json({'status': "SUCCESS"});
-            }
-        });
     });
 };

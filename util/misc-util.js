@@ -208,5 +208,30 @@ module.exports = {
                 reject(err)
             }
         });
+    },
+
+    renameMap: (mapName, newName)=>{
+
+        let currentFuncName = 'renameMap()';
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  function called');
+
+        return new Promise(async (resolve, reject)=>{
+
+            try{
+                verify.validate(mapName);
+                verify.validate(newName);
+
+                let query = {"mapName":mapName};
+                let values = {"$set": {"mapName": newName}};
+
+                let updateStatus = await dbUtil.updateDB(constants.COLLECTION_MAP, query, values);
+                verify.validate(updateStatus);
+                logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  update status::'+updateStatus);
+                resolve();
+            }catch(err){
+                logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
+                reject(err)
+            }
+        });
     }
 };
