@@ -201,3 +201,59 @@
     at Promise (/home/peps/misc/GetMapped/util/misc-util.js:146:17)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T23:03:11.388Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::assert is not defined => ReferenceError: assert is not defined
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:139:13)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:275:10)
+    at /home/peps/misc/GetMapped/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/home/peps/misc/GetMapped/node_modules/raw-body/index.js:224:16)
+2018-12-23T23:04:15.450Z error: 	db-util.js:::updateDB():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:226:24)
+    at new Promise (<anonymous>)
+    at Object.updateDB (/home/peps/misc/GetMapped/util/db-util.js:220:16)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:175:49)
+    at new Promise (<anonymous>)
+    at Object.updateMap (/home/peps/misc/GetMapped/util/misc-util.js:166:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:145:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-23T23:04:15.453Z error: 	misc-util.js:::removeMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:226:24)
+    at new Promise (<anonymous>)
+    at Object.updateDB (/home/peps/misc/GetMapped/util/db-util.js:220:16)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:175:49)
+    at new Promise (<anonymous>)
+    at Object.updateMap (/home/peps/misc/GetMapped/util/misc-util.js:166:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:145:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-23T23:04:15.454Z error: 	routes.js:::/save-map:::Error thrown to the endpointINVALID_PARAM:: => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:226:24)
+    at new Promise (<anonymous>)
+    at Object.updateDB (/home/peps/misc/GetMapped/util/db-util.js:220:16)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:175:49)
+    at new Promise (<anonymous>)
+    at Object.updateMap (/home/peps/misc/GetMapped/util/misc-util.js:166:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:145:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-23T23:05:07.524Z error: 	misc-util.js:::removeMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:176:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T23:05:07.525Z error: 	routes.js:::/save-map:::Error thrown to the endpointINVALID_PARAM:: => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:176:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)

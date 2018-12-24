@@ -30,7 +30,7 @@ const logger = winston.createLogger({
       level: 'info'
     }),
     new (winston.transports.File)({
-      filename: `${logDir}/cubicapp.log`,
+      filename: `${logDir}/get-mapped-app.log`,
       timestamp: tsFormat,
       colorize: true,
       level: env === 'development' ? 'debug' : 'info'

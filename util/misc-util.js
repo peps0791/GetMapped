@@ -125,6 +125,33 @@ module.exports = {
 
 
     /*
+      * @name: insertEmployee()
+      * @description: inserts a new emp entry in the database
+      * @params: mapName (::String), fileName (::String)
+      * @returns: Promise object
+      */
+    insertEmployee: (coord, seatNo, empName, empPhone)=>{
+
+        let currentFuncName = 'insertEmployee()';
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  function called');
+
+        return new Promise(async (resolve, reject)=>{
+
+            try{
+                let doc = {"coord": coord, "seatNo": seatNo, "empName": empName, "empPhone": empPhone};
+                let insertId = await dbUtil.insertInDB(constants.COLLECTION_EMP,  doc);
+                verify.validate(insertId);
+                logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  inserted map id::'+insertId);
+                resolve();
+            }catch(err){
+                logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
+                reject(err)
+            }
+        });
+    },
+
+
+    /*
    * @name: removeMap()
    * @description: removes map from the database
    * @params: mapName (::String)
@@ -150,6 +177,36 @@ module.exports = {
                 reject(err)
             }
         });
+    },
 
+    /*
+   * @name: updateMap()
+   * @description: updates map by storing updated nodes
+   * @params: mapName (::String), mapNodes (::String)
+   * @returns: Promise object
+   */
+    updateMap: (mapName, mapNodes)=>{
+
+        let currentFuncName = 'updateMap()';
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  function called');
+
+        return new Promise(async (resolve, reject)=>{
+
+            try{
+                verify.validate(mapName);
+                verify.validate(mapNodes);
+
+                let query = {"mapName":mapName};
+                let values = {"$set": {"nodes": mapNodes}};
+
+                let updateStatus = await dbUtil.updateDB(constants.COLLECTION_MAP, query, values);
+                verify.validate(updateStatus);
+                logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  update status::'+updateStatus);
+                resolve();
+            }catch(err){
+                logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
+                reject(err)
+            }
+        });
     }
 };

@@ -172,36 +172,70 @@ module.exports = {
         });
     },
 
-
+    /*
+   * @name: removeFromDB()
+   * @description: removes entry from the database
+   * @params: collectionName (::String), query (::JSON)
+   * @returns: Promise object containing result object from the delete query
+   */
     removeFromDB: function(collectionName, query){
 
-        let currentFuncName = 'removeFromDB';
+        let currentFuncName = 'removeFromDB()';
         let _this = module.exports;
         logUtil.writeLog(scriptName, currentFuncName, currentFuncName +' function called with parameters:: collection name::' + collectionName +  " :: query::"+query);
 
         return new Promise(async (resolve, reject)=>{
 
             try{
-
                 verify.validate(collectionName);
                 verify.validate(query);
 
                 let db = await _this.getConnectionObj();
                 const col = db.collection(collectionName);
 
-                col.deleteOne(query)
-                    .then((res)=>{
+                col.deleteOne(query).then((res)=>{
                         resolve(res);
                     }).catch((err)=>{
-                     reject(err)   ;
+                     reject(err);
                 });
             }catch(err){
                 logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
                 reject(err);
             }
-
         });
+    },
 
+    /*
+      * @name: updateDB()
+      * @description: updates entry in the database
+      * @params: collectionName (::String), query (::JSON), values (::JSON), options (::options)
+      * @returns: Promise object containing result object from the delete query
+      */
+    updateDB: function(collectionName, query, values, options=null){
 
+        let currentFuncName = 'updateDB()';
+        let _this = module.exports;
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName +' function called with parameters:: collection name::' + collectionName +  " :: query::"+query + "values::"+  JSON.stringify(values) + " ::options::" +JSON.stringify(options) );
+
+        return new Promise(async (resolve, reject)=>{
+
+            try{
+                verify.validate(collectionName);
+                verify.validate(query);
+                verify.validate(values);
+
+                let db = await _this.getConnectionObj();
+                const col = db.collection(collectionName);
+
+                col.updateOne(query, values, options).then((result)=>{
+                    resolve(result);
+                }).catch((err)=>{
+                    reject(err);
+                });
+            }catch(err){
+                logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
+                reject(err);
+            }
+        });
     }
 };

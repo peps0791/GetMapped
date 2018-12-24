@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const assert = require('chai').assert;
 
 const logUtil = require("../util/log-util");
 //const dbUtil = require("../util/db-util");
@@ -91,9 +92,6 @@ module.exports = function (app) {
             await miscUtil.createNewMap(mapName, uploadedFile.originalname);
             res.status(200).render('upload-new', {response: {"nodes": [], "mapname": mapName, "filename": uploadedFile.originalname}});
         }catch(err){
-            console.log(err.code);
-            console.log(err.msg);
-            console.log(err.name);
             if(err.code === constants.DB_ERRORCODE && err.message === constants.ITEM_ALREADY_PRSENT_ERRORCODE){
                 res.status(500).render("add-new", {response:{'errCode':err.message}})
             }else{
@@ -123,9 +121,106 @@ module.exports = function (app) {
             res.status(200).json({response:{'status':'SUCCESS'}});
         }catch(err){
             logUtil.writeLog(scriptName, constants.LABEL_API_REMOVE_MAP, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
+            res.status(500).json({'status': "FAIL"});
+        }
+    });
+
+
+    /*
+   * @api: '/save-map'
+   * @description: saves(updates) map nodes to the database
+   * @renders: None
+   */
+    app.post("/save-map", async (req, res) => {
+
+        logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_MAP,  constants.LABEL_API_SAVE_MAP + '  endpoint hit');
+        try{
+            let nodes = req.body.nodes;
+            logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_MAP,  'map nodes::'+JSON.stringify(nodes));
+            assert(nodes!=null);
+            let mapName = req.body.mapname;
+            logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_MAP,  'map name::'+mapName);
+            verify.validate(mapName);
+
+            await miscUtil.updateMap(mapName, nodes);
+            res.status(200).json({'status': "SUCCESS"});
+
+        }catch(err){
+            logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_MAP, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
+            res.status(500).json({'status': "FAIL"});
+        }
+    });
+
+    /*
+      * @api: '/save-seat'
+      * @description: saves emp-seat information in the database
+      * @renders: None
+      */
+    app.post('/save-seat', async (req, res) => {
+
+        logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_SEAT,  constants.LABEL_API_SAVE_SEAT + '  endpoint hit');
+        try{
+
+            let coord = req.body.coord;
+            let seatNo = req.body.seatNo;
+            let empName = req.body.empName;
+            let empPhone = req.body.empPhone;
+
+            await miscUtil.insertEmployee(coord, seatNo, empName, empPhone);
+            res.status(200).json({'status': "SUCCESS"});
+
+        }catch(err){
+            logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_MAP, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
+            res.status(500).json({'status': "FAIL"});
+        }
+    });
+
+
+    /*
+     * @api: '/get-maps'
+     * @description: saves emp-seat information in the database
+     * @renders: map-dashboard
+     */
+    app.get('/get-maps', async (req, res)=>{
+
+        try{
+            // get maps from db
+            let maps = await miscUtil.getMapsNamesFromDB();
+            logUtil.writeLog(scriptName, constants.LABEL_API_GET_MAPS, 'maps fetched form DB->' + maps);
+            res.status(200).render('map-dashboard', {response: {"maps": maps}});
+
+        }catch(err){
+            logUtil.writeLog(scriptName, constants.LABEL_API_GET_MAPS, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
             res.status(500).render('error', {response: {'errorCode': err.code, 'errorMsg': err.message}});
         }
+    });
 
+    app.post('/renameMap', async (req, res)=>{
 
+        try{
+
+        }catch(err){
+
+        }
+
+        var mapName = req.body.mapname;
+        console.log("map name->"+mapName);
+
+        var newName = req.body.newname;
+        console.log("map name->"+newName);
+
+        //get floor info
+        const mapCollection = db.collection('map');
+
+        mapCollection.updateOne({"mapName": mapName}, {"$set": {"mapName": newName}}, function (err, results) {
+            if (err != null) {
+                console.log("some error occurred while renaming map::" + err);
+                res.status(500).json({'status': "FAIL"});
+            } else {
+                //console.log(results);
+                console.log("Map renamed");
+                res.status(200).json({'status': "SUCCESS"});
+            }
+        });
     });
 };

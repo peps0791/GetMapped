@@ -4,29 +4,22 @@ module.exports = Object.freeze({
     LABEL_API_CREATE_MAP: '/create-map',
     LABEL_API_ADD_NEW:'/add-new-map',
     LABEL_API_REMOVE_MAP:'/remove-map',
+    LABEL_API_SAVE_MAP:'/save-map',
+    LABEL_API_SAVE_SEAT:'/save-seat',
+    LABEL_API_GET_MAPS:'/get-maps',
 
     LOGIN_API_LABEL:'/login',
     SIGNUP_API_LABEL:'/signup',
     HOME_API_LABEL: '/home',
     RECORD_API_LABEL: '/record',
-    PROFILE_API_LABEL: '/profile',
-    UPLOAD_API_LABEL: '/upload',
-    MEDIA_SELECT_API_LABEL: '/mediaSelection',
-    GET_NEXT_WORD_API_LABEL: '/getNextWord',
-    AWS_UPLOAD_LABEL: 'aws-upload',
-    FINISH_API_LABEL: '/finish',
+
     ERROR_API_LABEL: '/error',
-    GET_DISORDER_INFO_API_LABEL: '/getDisorderInfo',
     FORGOT_PASSWORD_API_LABEL:'/forgot',
     SEND_MAIL_API_LABEL: '/sendMail',
     RESET_API_LABEL:'/reset',
     RESET_PASSWORD_API_LABEL:'/resetPassword',
 
     //ERROR_MSGS
-    ERROR_EMPTY_USERNAME: 'Username is empty',
-    ERROR_USER_NOT_FOUND: 'Username not found',
-    ERROR_INVALID_USERNAME: 'Invalid username',
-    ERROR_INVALID_PASSWORD: 'Invalid password',
 
     INVALID_PARAM_ERROR_MSG: 'One or more paramater was invalid',
     SUCCESS_MSG: 'Success!',

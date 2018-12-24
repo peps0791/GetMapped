@@ -272,7 +272,7 @@
             }
             console.log(nodes)
             //ajax call for saving the map
-            $.post("/saveMap", {"nodes": nodes, "mapname":localStorage.getItem("mapname")}, function (data) {
+            $.post("/save-map", {"nodes": nodes, "mapname":localStorage.getItem("mapname")}, function (data) {
                 console.log("result from server:" + JSON.stringify(data))
                 alert("Map saved successfully!")
             });
@@ -280,7 +280,6 @@
 
         $('#saveSeatBtn').click(function () {
 
-            //clear all highlighted buttons
             console.log('save seat button clicked...')
             var coordinates = $('#seatCoord').val()
             var seat = $("#seatNo").val()
@@ -288,7 +287,7 @@
             var empPhone = $("#empPhone").val()
 
             //ajax call for saving seat functionality
-            $.post("/saveSeat", {
+            $.post("/save-seat", {
                 "coord": coordinates,
                 "seatNo": seat,
                 "empName": empName,
