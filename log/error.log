@@ -257,3 +257,69 @@
     at Promise (/home/peps/misc/GetMapped/util/misc-util.js:176:24)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-24T03:02:27.076Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::Unspecified AssertionError => AssertionError: Unspecified AssertionError
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:140:13)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:275:10)
+    at /home/peps/misc/GetMapped/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/home/peps/misc/GetMapped/node_modules/raw-body/index.js:224:16)
+2018-12-24T03:04:13.710Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::Unspecified AssertionError => AssertionError: Unspecified AssertionError
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:140:13)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:275:10)
+    at /home/peps/misc/GetMapped/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/home/peps/misc/GetMapped/node_modules/raw-body/index.js:224:16)
+2018-12-24T03:08:08.875Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::Unspecified AssertionError => AssertionError: Unspecified AssertionError
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:144:13)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:275:10)
+    at /home/peps/misc/GetMapped/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/home/peps/misc/GetMapped/node_modules/raw-body/index.js:224:16)
+2018-12-24T03:16:08.388Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::Unspecified AssertionError => AssertionError: Unspecified AssertionError
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:144:13)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:275:10)
+    at /home/peps/misc/GetMapped/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/home/peps/misc/GetMapped/node_modules/raw-body/index.js:224:16)
+2018-12-24T03:18:17.905Z error: 	misc-util.js:::updateMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:197:24)
+    at new Promise (<anonymous>)
+    at Object.updateMap (/home/peps/misc/GetMapped/util/misc-util.js:193:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:150:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-24T03:18:17.906Z error: 	routes.js:::/save-map:::Error thrown to the endpointINVALID_PARAM:: => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:197:24)
+    at new Promise (<anonymous>)
+    at Object.updateMap (/home/peps/misc/GetMapped/util/misc-util.js:193:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:150:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)

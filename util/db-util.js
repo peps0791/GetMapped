@@ -9,16 +9,13 @@
 // Import modules
 const path = require('path');
 const assert = require('chai').assert;
+const MongoClient = require('mongodb').MongoClient;
 
-/*const dbConfig = require('../config/database');*/
 const constants = require('../constants');
-
 const errFile = require('./error-util');
 const logUtil = require('./log-util');
 const config = require("../config/config");
 const verify = require('./verify-util');
-
-const MongoClient = require('mongodb').MongoClient;
 
 const scriptName = path.basename(__filename);
 
@@ -32,7 +29,7 @@ module.exports = {
      * @params: None
      * @returns: Promise object
      */
-    initDB: function () {
+    initDB: ()=> {
 
         let currentFuncName = 'initDB';
         let _this = module.exports;
@@ -43,8 +40,8 @@ module.exports = {
                 MongoClient.connect(config.dbConfig.uri, {useNewUrlParser: true})
                     .then(function (client) {
                         logUtil.writeLog(scriptName, currentFuncName, "Connected successfully to the db server.");
-                        _this.db = client.db(config.dbConfig.dbName);
 
+                        _this.db = _this.selectDBName(client);
                         _this.initCollections(_this.db);
                         resolve();
                     })
@@ -59,6 +56,17 @@ module.exports = {
         });
     },
 
+    selectDBName:(client)=>{
+
+        let db;
+        if(process.env.NODE_ENV === constants.DEV_ENV){
+            db = client.db(config.dbConfig["test-dbName"]);
+        }else{
+            db = client.db(config.dbConfig.dbName);
+        }
+        return db;
+    },
+
 
     /*
      * @name: initCollections()
@@ -66,7 +74,7 @@ module.exports = {
      * @params: db object
      * @returns: None
      */
-    initCollections: function(db){
+    initCollections: (db)=>{
 
         let currentFuncName = 'initCollections';
         logUtil.writeLog(scriptName, currentFuncName, currentFuncName +' function called ');
@@ -82,20 +90,23 @@ module.exports = {
      * @params: None
      * @returns: db connection object
      */
-    getConnectionObj: async function () {
+    getConnectionObj: async ()=> {
 
         let _this = module.exports;
         let currentFuncName = 'getConnectionObj';
         logUtil.writeLog(scriptName, currentFuncName, currentFuncName +' function called ');
-        try{
-            if (!_this.db ) {
-                await _this.initDB();
+
+        return new Promise(async (resolve, reject)=>{
+            try{
+                if (!_this.db ) {
+                    await _this.initDB();
+                }
+                resolve(_this.db);
+            }catch(err){
+                logUtil.writeLog(scriptName, currentFuncName, currentFuncName +'  Error ', true, err);
+                reject(err)
             }
-        }catch(err){
-            logUtil.writeLog(scriptName, currentFuncName, currentFuncName +'  Error ', true, err);
-            throw new Error(err)
-        }
-        return _this.db;
+        });
     },
 
     /*
@@ -104,7 +115,7 @@ module.exports = {
      * @params: collectionName (::String), queryObj (::JSON)
      * @returns: Promise object
      */
-    getFromDB: function (collectionName, queryObj) {
+    getFromDB: (collectionName, queryObj)=> {
 
         let currentFuncName = 'getFromDB';
         let _this = module.exports;
@@ -126,8 +137,6 @@ module.exports = {
                     logUtil.writeLog(scriptName, currentFuncName, 'Some exception occurred while getting data from DB', true, err);
                     throw err
                 });
-
-
             } catch (err) {
                 logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
                 reject(err)
@@ -141,7 +150,7 @@ module.exports = {
     * @params: collectionName (::String), document (::JSON)
     * @returns: Promise object containing insert ID
     */
-    insertInDB: function(collectionName, document){
+    insertInDB:(collectionName, document)=>{
 
         let currentFuncName = 'insertInDB';
         let _this = module.exports;
@@ -178,7 +187,7 @@ module.exports = {
    * @params: collectionName (::String), query (::JSON)
    * @returns: Promise object containing result object from the delete query
    */
-    removeFromDB: function(collectionName, query){
+    removeFromDB:(collectionName, query)=>{
 
         let currentFuncName = 'removeFromDB()';
         let _this = module.exports;
@@ -211,7 +220,7 @@ module.exports = {
       * @params: collectionName (::String), query (::JSON), values (::JSON), options (::options)
       * @returns: Promise object containing result object from the delete query
       */
-    updateDB: function(collectionName, query, values, options=null){
+    updateDB: (collectionName, query, values, options=null)=>{
 
         let currentFuncName = 'updateDB()';
         let _this = module.exports;

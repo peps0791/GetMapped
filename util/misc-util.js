@@ -194,7 +194,7 @@ module.exports = {
 
             try{
                 verify.validate(mapName);
-                verify.validate(mapNodes);
+                //verify.validate(mapNodes);
 
                 let query = {"mapName":mapName};
                 let values = {"$set": {"nodes": mapNodes}};

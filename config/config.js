@@ -4,6 +4,7 @@
 module.exports = {
     dbConfig:{
         "dbName":"getMappedDB",
+        "test-dbName": "getMappedDBTest",
         "uri":"mongodb://localhost:27017"
     },
     multerConfig:{
@@ -15,5 +16,8 @@ module.exports = {
                 cb(null, file.originalname)
             }
         }
+    },
+    appConfig:{
+        appPort:3000
     }
 };

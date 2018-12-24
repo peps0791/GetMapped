@@ -156,209 +156,66 @@
 <script src="js/demo/chart-area-demo.js"></script>
 
 <script src="astar.js"></script>
-
 <script>
-
-    var isMouseDown = false;
-
-    $(document).mousedown(function(event) {
-        console.log(event.target.nodeName)
-        if(event.target.nodeName === "TD"){
-            console.log($(event.target));
-            console.log(event.target.id);
-            isMouseDown = true;
-            $(event.target).toggleClass("highlighted");
-            //var nodeid = $(this).attr('id');
-            console.log("id of node clicked::" + event.target.id)
-            $("#seatCoord").val(event.target.id)
-        }
-    }).mouseover(function (event) {
-        if(event.target.nodeName === "TD"){
-            if (isMouseDown) {
-                $(event.target).toggleClass("highlighted");
-            }
-        }
-
-    }).mouseup(function (event) {
-        if(event.target.nodeName === "TD"){
-            isMouseDown = false;
-        }
-    })
-
-
     window.nodes = []
+    function populateImage(response) {
 
-    window.onload = function () {
+        console.log("populate image called")
+        var img_name = response.filename
+        console.log("image name->" + img_name)
 
-        function populateImage(response) {
+        localStorage.setItem("mapname", response.mapname)
 
-            console.log("populate image called")
-            var img_name = response.filename
-            console.log("image name->" + img_name)
+        var img = document.getElementById("myimg")
+        img.onload = function () {
+            console.log("Height:" + this.clientHeight);
+            console.log("Width:" + this.clientWidth);
 
-            localStorage.setItem("mapname", response.mapname)
+            var width = $(window).width(),
+                height = $(window).height()
 
-            var img = document.getElementById("myimg")
-            img.onload = function () {
-                console.log("Height:" + this.clientHeight);
-                console.log("Width:" + this.clientWidth);
-
-                var width = $(window).width(),
-                    height = $(window).height()
-
-                console.log(width);
-                console.log(height);
-
-                var cellSize = 10
-
-                var numCols = Math.floor(document.getElementById("myimg").clientWidth / cellSize);
-                var numRows = Math.floor(document.getElementById("myimg").clientHeight / cellSize)
-
-
-                console.log("number of rows->" + numRows)
-                console.log("number of columns->" + numCols)
-
-                var grid = document.getElementById("grid")
-
-                grid.style.maxHeight = "100%";
-                for (var i = 0; i < numRows; i++) {
-                    var row = grid.insertRow()
-                    for (var j = 0; j < numCols; j++) {
-                        var cell = row.insertCell()
-                        cell.style.maxHeight = "10px"
-                        cell.style.maxWidth = "10px"
-                        cell.id = i + "-" + j
-                        //cell.innerHTML = i+"-"+j
-                    }
-                }
-
-                populateMap(<%- JSON.stringify(response) %>)
-
-            }
-
-
-            $("#myimg").attr("src", 'uploads/'+img_name)
-
-        }
-
-        function populateMap(response) {
-            console.log("populate response method called")
-
-            console.log("nodes ::", response.nodes)
-            for (var item of response.nodes) {
-                $("#" + item).toggleClass("highlighted");
-            }
-        }
-
-        populateImage(<%- JSON.stringify(response) %>)
-
-
-        $('#clearAllBtn').click(function () {
-
-            //clear all highlighted buttons
-            console.log('clear all button clicked...')
-        });
-
-        $('#saveMapBtn').click(function () {
-
-            //clear all highlighted buttons
-            console.log('save map button clicked...')
-            //get all nodes highlighted
-            var nodes = []
-            var el_arr = $(".highlighted")
-            console.log(el_arr)
-            for (var item of el_arr) {
-                nodes.push(item.id)
-            }
-            console.log(nodes)
-            //ajax call for saving the map
-            $.post("/save-map", {"nodes": nodes, "mapname":localStorage.getItem("mapname")}, function (data) {
-                console.log("result from server:" + JSON.stringify(data))
-                alert("Map saved successfully!")
-            });
-        });
-
-        $('#saveSeatBtn').click(function () {
-
-            console.log('save seat button clicked...')
-            var coordinates = $('#seatCoord').val()
-            var seat = $("#seatNo").val()
-            var empName = $("#empName").val()
-            var empPhone = $("#empPhone").val()
-
-            //ajax call for saving seat functionality
-            $.post("/save-seat", {
-                "coord": coordinates,
-                "seatNo": seat,
-                "empName": empName,
-                "empPhone": empPhone
-            }, function (data) {
-                console.log("result from server:" + JSON.stringify(data))
-                alert("Map saved")
-            });
-        });
-
-        $('#removeBtn').click(function () {
-
-            if(window.confirm("Are you sure you want to remove this map?")){
-                $.post("/remove-map", {
-                    "mapname": localStorage.getItem("mapname"),
-                }, function (data) {
-                    console.log("result from server:" + JSON.stringify(data))
-                    alert("Map successfully removed!\n Redirecting to the home page...")
-                    window.location.href = "/"
-                });
-            }
-        })
-
-        $('#searchBtn').click(function () {
+            console.log(width);
+            console.log(height);
 
             var cellSize = 10
+
             var numCols = Math.floor(document.getElementById("myimg").clientWidth / cellSize);
             var numRows = Math.floor(document.getElementById("myimg").clientHeight / cellSize)
-            //console.log(nodes)
 
-            //create graph
-            var nodes = new Array(numRows);
-            var copy = new Array(numCols);
-            for (var i = 0; i < nodes.length; i++) {
-                copy[i] = 0;
+
+            console.log("number of rows->" + numRows)
+            console.log("number of columns->" + numCols)
+
+            var grid = document.getElementById("grid")
+
+            grid.style.maxHeight = "100%";
+            for (var i = 0; i < numRows; i++) {
+                var row = grid.insertRow()
+                for (var j = 0; j < numCols; j++) {
+                    var cell = row.insertCell()
+                    cell.style.maxHeight = "10px"
+                    cell.style.maxWidth = "10px"
+                    cell.id = i + "-" + j
+                    //cell.innerHTML = i+"-"+j
+                }
             }
-
-            for (var i = 0; i < nodes.length; i++) {
-                nodes[i] = copy.slice(0);
-            }
-
-            var el_arr = $(".highlighted")
-            console.log(el_arr)
-            for (var item of el_arr) {
-
-                var x = parseInt(item.id.split("-")[0])
-                var y = parseInt(item.id.split("-")[1])
-                console.log("x->" + x + " y ->" + y)
-                nodes[x][y] = 1
-            }
-
-            console.log(nodes)
-            console.log("debuging->" + nodes[0][0] + " --" + nodes[0][1] + " --" + nodes[0][10])
-            var graph = new Graph(nodes, {diagonal: true});
-            var start = graph.grid[0][0];
-            var end = graph.grid[0][10];
-            var pathresult = astar.search(graph, start, end);
-            console.log("result->" + pathresult)
-            for (var resultitem of pathresult) {
-                console.log(resultitem)
-                var itemid = resultitem.x + "-" + resultitem.y
-                console.log(itemid)
-                console.log($("#" + itemid))
-                $("#" + itemid).addClass("searchresult");
-            }
-        });
-
+            populateMap(<%- JSON.stringify(response) %>)
+        }
+        $("#myimg").attr("src", 'uploads/'+img_name)
 
     }
+    function populateMap(response) {
+        console.log("populate response method called")
 
+        console.log("nodes ::", response.nodes)
+        for (var item of response.nodes) {
+            $("#" + item).toggleClass("highlighted");
+        }
+    }
 
+    populateImage(<%- JSON.stringify(response) %>)
 </script>
+<script src="uploadnew.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,1073 @@
+2018-12-24T02:04:32.005Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:04:32.007Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:04:32.024Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:04:32.025Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:04:32.025Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:04:32.030Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:04:32.030Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:04:32.041Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:04:32.041Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:04:32.042Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:04:32.042Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:04:32.042Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-24T02:04:32.043Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:04:32.043Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-24T02:04:32.043Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:117:24)
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:114:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:59:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:04:32.044Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-24T02:04:32.045Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:04:32.046Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-24T02:04:32.046Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:118:24)
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:114:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:68:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:04:32.047Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-24T02:04:32.047Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:04:32.047Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:04:32.051Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c2023086830db35f9e82bac","mapName":"test-map-1","file-name":"IMG_2109_1.JPG","nodes":["22-26"]},{"_id":"5c203df25b1481691e85bd6a","mapName":"test-map-2","file-name":"IMG_2109_1.JPG","nodes":["15-16","16-16","17-16","18-16","19-16","20-16","21-16","22-16","23-16","24-16","25-16","26-16","27-16","28-16","29-16","30-16","31-16","32-16","33-16","34-16","35-16","36-16","37-16","38-16","39-16","40-16","41-16"]}]
+2018-12-24T02:04:32.054Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:04:32.055Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:04:32.055Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:04:32.055Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:154:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:151:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:89:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:04:32.056Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:04:32.056Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:04:32.056Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:04:32.056Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:04:32.056Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:155:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:151:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:98:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:04:32.059Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:04:32.059Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:04:32.059Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:04:32.059Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:04:32.061Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:04:32.061Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:04:32.061Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-map","file-name":"test-file"}
+2018-12-24T02:04:32.061Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:06:20.737Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:06:20.739Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:06:20.754Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:06:20.755Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:06:20.755Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:06:20.761Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:06:20.762Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:06:20.769Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:06:20.769Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:06:20.770Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:06:20.770Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:07:38.076Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:07:38.078Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:07:38.094Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:07:38.095Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:07:38.096Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:07:38.101Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:07:38.102Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:07:38.108Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:07:38.108Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:07:38.109Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:07:38.109Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:09:23.050Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:09:23.052Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:09:23.068Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:09:23.070Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:09:23.070Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:09:23.077Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:09:23.078Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:09:23.091Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:09:23.092Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:09:23.092Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:09:23.092Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:10:33.264Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:10:33.266Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:10:33.282Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:10:33.283Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:10:33.283Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:10:33.288Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:10:33.289Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:10:33.299Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:10:33.299Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:10:33.300Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:10:33.300Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:11:56.867Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:11:56.869Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:11:56.884Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:11:56.885Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:11:56.885Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:11:56.890Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:11:56.891Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:11:56.898Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:11:56.899Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:11:56.899Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:11:56.900Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:14:58.760Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:14:58.762Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:14:58.779Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:14:58.780Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:14:58.780Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:14:58.785Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:14:58.786Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:14:58.792Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:14:58.793Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:14:58.794Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:14:58.794Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:17:09.965Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:17:09.966Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:17:09.984Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:17:09.986Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:17:09.986Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:17:09.992Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:17:09.993Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:17:09.999Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:17:09.999Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:17:10.000Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:17:10.000Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:18:52.164Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:18:52.166Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:18:52.186Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:18:52.187Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:18:52.192Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:18:52.192Z info: 	db-util.js:::initDB:::DB object already initialized
+2018-12-24T02:18:52.192Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:19:02.748Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:19:02.749Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:19:02.770Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:19:02.771Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:19:02.776Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:19:02.776Z info: 	db-util.js:::initDB:::DB object already initialized
+2018-12-24T02:19:02.776Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:21:53.488Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:21:53.490Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:21:53.512Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:21:53.512Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:21:53.517Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:21:53.517Z info: 	db-util.js:::initDB:::DB object already initialized
+2018-12-24T02:21:53.517Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:23:27.500Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:23:27.502Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:23:27.521Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:23:27.522Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:23:27.527Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:23:27.527Z info: 	db-util.js:::initDB:::DB object already initialized
+2018-12-24T02:23:27.527Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:24:52.320Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:24:52.321Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:24:52.342Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:24:52.343Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:24:52.348Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:24:52.348Z info: 	db-util.js:::initDB:::DB object already initialized
+2018-12-24T02:24:52.348Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:25:11.362Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:25:11.364Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:25:11.384Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:25:11.385Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:25:11.390Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:25:11.390Z info: 	db-util.js:::initDB:::DB object already initialized
+2018-12-24T02:25:11.390Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:26:21.878Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:26:21.881Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:26:21.908Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:26:21.909Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:26:21.917Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:26:21.917Z info: 	db-util.js:::initDB:::DB object already initialized
+2018-12-24T02:26:21.917Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:27:27.719Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:27:27.721Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:27:27.739Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:27:27.740Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:27:27.749Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:27:27.749Z info: 	db-util.js:::initDB:::DB object already initialized
+2018-12-24T02:27:27.749Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:28:41.687Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:28:41.689Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:28:41.707Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:28:41.708Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:28:41.713Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:28:41.713Z info: 	db-util.js:::initDB:::DB object already initialized
+2018-12-24T02:28:41.714Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:29:42.204Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:29:42.206Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:29:42.226Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:29:42.226Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:29:42.231Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:29:42.231Z info: 	db-util.js:::initDB:::DB object already initialized
+2018-12-24T02:29:42.231Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:30:51.707Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:30:51.709Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:30:51.729Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:30:51.730Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:30:51.734Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:30:51.734Z info: 	db-util.js:::initDB:::DB object already initialized
+2018-12-24T02:30:51.735Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:32:10.596Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:32:10.597Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:32:10.617Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:32:10.618Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:38:56.914Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:38:56.915Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:38:56.935Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:38:56.935Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:38:56.935Z info: 	db-util.js:::initDB:::Some error occurred while connecting to db
+2018-12-24T02:38:56.935Z error: 	db-util.js:::initDB:::Some error occurred while connecting to db => TypeError: db.collection is not a function
+    at Object.initCollections (/home/peps/misc/GetMapped/util/db-util.js:81:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:45:31
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-24T02:38:56.936Z info: 	db-util.js:::getConnectionObj:::getConnectionObj  Error 
+2018-12-24T02:38:56.936Z error: 	db-util.js:::getConnectionObj:::getConnectionObj  Error  => TypeError: db.collection is not a function
+    at Object.initCollections (/home/peps/misc/GetMapped/util/db-util.js:81:27)
+    at /home/peps/misc/GetMapped/util/db-util.js:45:31
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-24T02:40:44.402Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:40:44.404Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:40:44.423Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:40:44.423Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:40:44.423Z info: 	db-util.js:::initDB:::Some error occurred while connecting to db
+2018-12-24T02:40:44.423Z error: 	db-util.js:::initDB:::Some error occurred while connecting to db => TypeError: Cannot read property 'collection' of undefined
+    at Object.initCollections (/home/peps/misc/GetMapped/util/db-util.js:81:27)
+    at MongoClient.connect.then (/home/peps/misc/GetMapped/util/db-util.js:45:31)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-24T02:40:44.423Z info: 	db-util.js:::getConnectionObj:::getConnectionObj  Error 
+2018-12-24T02:40:44.424Z error: 	db-util.js:::getConnectionObj:::getConnectionObj  Error  => TypeError: Cannot read property 'collection' of undefined
+    at Object.initCollections (/home/peps/misc/GetMapped/util/db-util.js:81:27)
+    at MongoClient.connect.then (/home/peps/misc/GetMapped/util/db-util.js:45:31)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-24T02:41:21.174Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:41:21.176Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:41:21.195Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:41:21.195Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:41:21.195Z info: 	db-util.js:::initDB:::Some error occurred while connecting to db
+2018-12-24T02:41:21.195Z error: 	db-util.js:::initDB:::Some error occurred while connecting to db => TypeError: db.collection is not a function
+    at Object.initCollections (/home/peps/misc/GetMapped/util/db-util.js:82:27)
+    at MongoClient.connect.then (/home/peps/misc/GetMapped/util/db-util.js:46:31)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-24T02:41:21.195Z info: 	db-util.js:::getConnectionObj:::getConnectionObj  Error 
+2018-12-24T02:41:21.195Z error: 	db-util.js:::getConnectionObj:::getConnectionObj  Error  => TypeError: db.collection is not a function
+    at Object.initCollections (/home/peps/misc/GetMapped/util/db-util.js:82:27)
+    at MongoClient.connect.then (/home/peps/misc/GetMapped/util/db-util.js:46:31)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-24T02:43:53.071Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:43:53.073Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:43:53.090Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:43:53.091Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:44:27.948Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:44:27.950Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:44:27.972Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:44:27.973Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:46:38.160Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:46:38.162Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:46:38.181Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:46:38.182Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:48:11.298Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:48:11.300Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:48:11.320Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:48:11.321Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:48:11.326Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:48:11.327Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:48:11.327Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:48:11.327Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:48:11.328Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:48:11.328Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:48:11.328Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:48:11.328Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:48:11.329Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:48:11.329Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:48:11.329Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:48:11.329Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:48:11.329Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:48:13.338Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:48:13.339Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:48:13.340Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-map","file-name":"test-file"}
+2018-12-24T02:48:13.340Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:48:47.388Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:48:47.390Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:48:47.408Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:48:47.409Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:48:47.415Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:48:47.415Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:48:47.415Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:48:47.416Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:49:03.095Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:49:03.097Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:49:03.120Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:49:03.120Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:49:03.126Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:49:03.126Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:49:03.126Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:49:03.127Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:49:03.128Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:49:03.128Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:49:03.128Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:49:03.128Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:49:03.129Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:49:15.699Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:49:15.701Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:49:15.723Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:49:15.724Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:49:15.730Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:49:15.730Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:49:15.730Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:49:15.731Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:49:15.732Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:49:15.732Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:49:15.732Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:49:15.733Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:49:15.733Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:49:15.734Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:49:15.734Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:49:15.734Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:49:15.734Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:52:54.097Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:52:54.099Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:52:54.122Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:52:54.123Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:52:54.129Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:52:54.129Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:52:54.130Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:52:54.130Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:52:54.131Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:52:54.132Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:52:54.132Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:52:54.132Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:52:54.132Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:52:54.133Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:52:54.133Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:52:54.133Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:52:54.133Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:54:34.461Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:54:34.463Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:54:34.482Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:54:34.482Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:54:34.490Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:54:34.490Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:54:34.490Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:54:34.491Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:160:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:54:34.492Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:54:34.492Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:54:34.492Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:54:34.492Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:54:34.493Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:164:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:160:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:54:34.493Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:54:34.493Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:54:34.493Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:54:34.493Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:55:42.961Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:55:42.963Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:55:42.982Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:55:42.983Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:55:42.989Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:55:42.990Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:55:42.990Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:55:42.990Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:55:42.992Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:55:42.992Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:55:42.992Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:55:42.992Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:55:42.992Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:55:42.993Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:55:42.993Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:55:42.993Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:55:42.993Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:56:03.664Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:56:03.666Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:56:03.693Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:56:03.694Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:56:03.702Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:56:03.702Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:56:03.702Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:56:03.703Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:56:03.704Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:56:03.704Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:56:03.704Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:56:03.705Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:56:03.705Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:56:03.705Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:56:03.706Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:56:03.706Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:56:03.706Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:56:03.709Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:56:03.709Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:56:03.709Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-map","file-name":"test-file"}
+2018-12-24T02:56:03.709Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:56:55.288Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:56:55.290Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:56:55.310Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:56:55.311Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:56:55.316Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:56:55.317Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:56:55.317Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:56:55.317Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:56:55.319Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:56:55.319Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:56:55.319Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:56:55.319Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:56:55.319Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:56:55.320Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:56:55.320Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:56:55.320Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:56:55.320Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:56:55.323Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:56:55.323Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:56:55.323Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:56:55.324Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:58:07.641Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:58:07.643Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:58:07.664Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:58:07.665Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:58:07.671Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:58:07.671Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:58:07.671Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:58:07.672Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:58:07.673Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:58:07.673Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:58:07.673Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:58:07.673Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:58:07.673Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:58:07.674Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:58:07.674Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:58:07.674Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp1","file-name":"test-file"}
+2018-12-24T02:58:07.674Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:58:07.676Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:58:07.676Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:58:07.676Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:58:07.676Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:58:33.092Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:58:33.094Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:58:33.113Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:58:33.114Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:58:33.119Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:58:33.119Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:58:33.119Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:58:33.120Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:58:33.121Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:58:33.121Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:58:33.121Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:58:33.122Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:58:33.122Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:58:33.122Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:58:33.123Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:58:33.123Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp2","file-name":"test-file"}
+2018-12-24T02:58:33.123Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:58:33.125Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:58:33.125Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:58:33.125Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:58:33.125Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:59:24.952Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:59:24.954Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T02:59:24.983Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T02:59:24.984Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T02:59:24.990Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T02:59:24.990Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:59:24.990Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:59:24.991Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:59:24.992Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T02:59:24.992Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:59:24.992Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:59:24.993Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T02:59:24.993Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:59:24.993Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:59:24.994Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:59:24.994Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp2","file-name":"test-file"}
+2018-12-24T02:59:24.994Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:59:24.997Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T02:59:24.997Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:59:24.997Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T02:59:24.997Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:59:24.999Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-24T02:59:24.999Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T02:59:24.999Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-24T02:59:24.999Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:127:24)
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:124:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:110:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:59:25.000Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-24T02:59:25.000Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:59:25.001Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-24T02:59:25.001Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:128:24)
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:124:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:119:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T02:59:25.002Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-24T02:59:25.002Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T02:59:25.002Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T02:59:25.007Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c204aae1f6b9c070cf5139e","mapName":"test-mapp","file-name":"test-file"},{"_id":"5c204ac325126d0761d96cc6","mapName":"test-map","file-name":"test-file"},{"_id":"5c204b3fce5898090837661b","mapName":"test-mapp1","file-name":"test-file"},{"_id":"5c204b59ed67630973380905","mapName":"test-mapp2","file-name":"test-file"}]
+2018-12-24T03:01:17.080Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T03:01:17.082Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T03:01:17.101Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T03:01:17.102Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T03:01:17.107Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::null :: doc[object Object]
+2018-12-24T03:01:17.107Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T03:01:17.108Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T03:01:17.108Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:162:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:63:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T03:01:17.109Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: docnull
+2018-12-24T03:01:17.109Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T03:01:17.109Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T03:01:17.109Z info: 	db-util.js:::insertInDB:::Inside Catch block
+2018-12-24T03:01:17.110Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:163:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:159:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:72:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T03:01:17.110Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T03:01:17.110Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T03:01:17.110Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp2","file-name":"test-file"}
+2018-12-24T03:01:17.110Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T03:01:17.113Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::map :: doc[object Object]
+2018-12-24T03:01:17.113Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T03:01:17.113Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"test-mapp","file-name":"test-file"}
+2018-12-24T03:01:17.113Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T03:01:17.115Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->null :: queryObj{}
+2018-12-24T03:01:17.115Z info: 	verify-util.js:::validate::: called with parameters null
+2018-12-24T03:01:17.115Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-24T03:01:17.116Z error: 	db-util.js:::getFromDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:127:24)
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:124:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:110:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T03:01:17.116Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObjnull
+2018-12-24T03:01:17.116Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T03:01:17.118Z info: 	db-util.js:::getFromDB:::Inside Catch block
+2018-12-24T03:01:17.119Z error: 	db-util.js:::getFromDB:::Inside Catch block => AssertionError: expected null to not equal null
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:128:24)
+    at new Promise (<anonymous>)
+    at Object.getFromDB (/home/peps/misc/GetMapped/util/db-util.js:124:16)
+    at Context.it (/home/peps/misc/GetMapped/test/db-util-test.js:119:26)
+    at callFn (/usr/lib/node_modules/mocha/lib/runnable.js:354:21)
+    at Test.Runnable.run (/usr/lib/node_modules/mocha/lib/runnable.js:346:7)
+    at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:442:10)
+    at /usr/lib/node_modules/mocha/lib/runner.js:560:12
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:356:14)
+    at /usr/lib/node_modules/mocha/lib/runner.js:366:7
+    at next (/usr/lib/node_modules/mocha/lib/runner.js:290:14)
+    at Immediate.<anonymous> (/usr/lib/node_modules/mocha/lib/runner.js:334:5)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+2018-12-24T03:01:17.120Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-24T03:01:17.120Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T03:01:17.120Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T03:01:17.127Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c204aae1f6b9c070cf5139e","mapName":"test-mapp","file-name":"test-file"},{"_id":"5c204ac325126d0761d96cc6","mapName":"test-map","file-name":"test-file"},{"_id":"5c204b3fce5898090837661b","mapName":"test-mapp1","file-name":"test-file"},{"_id":"5c204b59ed67630973380905","mapName":"test-mapp2","file-name":"test-file"}]

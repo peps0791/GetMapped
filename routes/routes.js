@@ -4,7 +4,6 @@ const path = require('path');
 const assert = require('chai').assert;
 
 const logUtil = require("../util/log-util");
-//const dbUtil = require("../util/db-util");
 const miscUtil = require("../util/misc-util");
 const constants = require("../constants");
 const verify = require('../util/verify-util');
@@ -135,12 +134,17 @@ module.exports = function (app) {
 
         logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_MAP,  constants.LABEL_API_SAVE_MAP + '  endpoint hit');
         try{
-            let nodes = req.body.nodes;
-            logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_MAP,  'map nodes::'+JSON.stringify(nodes));
-            assert(nodes!=null);
             let mapName = req.body.mapname;
             logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_MAP,  'map name::'+mapName);
             verify.validate(mapName);
+
+            let nodes = req.body.nodes;
+            logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_MAP,  'map nodes::'+JSON.stringify(nodes));
+            try{
+                assert(nodes!=null);
+            }catch(err){
+                nodes = [];
+            }
 
             await miscUtil.updateMap(mapName, nodes);
             res.status(200).json({'status': "SUCCESS"});

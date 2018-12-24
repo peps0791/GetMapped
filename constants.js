@@ -9,6 +9,9 @@ module.exports = Object.freeze({
     LABEL_API_GET_MAPS:'/get-maps',
     LABEL_API_RENAME_MAP:'/rename-map',
 
+    DEV_ENV:'DEV',
+    PROD_ENV:'PROD',
+
     LOGIN_API_LABEL:'/login',
     SIGNUP_API_LABEL:'/signup',
     HOME_API_LABEL: '/home',
