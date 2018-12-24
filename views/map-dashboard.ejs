@@ -10,26 +10,20 @@
     <meta name="author" content="">
 
     <title>Get Mapped-Dashboard</title>
-
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
     <!-- Page level plugin CSS-->
     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
-
 
   </head>
 
   <body id="page-top">
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-
       <a class="navbar-brand mr-1" href="/">Home</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
@@ -106,25 +100,6 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.ejs">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -143,144 +118,9 @@
     <!-- Demo scripts for this page-->
     <script src="js/demo/datatables-demo.js"></script>
     <script src="js/demo/chart-area-demo.js"></script>
-
+    <script src="map_dashboard.js"></script>
     <script>
-
-        function createDiv(text){
-
-            //display map tiles on the dashboard
-            var outerDiv = $(document.createElement('div'))
-            outerDiv.addClass("col-xl-3 col-sm-6 mb-3")
-
-            var outDiv = $(document.createElement('div'))
-            outDiv.addClass("card text-white bg-primary o-hidden h-100")
-            outerDiv.append(outDiv)
-
-            var inDiv = $(document.createElement('div'))
-            inDiv.addClass("card-body")
-
-            outDiv.append(inDiv)
-
-            var innerDiv = $(document.createElement('div'))
-            innerDiv.addClass("mr-5")
-            innerDiv.html('<h4>'+text + '</h4>')
-
-            //-----------------------------------------------------------//
-
-            var link = $(document.createElement('a'))
-            link.addClass("card-footer text-white clearfix small z-1")
-            link.attr("href", "/get-map?mapname="+text)
-
-            outDiv.append(link)
-
-            var span1 = $(document.createElement('span'))
-            span1.addClass("float-left")
-            span1.html("View Floor Plan")
-            link.append(span1)
-
-            var span2 = $(document.createElement('span'))
-            span2.addClass("float-right")
-            link.append(span2)
-
-            var iEl = $(document.createElement('span'))
-            iEl.addClass("fas fa-angle-right")
-            span2.append(iEl)
-
-
-            //------------------------------------------------------------//
-
-            var currentTimeStamp = + new Date()
-            console.log("current timestamp->"+currentTimeStamp)
-
-
-            var link = $(document.createElement('a'))
-            link.addClass("card-footer text-white clearfix small z-1")
-            link.id = "collapseLink"+currentTimeStamp.toString()
-            link.attr("href", "#collapseEl"+currentTimeStamp.toString())
-            link.attr("data-toggle", "collapse")
-            link.attr("aria-expanded", "false")
-            link.attr("aria-controls", "collapseEl"+currentTimeStamp.toString())
-
-            outDiv.append(link)
-
-
-            var span1 = $(document.createElement('span'))
-            span1.addClass("float-left")
-            span1.html("Rename Floor Plan")
-            link.append(span1)
-
-            var span2 = $(document.createElement('span'))
-            span2.addClass("float-right")
-            link.append(span2)
-
-            var iEl = $(document.createElement('span'))
-            iEl.addClass("fas fa-angle-right")
-            span2.append(iEl)
-
-            var collapseDiv = $(document.createElement('div'))
-            collapseDiv.attr("id", "collapseEl"+currentTimeStamp.toString())
-            collapseDiv.addClass("collapse")
-            outDiv.append(collapseDiv)
-
-            var inCollapseDiv = $(document.createElement('div'))
-            inCollapseDiv.addClass("card card-body")
-            collapseDiv.append(inCollapseDiv)
-
-            var input = $(document.createElement('input'))
-            input.attr("id","input-"+currentTimeStamp.toString());
-            var btn = $(document.createElement('button'))
-            btn.addClass("btn-md")
-            btn.text("Rename")
-            btn.css("color", "grey")
-            btn.css("margin-top", "1%")
-            btn.attr("id", "btn-"+currentTimeStamp.toString());
-            inCollapseDiv.append(input)
-            inCollapseDiv.append(btn)
-
-            //----------------------------------------------------------------//
-
-            var link = $(document.createElement('a'))
-            link.addClass("card-footer text-white clearfix small z-1")
-            link.attr("href", "#")
-
-            outDiv.append(link)
-
-            var span1 = $(document.createElement('span'))
-            span1.addClass("float-left")
-            span1.html("Remove Floor Plan")
-            link.append(span1)
-
-            var span2 = $(document.createElement('span'))
-            span2.addClass("float-right")
-            link.append(span2)
-
-            var iEl = $(document.createElement('span'))
-            iEl.addClass("fas fa-angle-right")
-            span2.append(iEl)
-
-
-            inDiv.append(innerDiv)
-
-            console.log(outerDiv)
-            return outerDiv
-
-        }
-
-        function populateDashBoard(response) {
-            console.log("populate response method called")
-            console.log(response.maps)
-
-            if (response.maps && response.maps.length===0){
-                console.log("No items on display...")
-                $("#noitemdiv").attr("hidden", false)
-            }
-            for(var item of response.maps){
-                var createdDiv = createDiv(item)
-                $(".container-fluid .row").append(createdDiv)
-            }
-        }
         window.onload = function(){
-
             populateDashBoard(<%- JSON.stringify(response) %>)
 
             $("button").click(function(){
@@ -302,8 +142,7 @@
                     ele.html(text);
 
                 })
-            })
-
+            });
         }
     </script>
   </body>
