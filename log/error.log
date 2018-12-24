@@ -323,3 +323,143 @@
     at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
     at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
     at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-24T11:03:58.705Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:03:58.715Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:11:12.121Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:11:12.121Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:12:55.360Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:12:55.361Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:13:40.881Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:13:40.881Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:14:10.158Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:14:10.158Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:16:36.347Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:16:36.348Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:17:16.580Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:17:16.580Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:20:11.454Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:20:11.454Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:21:09.362Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:21:09.363Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:21:35.567Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:21:35.568Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)

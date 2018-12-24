@@ -118,6 +118,7 @@
 
                 $.post("/rename-map", {"mapname": elText, "newname": text}, function(res){
 
+                    console.log("Server response::"+JSON.stringify(res));
                     if(res.status && res.status === "SUCCESS"){
 
                         console.log("Response from server::"+JSON.stringify(res));
@@ -125,10 +126,17 @@
 
                         let linkId = "#collapseLink"+currentId.substring(currentId.indexOf("-")+1);
                         $(linkId).click();
+                        $(textBoxId).val("");
 
                     }else{
-                        alert("Some error occurred during this operation. \n You will be redirected to the home page now...")
-                        window.location.href = "/";
+                        let errMsg = "Some error occurred during this operation. \n You will be redirected to the home page now...";
+                        if(res.error.code === 11000 && res.error.message.includes("duplicate")){
+                            errMsg = "Map with the same name already exists!!";
+                            alert(errMsg);
+                        }else{
+                            alert(errMsg);
+                            window.location.href = "/";
+                        }
                     }
                 })
             });

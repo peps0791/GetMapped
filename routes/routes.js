@@ -222,7 +222,7 @@ module.exports = function (app) {
 
         }catch(err){
             logUtil.writeLog(scriptName, constants.LABEL_API_RENAME_MAP, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
-            res.status(500).json({'status': "FAIL"});
+            res.status(200).json({'status': "FAIL", "error":{"code":err.code, "message":err.message}});
         }
     });
 };

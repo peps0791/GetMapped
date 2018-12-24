@@ -1,100 +1,108 @@
 function createDiv(text){
 
+    console.log("createDiv function called with parameters::"+text);
+
+    //----------------------------------------------------------//
+    //-------------------Outer component------------------------//
+    //----------------------------------------------------------//
+
     //display map tiles on the dashboard
-    var outerDiv = $(document.createElement('div'))
-    outerDiv.addClass("col-xl-3 col-sm-6 mb-3")
+    let outerDiv = $(document.createElement('div'));
+    outerDiv.addClass("col-xl-3 col-sm-6 mb-3");
 
-    var outDiv = $(document.createElement('div'))
-    outDiv.addClass("card text-white bg-primary o-hidden h-100")
-    outerDiv.append(outDiv)
+    let outDiv = $(document.createElement('div'));
+    outDiv.addClass("card text-white bg-primary o-hidden h-100");
+    outerDiv.append(outDiv);
 
-    var inDiv = $(document.createElement('div'))
-    inDiv.addClass("card-body")
+    let inDiv = $(document.createElement('div'));
+    inDiv.addClass("card-body");
+    outDiv.append(inDiv);
 
-    outDiv.append(inDiv)
+    let innerDiv = $(document.createElement('div'));
+    innerDiv.addClass("mr-5");
+    innerDiv.html('<h4>'+text + '</h4>');
 
-    var innerDiv = $(document.createElement('div'))
-    innerDiv.addClass("mr-5")
-    innerDiv.html('<h4>'+text + '</h4>')
+    //-------------------------------------------------------------//
+    //-------------------View Map component------------------------//
+    //-------------------------------------------------------------//
 
-    //-----------------------------------------------------------//
+    let linkV = $(document.createElement('a'));
+    linkV.addClass("card-footer text-white clearfix small z-1");
+    linkV.attr("href", "/get-map?mapname="+text);
+    outDiv.append(linkV);
 
-    var link = $(document.createElement('a'))
-    link.addClass("card-footer text-white clearfix small z-1")
-    link.attr("href", "/get-map?mapname="+text)
+    let span1V = $(document.createElement('span'));
+    span1V.addClass("float-left");
+    span1V.html("View Floor Plan");
+    linkV.append(span1V);
 
-    outDiv.append(link)
+    let span2V = $(document.createElement('span'));
+    span2V.addClass("float-right");
+    linkV.append(span2V);
 
-    var span1 = $(document.createElement('span'))
-    span1.addClass("float-left")
-    span1.html("View Floor Plan")
-    link.append(span1)
-
-    var span2 = $(document.createElement('span'))
-    span2.addClass("float-right")
-    link.append(span2)
-
-    var iEl = $(document.createElement('span'))
-    iEl.addClass("fas fa-angle-right")
-    span2.append(iEl)
-
+    let iElV = $(document.createElement('span'));
+    iElV.addClass("fas fa-angle-right");
+    span2V.append(iElV);
 
     //------------------------------------------------------------//
+    //------------------Rename Map component----------------------//
+    //------------------------------------------------------------//
 
-    var currentTimeStamp = + new Date()
-    console.log("current timestamp->"+currentTimeStamp)
-
-
-    var link = $(document.createElement('a'))
-    link.addClass("card-footer text-white clearfix small z-1")
-    link.attr("id", "collapseLink"+currentTimeStamp.toString());
-    link.attr("href", "#collapseEl"+currentTimeStamp.toString())
-    link.attr("data-toggle", "collapse")
-    link.attr("aria-expanded", "false")
-    link.attr("aria-controls", "collapseEl"+currentTimeStamp.toString())
-
-    outDiv.append(link)
+    let currentTimeStamp = + new Date();
+    console.log("current timestamp->"+currentTimeStamp);
 
 
-    var span1 = $(document.createElement('span'))
-    span1.addClass("float-left")
-    span1.html("Rename Floor Plan")
-    link.append(span1)
+    let linkR = $(document.createElement('a'));
+    linkR.addClass("card-footer text-white clearfix small z-1");
+    linkR.attr("id", "collapseLink"+currentTimeStamp.toString());
+    linkR.attr("href", "#collapseEl"+currentTimeStamp.toString());
+    linkR.attr("data-toggle", "collapse");
+    linkR.attr("aria-expanded", "false");
+    linkR.attr("aria-controls", "collapseEl"+currentTimeStamp.toString());
+    outDiv.append(linkR);
 
-    var span2 = $(document.createElement('span'))
-    span2.addClass("float-right")
-    link.append(span2)
 
-    var iEl = $(document.createElement('span'))
-    iEl.addClass("fas fa-angle-right")
-    span2.append(iEl)
+    let span1R = $(document.createElement('span'));
+    span1R.addClass("float-left");
+    span1R.html("Rename Floor Plan");
+    linkR.append(span1R);
 
-    var collapseDiv = $(document.createElement('div'))
-    collapseDiv.attr("id", "collapseEl"+currentTimeStamp.toString())
-    collapseDiv.addClass("collapse")
-    outDiv.append(collapseDiv)
+    let span2R = $(document.createElement('span'));
+    span2R.addClass("float-right");
+    linkR.append(span2R);
 
-    var inCollapseDiv = $(document.createElement('div'))
-    inCollapseDiv.addClass("card card-body")
-    collapseDiv.append(inCollapseDiv)
+    let iElR = $(document.createElement('span'));
+    iElR.addClass("fas fa-angle-right");
+    span2R.append(iElR);
 
-    var input = $(document.createElement('input'))
+    let collapseDiv = $(document.createElement('div'));
+    collapseDiv.attr("id", "collapseEl"+currentTimeStamp.toString());
+    collapseDiv.addClass("collapse");
+    outDiv.append(collapseDiv);
+
+    let inCollapseDiv = $(document.createElement('div'));
+    inCollapseDiv.addClass("card card-body");
+    collapseDiv.append(inCollapseDiv);
+
+    let input = $(document.createElement('input'));
     input.attr("id","input-"+currentTimeStamp.toString());
-    var btn = $(document.createElement('button'))
-    btn.addClass("btn-md")
-    btn.text("Rename")
-    btn.css("color", "grey")
-    btn.css("margin-top", "1%")
+    let btn = $(document.createElement('button'));
+    btn.addClass("btn-md");
+    btn.text("Rename");
+    btn.css("color", "grey");
+    btn.css("margin-top", "1%");
     btn.attr("id", "btn-"+currentTimeStamp.toString());
-    inCollapseDiv.append(input)
-    inCollapseDiv.append(btn)
+    inCollapseDiv.append(input);
+    inCollapseDiv.append(btn);
 
     //----------------------------------------------------------------//
+    //------------------Remove Map component--------------------------//
+    //----------------------------------------------------------------//
 
-    var link = $(document.createElement('a'))
-    link.addClass("card-footer text-white clearfix small z-1")
-    link.attr("href", "#");
-    link.click(function(){
+    let linkRm = $(document.createElement('a'));
+    linkRm.addClass("card-footer text-white clearfix small z-1");
+    linkRm.attr("href", "#");
+    linkRm.click(function(){
         console.log("clicked");
 
         console.log("name:::"+text);
@@ -102,45 +110,43 @@ function createDiv(text){
             $.post("/remove-map", {
                 "mapname": text,
             }, function (data) {
-                console.log("result from server:" + JSON.stringify(data))
-                alert("Map successfully removed!\n Redirecting to the home page...")
+                console.log("result from server:" + JSON.stringify(data));
+                alert("Map successfully removed!\n Redirecting to the home page...");
                 window.location.href = "/"
             });
         }
-    })
+    });
 
-    outDiv.append(link)
+    outDiv.append(linkRm);
 
-    var span1 = $(document.createElement('span'))
-    span1.addClass("float-left")
-    span1.html("Remove Floor Plan")
-    link.append(span1)
+    let span1Rm = $(document.createElement('span'));
+    span1Rm.addClass("float-left");
+    span1Rm.html("Remove Floor Plan");
+    linkRm.append(span1Rm);
 
-    var span2 = $(document.createElement('span'))
-    span2.addClass("float-right")
-    link.append(span2)
+    let span2Rm = $(document.createElement('span'));
+    span2Rm.addClass("float-right");
+    linkRm.append(span2Rm);
 
-    var iEl = $(document.createElement('span'))
-    iEl.addClass("fas fa-angle-right")
-    span2.append(iEl)
+    let iElRm = $(document.createElement('span'));
+    iElRm.addClass("fas fa-angle-right");
+    span2Rm.append(iElRm);
 
-
-    inDiv.append(innerDiv)
-
-    console.log(outerDiv)
+    inDiv.append(innerDiv);
     return outerDiv
 
 }
 
 function populateDashBoard(response) {
 
+    console.log("populateDashBoard function called with parameters::"+JSON.stringify(response));
     if (response.maps && response.maps.length===0){
-        console.log("No items on display...")
-        $("#noitemdiv").attr("hidden", false)
+        console.log("No items on display...");
+        $("#noitemdiv").attr("hidden", false);
     }
     for(let item of response.maps){
-        let createdDiv = createDiv(item)
-        $(".container-fluid .row").append(createdDiv)
+        let createdDiv = createDiv(item);
+        $(".container-fluid .row").append(createdDiv);
     }
 }
 
