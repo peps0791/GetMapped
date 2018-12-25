@@ -11,10 +11,10 @@
     <title>Get Mapped-Dashboard</title>
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <!-- Page level plugin CSS-->
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
 </head>
@@ -28,17 +28,7 @@
     </button>
 
     <!-- Navbar Search -->
-    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for..." aria-label="Search"
-                   aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </div>
-    </form>
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"></form>
 </nav>
 
 <div id="wrapper">
@@ -53,22 +43,67 @@
             </a>
         </li>
 
-        <li class="nav-item">
 
+        <li class = "nav-item" style="margin-left: 10%">
+            <div class="btn-group editMode" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                    <input type="radio" name="options" value="ViewMode" checked> View Mode
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" value="EditMode" > Edit Mode
+                </label>
+            </div>
+            <div id = "enableAsstDiv" hidden = true style="margin-left: 20%">
+                <input class="form-check-input" type="checkbox" value="" id="enableAsstCheckBox">
+                <label style = "color: white;"  class="form-check-label" for="enableAsstCheckBox">
+                    Enable Assistance
+                </label>
+            </div>
+            <div id = "assistant" hidden="true" style="border-color: white; border-style: solid; padding-top: 10%; margin-top: 5%; text-align: center;  margin-right: 10%"  >
+                <h5 style="color: white;"> <b>Marking Assistance</b></h5>
+                <ul class="nav nav-tabs">
+                    <li style ="margin-right: 5%"  class="active"><a data-toggle="tab" href="#home">Lanes</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Seats</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <p>Lane Start</p>
+                        <input id="startPt" type="text" placeholder="start" style="width: 30%"/>
+                        <p>Lane End Point</p>
+                        <input id="endPt" type="text" placeholder="Coord. of the ending box"/>
+                        <input style="margin-bottom: 10%"  id="highlightBtn" type="button" value="Done"/>
+
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <h3>Seats</h3>
+                        <p>Ut enim ad.</p>
+                        <input id="seatCoord" type="text" placeholder="Seat Coordinates"/>
+                        <input id="seatNo" type="text" placeholder="Seat Num"/>
+                    </div>
+                </div>
+            </div>>
+
+        </li>
+
+
+        <li class="nav-item">
             <input id="clearAllBtn" type="button" value="Clear All Markings"/>
         </li>
         <li class="nav-item">
 
             <div id="markedSeat">
                 <span style="color: white">Selected Seat</span>
-                <input id="seatCoord" type="text"/>
-                <input id="seatNo" type="text"/>
-                <input id="empName" type="text"/>
-                <input id="empPhone" type="text"/>
-                <input id="saveSeatBtn" type="button" value="Save"/>
+                <input id="seatCoord" type="text" placeholder="Seat Coordinates"/>
+                <input id="seatNo" type="text" placeholder="Seat Num"/>
+                <input id="empName" type="text" placeholder="Emp. Name"/>
+                <input id="empPhone" type="text" placeholder="Emp. Phone"/>
+                <input style="margin-bottom: 10%"  id="saveSeatBtn" type="button" value="Save"/>
 
             </div>
+
         </li>
+
         <li class="nav-item">
             <input id="saveMapBtn" type="button" value="Save Map"/>
         </li>
@@ -139,7 +174,10 @@
                 let cell = row.insertCell();
                 cell.style.maxHeight = "10px";
                 cell.style.maxWidth = "10px";
-                cell.id = i + "-" + j
+                cell.id = i + "-" + j;
+
+                cell.setAttribute("data-toggle", "tooltip");
+                cell.setAttribute("title", "seat:haha\ncoord:"+i + "::"+j);
             }
         }
         populateMap(<%- JSON.stringify(response) %>)
@@ -167,6 +205,11 @@
     }
 
     populateImage(<%- JSON.stringify(response) %>)
+</script>
+<script>
+    /*$(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });*/
 </script>
 <script defer src="js/uploadnew.js"></script>
 <script defer src="js/astar.js"></script>
