@@ -3384,3 +3384,191 @@
 2018-12-24T22:18:59.805Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
 2018-12-24T22:18:59.807Z info: 	db-util.js:::getFromDB:::Result from the server::[]
 2018-12-24T22:18:59.807Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-24T22:21:24.368Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T22:21:24.465Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T22:21:24.466Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T22:21:24.477Z info: 	index.js::::::App server started at port 3000
+2018-12-24T22:21:27.512Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-24T22:21:27.512Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-24T22:21:27.513Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-24T22:21:27.513Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T22:21:27.515Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T22:21:27.531Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c20bec1201dc46df5a3d47c","mapName":"map5","file-name":"IMG_2109_1.JPG","nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","23-0","24-0","25-0","26-0","27-0","28-0"]},{"_id":"5c214cee20eca31893ae63cb","mapName":"test-map","file-name":"IMG_2109_1.JPG","nodes":["3-7","5-7","6-7","7-7","7-8","8-8","9-8","10-8","11-8","12-8","14-8","15-8","16-8","17-8","18-8","20-8","21-8","22-8","23-8","24-8","25-8","26-8","27-8","28-8","29-8","30-8","31-8"]}]
+2018-12-24T22:21:27.531Z info: 	routes.js:::/:::maps fetched form DB->map5,test-map
+2018-12-24T22:21:27.532Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-24T22:21:27.532Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-24T22:21:27.533Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-24T22:21:27.533Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T22:21:27.535Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-24T22:21:27.535Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-24T23:11:43.410Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T23:11:43.510Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T23:11:43.512Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T23:11:43.523Z info: 	index.js::::::App server started at port 3000
+2018-12-24T23:11:47.967Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-24T23:11:47.970Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-24T23:11:47.971Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-24T23:11:47.971Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T23:11:47.973Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:11:47.985Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c20bec1201dc46df5a3d47c","mapName":"map5","file-name":"IMG_2109_1.JPG","nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","23-0","24-0","25-0","26-0","27-0","28-0"]},{"_id":"5c214cee20eca31893ae63cb","mapName":"test-map","file-name":"IMG_2109_1.JPG","nodes":["3-7","5-7","6-7","7-7","7-8","8-8","9-8","10-8","11-8","12-8","14-8","15-8","16-8","17-8","18-8","20-8","21-8","22-8","23-8","24-8","25-8","26-8","27-8","28-8","29-8","30-8","31-8"]}]
+2018-12-24T23:11:47.986Z info: 	routes.js:::/:::maps fetched form DB->map5,test-map
+2018-12-24T23:11:47.986Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-24T23:11:47.988Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-24T23:11:47.988Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-24T23:11:47.989Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:11:47.992Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-24T23:11:47.993Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-24T23:12:57.306Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-24T23:12:57.306Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-24T23:12:57.309Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-24T23:12:57.309Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T23:12:57.310Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:12:57.313Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c20bec1201dc46df5a3d47c","mapName":"map5","file-name":"IMG_2109_1.JPG","nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","23-0","24-0","25-0","26-0","27-0","28-0"]},{"_id":"5c214cee20eca31893ae63cb","mapName":"test-map","file-name":"IMG_2109_1.JPG","nodes":["3-7","5-7","6-7","7-7","7-8","8-8","9-8","10-8","11-8","12-8","14-8","15-8","16-8","17-8","18-8","20-8","21-8","22-8","23-8","24-8","25-8","26-8","27-8","28-8","29-8","30-8","31-8"]}]
+2018-12-24T23:12:57.314Z info: 	routes.js:::/:::maps fetched form DB->map5,test-map
+2018-12-24T23:12:57.314Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-24T23:12:57.314Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-24T23:12:57.314Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-24T23:12:57.315Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:12:57.317Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2018-12-24T23:12:57.318Z info: 	routes.js:::/:::employees fetched from DB->
+2018-12-24T23:13:14.288Z info: 	routes.js:::/get-map:::/get-map  endpoint hit
+2018-12-24T23:13:14.289Z info: 	routes.js:::/get-map:::map name->map5
+2018-12-24T23:13:14.290Z info: 	verify-util.js:::validate::: called with parameters "map5"
+2018-12-24T23:13:14.290Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2018-12-24T23:13:14.291Z info: 	verify-util.js:::validate::: called with parameters "map5"
+2018-12-24T23:13:14.292Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map5"}
+2018-12-24T23:13:14.292Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T23:13:14.292Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:13:14.295Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c20bec1201dc46df5a3d47c","mapName":"map5","file-name":"IMG_2109_1.JPG","nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","23-0","24-0","25-0","26-0","27-0","28-0"]}]
+2018-12-24T23:13:32.995Z info: 	routes.js:::/save-seat:::/save-seat  endpoint hit
+2018-12-24T23:13:32.995Z info: 	misc-util.js:::insertEmployee():::insertEmployee()  function called
+2018-12-24T23:13:32.996Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::employee :: doc[object Object]
+2018-12-24T23:13:32.996Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-24T23:13:32.996Z info: 	verify-util.js:::validate::: called with parameters {"coord":"22-26","seatNo":"1A","empName":"nik","empPhone":"1234"}
+2018-12-24T23:13:32.996Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:13:33.048Z info: 	verify-util.js:::validate::: called with parameters "5c21681ca26609514d5dae62"
+2018-12-24T23:13:33.049Z info: 	misc-util.js:::insertEmployee():::insertEmployee()  inserted map id::5c21681ca26609514d5dae62
+2018-12-24T23:13:36.834Z info: 	routes.js:::/save-map:::/save-map  endpoint hit
+2018-12-24T23:13:36.835Z info: 	routes.js:::/save-map:::map name::map5
+2018-12-24T23:13:36.835Z info: 	verify-util.js:::validate::: called with parameters "map5"
+2018-12-24T23:13:36.835Z info: 	routes.js:::/save-map:::map nodes::["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","26-0","27-0","28-0"]
+2018-12-24T23:13:36.836Z info: 	misc-util.js:::updateMap():::updateMap()  function called
+2018-12-24T23:13:36.836Z info: 	verify-util.js:::validate::: called with parameters "map5"
+2018-12-24T23:13:36.837Z info: 	db-util.js:::updateDB():::updateDB() function called with parameters:: collection name::map :: query::[object Object]values::{"$set":{"nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","26-0","27-0","28-0"]}} ::options::null
+2018-12-24T23:13:36.838Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T23:13:36.838Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"map5"}
+2018-12-24T23:13:36.838Z info: 	verify-util.js:::validate::: called with parameters {"$set":{"nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","26-0","27-0","28-0"]}}
+2018-12-24T23:13:36.839Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:13:36.844Z info: 	verify-util.js:::validate::: called with parameters {"ok":1,"nModified":1,"n":1}
+2018-12-24T23:13:36.845Z info: 	misc-util.js:::updateMap():::updateMap()  update status::{"ok":1,"nModified":1,"n":1}
+2018-12-24T23:13:39.723Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-24T23:13:39.723Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-24T23:13:39.724Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-24T23:13:39.724Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T23:13:39.724Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:13:39.726Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c20bec1201dc46df5a3d47c","mapName":"map5","file-name":"IMG_2109_1.JPG","nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","26-0","27-0","28-0"]},{"_id":"5c214cee20eca31893ae63cb","mapName":"test-map","file-name":"IMG_2109_1.JPG","nodes":["3-7","5-7","6-7","7-7","7-8","8-8","9-8","10-8","11-8","12-8","14-8","15-8","16-8","17-8","18-8","20-8","21-8","22-8","23-8","24-8","25-8","26-8","27-8","28-8","29-8","30-8","31-8"]}]
+2018-12-24T23:13:39.726Z info: 	routes.js:::/:::maps fetched form DB->map5,test-map
+2018-12-24T23:13:39.727Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-24T23:13:39.727Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-24T23:13:39.727Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-24T23:13:39.727Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:13:39.729Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c21681ca26609514d5dae62","coord":"22-26","seatNo":"1A","empName":"nik","empPhone":"1234"}]
+2018-12-24T23:13:39.729Z info: 	routes.js:::/:::employees fetched from DB->[object Object]
+2018-12-24T23:14:44.617Z info: 	routes.js:::/get-map:::/get-map  endpoint hit
+2018-12-24T23:14:44.618Z info: 	routes.js:::/get-map:::map name->map5
+2018-12-24T23:14:44.620Z info: 	verify-util.js:::validate::: called with parameters "map5"
+2018-12-24T23:14:44.622Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2018-12-24T23:14:44.623Z info: 	verify-util.js:::validate::: called with parameters "map5"
+2018-12-24T23:14:44.625Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map5"}
+2018-12-24T23:14:44.625Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T23:14:44.626Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:14:44.630Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c20bec1201dc46df5a3d47c","mapName":"map5","file-name":"IMG_2109_1.JPG","nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","26-0","27-0","28-0"]}]
+2018-12-24T23:14:58.851Z info: 	routes.js:::/save-seat:::/save-seat  endpoint hit
+2018-12-24T23:14:58.851Z info: 	misc-util.js:::insertEmployee():::insertEmployee()  function called
+2018-12-24T23:14:58.851Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::employee :: doc[object Object]
+2018-12-24T23:14:58.851Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-24T23:14:58.852Z info: 	verify-util.js:::validate::: called with parameters {"coord":"25-29","seatNo":"mike","empName":"1S","empPhone":"3456"}
+2018-12-24T23:14:58.852Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:14:58.853Z info: 	verify-util.js:::validate::: called with parameters "5c216872a26609514d5dae63"
+2018-12-24T23:14:58.853Z info: 	misc-util.js:::insertEmployee():::insertEmployee()  inserted map id::5c216872a26609514d5dae63
+2018-12-24T23:15:01.260Z info: 	routes.js:::/save-map:::/save-map  endpoint hit
+2018-12-24T23:15:01.261Z info: 	routes.js:::/save-map:::map name::map5
+2018-12-24T23:15:01.261Z info: 	verify-util.js:::validate::: called with parameters "map5"
+2018-12-24T23:15:01.261Z info: 	routes.js:::/save-map:::map nodes::["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","25-29","26-0","27-0","28-0"]
+2018-12-24T23:15:01.261Z info: 	misc-util.js:::updateMap():::updateMap()  function called
+2018-12-24T23:15:01.261Z info: 	verify-util.js:::validate::: called with parameters "map5"
+2018-12-24T23:15:01.262Z info: 	db-util.js:::updateDB():::updateDB() function called with parameters:: collection name::map :: query::[object Object]values::{"$set":{"nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","25-29","26-0","27-0","28-0"]}} ::options::null
+2018-12-24T23:15:01.262Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T23:15:01.262Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"map5"}
+2018-12-24T23:15:01.262Z info: 	verify-util.js:::validate::: called with parameters {"$set":{"nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","25-29","26-0","27-0","28-0"]}}
+2018-12-24T23:15:01.262Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:15:01.264Z info: 	verify-util.js:::validate::: called with parameters {"ok":1,"nModified":1,"n":1}
+2018-12-24T23:15:01.264Z info: 	misc-util.js:::updateMap():::updateMap()  update status::{"ok":1,"nModified":1,"n":1}
+2018-12-24T23:15:32.293Z info: 	routes.js:::/save-seat:::/save-seat  endpoint hit
+2018-12-24T23:15:32.294Z info: 	misc-util.js:::insertEmployee():::insertEmployee()  function called
+2018-12-24T23:15:32.294Z info: 	db-util.js:::insertInDB:::insertInDB function called with parameters:: collection name::employee :: doc[object Object]
+2018-12-24T23:15:32.294Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-24T23:15:32.294Z info: 	verify-util.js:::validate::: called with parameters {"coord":"27-26","seatNo":"mike1","empName":"1SS","empPhone":"34522"}
+2018-12-24T23:15:32.294Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:15:32.295Z info: 	verify-util.js:::validate::: called with parameters "5c216894a26609514d5dae64"
+2018-12-24T23:15:32.295Z info: 	misc-util.js:::insertEmployee():::insertEmployee()  inserted map id::5c216894a26609514d5dae64
+2018-12-24T23:15:34.564Z info: 	routes.js:::/save-map:::/save-map  endpoint hit
+2018-12-24T23:15:34.564Z info: 	routes.js:::/save-map:::map name::map5
+2018-12-24T23:15:34.564Z info: 	verify-util.js:::validate::: called with parameters "map5"
+2018-12-24T23:15:34.564Z info: 	routes.js:::/save-map:::map nodes::["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","25-29","26-0","27-0","27-26","28-0"]
+2018-12-24T23:15:34.564Z info: 	misc-util.js:::updateMap():::updateMap()  function called
+2018-12-24T23:15:34.565Z info: 	verify-util.js:::validate::: called with parameters "map5"
+2018-12-24T23:15:34.565Z info: 	db-util.js:::updateDB():::updateDB() function called with parameters:: collection name::map :: query::[object Object]values::{"$set":{"nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","25-29","26-0","27-0","27-26","28-0"]}} ::options::null
+2018-12-24T23:15:34.565Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T23:15:34.565Z info: 	verify-util.js:::validate::: called with parameters {"mapName":"map5"}
+2018-12-24T23:15:34.565Z info: 	verify-util.js:::validate::: called with parameters {"$set":{"nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","25-29","26-0","27-0","27-26","28-0"]}}
+2018-12-24T23:15:34.565Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:15:34.567Z info: 	verify-util.js:::validate::: called with parameters {"ok":1,"nModified":1,"n":1}
+2018-12-24T23:15:34.567Z info: 	misc-util.js:::updateMap():::updateMap()  update status::{"ok":1,"nModified":1,"n":1}
+2018-12-24T23:15:36.766Z info: 	routes.js:::/:::/  endpoint hit
+2018-12-24T23:15:36.766Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2018-12-24T23:15:36.766Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2018-12-24T23:15:36.766Z info: 	verify-util.js:::validate::: called with parameters "map"
+2018-12-24T23:15:36.767Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:15:36.768Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c20bec1201dc46df5a3d47c","mapName":"map5","file-name":"IMG_2109_1.JPG","nodes":["0-0","0-1","0-2","0-3","0-4","0-5","0-6","0-7","0-8","0-9","0-10","0-11","0-12","0-20","0-21","0-22","0-23","0-24","0-25","0-26","0-27","0-28","0-29","0-30","0-31","0-32","0-33","1-0","1-13","1-14","1-15","1-16","1-17","1-18","1-19","2-0","3-0","4-0","5-0","6-0","7-0","8-0","9-0","10-0","11-0","12-0","13-0","14-0","15-0","16-0","17-0","18-0","19-0","20-0","21-0","22-0","22-26","23-0","24-0","25-0","25-29","26-0","27-0","27-26","28-0"]},{"_id":"5c214cee20eca31893ae63cb","mapName":"test-map","file-name":"IMG_2109_1.JPG","nodes":["3-7","5-7","6-7","7-7","7-8","8-8","9-8","10-8","11-8","12-8","14-8","15-8","16-8","17-8","18-8","20-8","21-8","22-8","23-8","24-8","25-8","26-8","27-8","28-8","29-8","30-8","31-8"]}]
+2018-12-24T23:15:36.769Z info: 	routes.js:::/:::maps fetched form DB->map5,test-map
+2018-12-24T23:15:36.769Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2018-12-24T23:15:36.769Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2018-12-24T23:15:36.769Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2018-12-24T23:15:36.769Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2018-12-24T23:15:36.771Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c21681ca26609514d5dae62","coord":"22-26","seatNo":"1A","empName":"nik","empPhone":"1234"},{"_id":"5c216872a26609514d5dae63","coord":"25-29","seatNo":"mike","empName":"1S","empPhone":"3456"},{"_id":"5c216894a26609514d5dae64","coord":"27-26","seatNo":"mike1","empName":"1SS","empPhone":"34522"}]
+2018-12-24T23:15:36.771Z info: 	routes.js:::/:::employees fetched from DB->[object Object],[object Object],[object Object]
+2018-12-24T23:27:56.959Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T23:27:57.040Z info: 	db-util.js:::initDB:::Some error occurred while connecting to db
+2018-12-24T23:27:57.041Z error: 	db-util.js:::initDB:::Some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+2018-12-24T23:27:57.042Z info: 	index.js::::::Some error occurred while connecting to DB MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+2018-12-24T23:27:57.042Z info: 	index.js::::::Exiting application!!!
+2018-12-24T23:34:52.981Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T23:34:53.067Z info: 	db-util.js:::initDB:::Some error occurred while connecting to db
+2018-12-24T23:34:53.068Z error: 	db-util.js:::initDB:::Some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+2018-12-24T23:34:53.068Z info: 	index.js::::::Some error occurred while connecting to DB MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+2018-12-24T23:34:53.068Z info: 	index.js::::::Exiting application!!!
+2018-12-24T23:39:58.544Z info: 	db-util.js:::initDB:::initDB() function called
+2018-12-24T23:39:58.638Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2018-12-24T23:39:58.639Z info: 	db-util.js:::initCollections:::initCollections function called 
+2018-12-24T23:39:58.652Z info: 	index.js::::::App server started at port 3000
