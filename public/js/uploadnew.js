@@ -3,6 +3,20 @@ window.isEditMode = false;
 window.isAssistanceEnabled = false;
 
 
+$("input[name='optradio']").change(function(){
+    // Do something interesting here
+    if ($(this).val() === 'lanes') {
+        console.log("lanes");
+        $("#assistant").attr("hidden", false);
+        $("#seat-assistant").attr("hidden", true);
+    } else if ($(this).val() === 'seats') {
+        console.log("seats");
+        $("#assistant").attr("hidden", true);
+        $("#seat-assistant").attr("hidden", false);
+    }
+});
+
+
 $("#highlightBtn").click(function(){
 
     console.log("highlights button clicked...");
@@ -39,11 +53,9 @@ $('#enableAsstCheckBox').click(function() {
     console.log("Checkbox state (method 2) = " + $('#enableAsstCheckBox').is(':checked'));
 
     if($('#enableAsstCheckBox').prop('checked')){
-        $("#assistant").attr("hidden", false);
         window.isEditMode = false;
         window.isAssistanceEnabled = true;
     }else{
-        $("#assistant").attr("hidden", true);
         window.isEditMode = true;
         window.isAssistanceEnabled = false;
     }
@@ -53,16 +65,15 @@ $('#enableAsstCheckBox').click(function() {
 // get selection
 $('.editMode input[type=radio]').on('change', function() {
     console.log(this.value);
-    //
-    let el = $("#enableAsstDiv");
+    let mOptions = $("#markOptions");
     if(this.value === "EditMode"){
-        el.attr("hidden", false);
+        mOptions.attr("hidden", false);
         window.isEditMode = true;
         window.isAssistanceEnabled = false;
         $('#enableAsstCheckBox').prop('checked', false);
 
     }else if(this.value === "ViewMode"){
-        el.attr("hidden", true);
+        mOptions.attr("hidden", true);
         $("#assistant").attr("hidden", true);
         window.isEditMode = false;
         window.isAssistanceEnabled = false;

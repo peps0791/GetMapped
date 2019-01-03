@@ -53,67 +53,55 @@
                     <input type="radio" name="options" value="EditMode" > Edit Mode
                 </label>
             </div>
-            <div id = "enableAsstDiv" hidden = true style="margin-left: 20%">
-                <input class="form-check-input" type="checkbox" value="" id="enableAsstCheckBox">
-                <label style = "color: white;"  class="form-check-label" for="enableAsstCheckBox">
-                    Enable Assistance
-                </label>
+
+            <div id = "markOptions">
+                <input type="radio" name="optradio" id="laneRadio" value="lanes"/>
+                <label for="laneRadio">Mark Lanes</label>
+
+                <input type="radio" name="optradio" id="seatRadio" value="seats"/>
+                <label for="seatRadio">Mark Seats</label>
+
             </div>
-            <div id = "assistant" hidden="true" style="border-color: white; border-style: solid; padding-top: 10%; margin-top: 5%; text-align: center;  margin-right: 10%"  >
-                <h5 style="color: white;"> <b>Marking Assistance</b></h5>
-                <ul class="nav nav-tabs">
-                    <li style ="margin-right: 5%"  class="active"><a data-toggle="tab" href="#home">Lanes</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Seats</a></li>
-                </ul>
 
-                <div class="tab-content">
-                    <div id="home" class="tab-pane fade in active">
-                        <p>Lane Start</p>
-                        <input id="startPt" type="text" placeholder="start" style="width: 30%"/>
-                        <p>Lane End Point</p>
-                        <input id="endPt" type="text" placeholder="Coord. of the ending box"/>
-                        <input style="margin-bottom: 10%"  id="highlightBtn" type="button" value="Done"/>
 
-                    </div>
-                    <div id="menu1" class="tab-pane fade">
-                        <h3>Seats</h3>
-                        <p>Ut enim ad.</p>
-                        <input id="seatCoord" type="text" placeholder="Seat Coordinates"/>
-                        <input id="seatNo" type="text" placeholder="Seat Num"/>
-                    </div>
+            <div id = "assistant" hidden="true" style="border-color: white; border-style: solid; padding-top: 10%; margin-top: 5%; text-align: center;  margin-right: 10%" >
+                <div id = "enableAsstDiv" style="margin-left: 20%">
+                    <input class="form-check-input" type="checkbox" value="" id="enableAsstCheckBox">
+                    <label style = "color: white;"  class="form-check-label" for="enableAsstCheckBox">
+                        Enable Assistance
+                    </label>
                 </div>
-            </div>>
+                <h5 style="color: white;"> <b>Marking Lanes</b></h5>
+                <div>
+                    <p>Lane Start</p>
+                    <input id="startPt" type="text" placeholder="start" style="width: 30%"/>
+                    <p>Lane End Point</p>
+                    <input id="endPt" type="text" placeholder="Coord. of the ending box"/>
+                    <input style="margin-bottom: 10%"  id="highlightBtn" type="button" value="Done"/>
 
-        </li>
-
-
-        <li class="nav-item">
-            <input id="clearAllBtn" type="button" value="Clear All Markings"/>
-        </li>
-        <li class="nav-item">
-
-            <div id="markedSeat">
-                <span style="color: white">Selected Seat</span>
-                <input id="seatCoord" type="text" placeholder="Seat Coordinates"/>
-                <input id="seatNo" type="text" placeholder="Seat Num"/>
-                <input id="empName" type="text" placeholder="Emp. Name"/>
-                <input id="empPhone" type="text" placeholder="Emp. Phone"/>
-                <input style="margin-bottom: 10%"  id="saveSeatBtn" type="button" value="Save"/>
-
+                </div>
+            </div>
+            <div id = "seat-assistant" hidden="true" style="border-color: white; border-style: solid; padding-top: 10%; margin-top: 5%; text-align: center;  margin-right: 10%"  >
+                <h5 style="color: white;"> <b>Mark Seats</b></h5>
+                <div>
+                    <h3>Seats</h3>
+                    <p>Ut enim ad.</p>
+                    <input id="seatCoord" type="text" placeholder="Seat Coordinates"/>
+                    <input id="seatNo" type="text" placeholder="Seat Num"/>
+                    <input id="empName" type="text" placeholder="Emp. Name"/>
+                    <input id="empPhone" type="text" placeholder="Emp. Phone"/>
+                    <input style="margin-bottom: 10%"  id="saveSeatBtn" type="button" value="Save"/>
+                </div>
             </div>
 
         </li>
 
-        <li class="nav-item">
-            <input id="saveMapBtn" type="button" value="Save Map"/>
+        <li class="nav-item" style="margin-left: 10%;margin-top: 10%;">
+            <input id="clearAllBtn" type="button" value="Clear All Markings"/><br>
+            <input id="saveMapBtn" type="button" value="Save Map"/><br>
+            <!--<input id="searchBtn" type="button" value="Search"/><br>-->
+            <input id="removeBtn" type="button" value="Remove Map"/><br>
         </li>
-        <li class="nav-item">
-            <input id="searchBtn" type="button" value="Search"/>
-        </li>
-        <li class="nav-item">
-            <input id="removeBtn" type="button" value="Remove Map"/>
-        </li>
-
     </ul>
 
     <div id="content-wrapper">
