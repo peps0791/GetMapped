@@ -44,69 +44,66 @@
         </li>
 
 
-        <li class = "nav-item" style="margin-left: 10%">
+        <li class="nav-item" style="margin-left: 10%">
             <div class="btn-group editMode" data-toggle="buttons">
-                <label class="btn btn-primary active">
-                    <input type="radio" name="options" value="ViewMode" checked> View Mode
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" value="ViewMode" checked/> View Mode
                 </label>
                 <label class="btn btn-primary">
-                    <input type="radio" name="options" value="EditMode" > Edit Mode
+                    <input type="radio" name="options" value="EditMode"/> Edit Mode
                 </label>
             </div>
 
-            <div id = "markOptions">
+            <div id="markOptions">
                 <input type="radio" name="optradio" id="laneRadio" value="lanes"/>
                 <label for="laneRadio">Mark Lanes</label>
 
                 <input type="radio" name="optradio" id="seatRadio" value="seats"/>
                 <label for="seatRadio">Mark Seats</label>
-
             </div>
 
 
-            <div id = "assistant" hidden="true" style="border-color: white; border-style: solid; padding-top: 10%; margin-top: 5%; text-align: center;  margin-right: 10%" >
-                <div id = "enableAsstDiv" style="margin-left: 20%">
+            <div id="assistant" hidden="true" style="border-color: white; border-style: solid; padding-top: 10%; margin-top: 5%; text-align: center;  margin-right: 10%">
+                <div id="enableAsstDiv" style="margin-left: 10%">
                     <input class="form-check-input" type="checkbox" value="" id="enableAsstCheckBox">
-                    <label style = "color: white;"  class="form-check-label" for="enableAsstCheckBox">
+                    <label style="color: white;" class="form-check-label" for="enableAsstCheckBox">
                         Enable Assistance
                     </label>
                 </div>
-                <h5 style="color: white;"> <b>Marking Lanes</b></h5>
-                <div>
-                    <p>Lane Start</p>
-                    <input id="startPt" type="text" placeholder="start" style="width: 30%"/>
-                    <p>Lane End Point</p>
-                    <input id="endPt" type="text" placeholder="Coord. of the ending box"/>
-                    <input style="margin-bottom: 10%"  id="highlightBtn" type="button" value="Done"/>
+                <h5 style="color: white; margin-top: 5%"><b>Marking Lanes</b></h5>
+                <div style="margin-top: 10%">
+
+                    <input id="startPt" type="text" placeholder="Lane Start" style="width: 80%;"/>
+                    <input id="endPt" type="text" placeholder="Lane End" style="width: 80%;"/>
+                    <button id="highlightBtn" type="button" class="btn btn-primary" style="margin-bottom: 10%;margin-top: 10%">Mark</button>
 
                 </div>
             </div>
-            <div id = "seat-assistant" hidden="true" style="border-color: white; border-style: solid; padding-top: 10%; margin-top: 5%; text-align: center;  margin-right: 10%"  >
-                <h5 style="color: white;"> <b>Mark Seats</b></h5>
+            <div id="seat-assistant" hidden="true" style="border-color: white; border-style: solid; padding-top: 10%; margin-top: 5%; text-align: center;  margin-right: 10%">
+                <h5 style="color: white;"><b>Mark Seats</b></h5>
                 <div>
                     <h3>Seats</h3>
-                    <p>Ut enim ad.</p>
                     <input id="seatCoord" type="text" placeholder="Seat Coordinates"/>
                     <input id="seatNo" type="text" placeholder="Seat Num"/>
                     <input id="empName" type="text" placeholder="Emp. Name"/>
                     <input id="empPhone" type="text" placeholder="Emp. Phone"/>
-                    <input style="margin-bottom: 10%"  id="saveSeatBtn" type="button" value="Save"/>
+                    <button class="btn btn-primary"  style="margin-bottom: 10%;margin-top: 10%" id="saveSeatBtn" type="button">Save Seat</button>
                 </div>
             </div>
 
         </li>
 
-        <li class="nav-item" style="margin-left: 10%;margin-top: 10%;">
-            <input id="clearAllBtn" type="button" value="Clear All Markings"/><br>
-            <input id="saveMapBtn" type="button" value="Save Map"/><br>
-            <!--<input id="searchBtn" type="button" value="Search"/><br>-->
-            <input id="removeBtn" type="button" value="Remove Map"/><br>
+        <li class="nav-item" style="margin-left: 10%;margin-top: 15%;">
+            <button id="saveMapBtn" type="button" class="btn btn-primary">Save Map</button>
+            <br>
+            <button id="clearAllBtn" type="button" class="btn btn-danger" style="margin-top: 3%">Clear All Markings
+            </button>
         </li>
     </ul>
 
     <div id="content-wrapper">
         <div class="container-fluid" id="drawTable">
-            <img id="myimg"          alt="Map image" class="img-fluid. "
+            <img id="myimg" alt="Map image" class="img-fluid. "
                  style="max-width: 100%;height: 100%;">
             <table id="grid" style="max-width: 100%;height: 100%;">
             </table>
@@ -141,17 +138,17 @@
 <script defer>
     window.nodes = [];
 
-    let img_load_fn = function(){
+    let img_load_fn = function () {
 
         console.log("img_load_fn called:::");
-        console.log("Height:" + this.clientHeight + " width::"+ this.clientWidth);
+        console.log("Height:" + this.clientHeight + " width::" + this.clientWidth);
 
         let cellSize = 10;
 
         let numCols = Math.floor(document.getElementById("myimg").clientWidth / cellSize);
         let numRows = Math.floor(document.getElementById("myimg").clientHeight / cellSize);
 
-        console.log("Rows->" + numRows + " Cols->"+numCols);
+        console.log("Rows->" + numRows + " Cols->" + numCols);
 
         let grid = document.getElementById("grid");
 
@@ -165,7 +162,7 @@
                 cell.id = i + "-" + j;
 
                 cell.setAttribute("data-toggle", "tooltip");
-                cell.setAttribute("title", "seat:haha\ncoord:"+i + "::"+j);
+                cell.setAttribute("title", "seat:haha\ncoord:" + i + "::" + j);
             }
         }
         populateMap(<%- JSON.stringify(response) %>)
@@ -173,16 +170,17 @@
 
     function populateImage(response) {
 
-        console.log("populate image called with parameters::"+JSON.stringify(response));
+        console.log("populate image called with parameters::" + JSON.stringify(response));
         let img_name = response.filename;
 
         localStorage.setItem("mapname", response.mapname);
 
         let img = document.getElementById("myimg");
         img.onload = img_load_fn;
-        $("#myimg").attr("src", 'uploads/'+img_name)
+        $("#myimg").attr("src", 'uploads/' + img_name)
 
     }
+
     function populateMap(response) {
         console.log("populate response method called");
 
@@ -194,12 +192,6 @@
 
     populateImage(<%- JSON.stringify(response) %>)
 </script>
-<script>
-    /*$(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });*/
-</script>
 <script defer src="js/uploadnew.js"></script>
-<script defer src="js/astar.js"></script>
 </body>
 </html>
