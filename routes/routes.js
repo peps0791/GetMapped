@@ -169,8 +169,9 @@ module.exports = function (app) {
             let seatNo = req.body.seatNo;
             let empName = req.body.empName;
             let empPhone = req.body.empPhone;
+            let mapName = req.body.mapname;
 
-            await miscUtil.insertEmployee(coord, seatNo, empName, empPhone);
+            await miscUtil.insertSeat(coord, seatNo, empName, empPhone, mapName);
             res.status(200).json({'status': "SUCCESS"});
 
         }catch(err){

@@ -22,6 +22,7 @@ const scriptName = path.basename(__filename);
 module.exports = {
 
     db: null,
+    client:null,
 
     /*
      * @name: initDB()
@@ -41,7 +42,9 @@ module.exports = {
                     .then(function (client) {
                         logUtil.writeLog(scriptName, currentFuncName, "Connected successfully to the db server.");
 
+                        _this.client = client;
                         _this.db = _this.selectDBName(client);
+
                         _this.initCollections(_this.db);
                         resolve();
                     })
@@ -102,6 +105,31 @@ module.exports = {
                     await _this.initDB();
                 }
                 resolve(_this.db);
+            }catch(err){
+                logUtil.writeLog(scriptName, currentFuncName, currentFuncName +'  Error ', true, err);
+                reject(err)
+            }
+        });
+    },
+
+    /*
+    * @name: getClientObj()
+    * @description: returns mongodb client object
+    * @params: None
+    * @returns: db client object
+    */
+    getClientObj: async()=>{
+
+        let _this = module.exports;
+        let currentFuncName = 'getClientObj';
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName +' function called ');
+
+        return new Promise(async (resolve, reject)=>{
+            try{
+                if (!_this.client ) {
+                    await _this.initDB();
+                }
+                resolve(_this.client);
             }catch(err){
                 logUtil.writeLog(scriptName, currentFuncName, currentFuncName +'  Error ', true, err);
                 reject(err)
@@ -244,6 +272,41 @@ module.exports = {
             }catch(err){
                 logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
                 reject(err);
+            }
+        });
+    },
+
+    /*
+     * @name: executeTransactionSaveSeat()
+     * @description: saves seat in the emp table and coordinates in the map table
+     * @params: insertDoc (::JSON), updateObj (::JSON)
+     * @returns: Promise object containing result object from the delete query
+     */
+    executeTransactionSaveSeat: (insertDoc, updateObj)=>{
+
+        let currentFuncName = 'executeTransaction()';
+        let _this = module.exports;
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName +' function called with parameters:: collection name::' + JSON.stringify(insertDoc) + "::updateObj::"+JSON.stringify(updateObj));
+
+        return new Promise(async (resolve, reject)=>{
+            try{
+                let client = await _this.getClientObj();
+                const session = client.startSession();
+
+                session.startTransaction();
+
+                let insertId = await _this.insertInDB(constants.COLLECTION_EMP,  insertDoc);
+                verify.validate(insertId);
+                logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  inserted map id::'+insertId);
+
+                let updateStatus = await _this.updateDB(constants.COLLECTION_MAP, updateObj.query, updateObj.values);
+                verify.validate(updateStatus);
+                session.commitTransaction();
+                resolve();
+            }catch(error){
+                await session.abortTransaction();
+                session.endSession();
+                reject(error); // Rethrow so calling function sees error
             }
         });
     }

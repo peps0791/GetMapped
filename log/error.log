@@ -495,3 +495,15 @@
     at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
     at Object.onceWrapper (events.js:315:30)
     at emitOne (events.js:116:13)
+2019-01-03T12:18:05.412Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::dbUtil is not defined => ReferenceError: dbUtil is not defined
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:270:36)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-03T12:20:04.455Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::the update operation document must contain atomic operators. => MongoError: the update operation document must contain atomic operators.
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at checkForAtomicOperators (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:161:12)
+    at Collection.updateOne (/home/peps/misc/GetMapped/node_modules/mongodb/lib/collection.js:722:15)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:242:21)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)

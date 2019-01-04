@@ -154,7 +154,8 @@ $('#saveSeatBtn').click(function () {
         "coord": coordinates,
         "seatNo": seat,
         "empName": empName,
-        "empPhone": empPhone
+        "empPhone": empPhone,
+        "mapname":localStorage.getItem("mapname")
     }, function (data) {
         console.log("result from server:" + JSON.stringify(data));
         alert("Map updated successfully!! ");

@@ -125,27 +125,25 @@ module.exports = {
 
 
     /*
-      * @name: insertEmployee()
+      * @name: insertSeat()
       * @description: inserts a new emp entry in the database
-      * @params: mapName (::String), fileName (::String)
+      * @params: coord (::String), seatNo (::String), empName (::String), empPhone (::String), mapname (::String)
       * @returns: Promise object
       */
-    insertEmployee: (coord, seatNo, empName, empPhone)=>{
+    insertSeat: (coord, seatNo, empName, empPhone, mapName)=>{
 
-        let currentFuncName = 'insertEmployee()';
-        logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  function called');
-
+        let currentFuncName = 'insertSeat()';
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  function called with parameters:: coord::'+ coord + " seat no::"+seatNo + " empName::"+empName + ":: emp phone::"+empPhone + "::mapname::"+mapName );
         return new Promise(async (resolve, reject)=>{
 
             try{
-                let doc = {"coord": coord, "seatNo": seatNo, "empName": empName, "empPhone": empPhone};
-                let insertId = await dbUtil.insertInDB(constants.COLLECTION_EMP,  doc);
-                verify.validate(insertId);
-                logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  inserted map id::'+insertId);
+                let seatDoc = {"coord": coord, "seatNo": seatNo, "empName": empName, "empPhone": empPhone};
+                let updateQueryObj = {query :{"mapName":mapName}, values : {"$push": {"nodes": coord}}};
+                await dbUtil.executeTransactionSaveSeat(seatDoc, updateQueryObj);
                 resolve();
             }catch(err){
                 logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
-                reject(err)
+                reject(err);
             }
         });
     },
