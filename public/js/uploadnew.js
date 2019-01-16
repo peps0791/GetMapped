@@ -13,6 +13,11 @@ $("input[name='optradio']").change(function(){
         console.log("seats");
         $("#assistant").attr("hidden", true);
         $("#seat-assistant").attr("hidden", false);
+
+        $('#enableAsstCheckBox').prop('checked', false);
+        console.log("Checkbox state (method 2) = " + $('#enableAsstCheckBox').is(':checked'));
+        window.isEditMode = true;
+        window.isAssistanceEnabled = false;
     }
 });
 

@@ -17,13 +17,30 @@ module.exports = function (app) {
 
     /*
      * @api: '/'
-     * @description: gets the list of all maps and employees from the database
-     * @renders: dashboard.ejs
+     * @description: renders the start page of the application
+     * @renders: start.ejs
      */
-    app.get('/', async (req, res) => {
+    app.get('/', (req, res) => {
 
         logUtil.writeLog(scriptName, constants.LABEL_API_ROOT,  constants.LABEL_API_ROOT + '  endpoint hit');
         try {
+            res.status(200).render('start');
+        } catch (err) {
+            logUtil.writeLog(scriptName, constants.LABEL_API_ROOT, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
+            res.status(500).render('error', {response: {'errorCode': err.code, 'errorMsg': err.message}});
+        }
+    });
+
+    /*
+     * @api: '/admin-view'
+     * @description: gets the list of all maps and employees from the database
+     * @renders: dashboard.ejs
+     */
+    app.get('/admin-view', async (req, res)=>{
+
+        logUtil.writeLog(scriptName, constants.LABEL_API_ADMIN_VIEW,  constants.LABEL_API_ADMIN_VIEW + '  endpoint hit');
+        try{
+            //res.status(200).render('start');
             // get maps from db
             let maps = await miscUtil.getMapsNamesFromDB();
             logUtil.writeLog(scriptName, constants.LABEL_API_ROOT, 'maps fetched form DB->' + maps);
@@ -32,8 +49,45 @@ module.exports = function (app) {
             logUtil.writeLog(scriptName, constants.LABEL_API_ROOT, 'employees fetched from DB->' + employees);
             // render the list back to the frontend
             res.status(200).render('dashboard', {response: {"maps": maps, "emp": employees}});
-        } catch (err) {
-            logUtil.writeLog(scriptName, constants.LABEL_API_ROOT, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
+        }catch(err){
+            logUtil.writeLog(scriptName, constants.LABEL_API_ADMIN_VIEW, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
+            res.status(500).render('error', {response: {'errorCode': err.code, 'errorMsg': err.message}});
+        }
+    });
+
+    app.post("/search-emp", async (req, res)=>{
+
+        logUtil.writeLog(scriptName, constants.LABEL_API_SEARCH_EMP,  constants.LABEL_API_SEARCH_EMP + '  endpoint hit');
+        try{
+            let empName = req.body.empName;
+            console.log("empName::"+empName);
+            let empSeat = req.body.empSeat;
+            console.log("emp seat::"+empSeat);
+            let empDoc = await miscUtil.getEmployeeFromDB(empName, empSeat);
+
+            console.log(empDoc);
+            let map = await miscUtil.getMapFromDB(empDoc["mapName"]);
+
+            res.status(200).render('search-result', {response: {"emp":empDoc, "nodes": map.nodes,  "mapname":empDoc["mapName"],  "filename": map["file-name"]}});
+        }catch(err){
+            logUtil.writeLog(scriptName, constants.LABEL_API_SEARCH_EMP, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
+            res.status(500).render('error', {response: {'errorCode': err.code, 'errorMsg': err.message}});
+        }
+    });
+
+    /*
+    * @api: '/emp-view'
+    * @description: renders the employee search view
+    * @renders: search.ejs
+    */
+    app.get("/emp-view", async (req, res)=>{
+
+        logUtil.writeLog(scriptName, constants.LABEL_API_EMP_VIEW,  constants.LABEL_API_EMP_VIEW + '  endpoint hit');
+        try{
+
+            res.status(200).render('search');
+        }catch(err){
+            logUtil.writeLog(scriptName, constants.LABEL_API_EMP_VIEW, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
             res.status(500).render('error', {response: {'errorCode': err.code, 'errorMsg': err.message}});
         }
     });

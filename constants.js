@@ -1,5 +1,8 @@
 module.exports = Object.freeze({
     LABEL_API_ROOT: '/',
+    LABEL_API_ADMIN_VIEW:'/admin-view',
+    LABEL_API_EMP_VIEW:'/emp-view',
+    LABEL_API_SEARCH_EMP:'/search-emp',
     LABEL_API_GET_MAP: '/get-map',
     LABEL_API_CREATE_MAP: '/create-map',
     LABEL_API_ADD_NEW:'/add-new-map',

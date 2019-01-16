@@ -507,3 +507,29 @@
     at Promise (/home/peps/misc/GetMapped/util/db-util.js:242:21)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-15T22:31:25.918Z error: 	routes.js:::/search-emp:::Error thrown to the endpointundefined::map is not defined => ReferenceError: map is not defined
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:71:74)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-15T22:36:20.282Z error: 	routes.js:::/search-emp:::Error thrown to the endpointundefined::map is not defined => ReferenceError: map is not defined
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:71:74)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-15T22:38:12.468Z error: 	misc-util.js:::getMapFromDB():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:61:24)
+    at new Promise (<anonymous>)
+    at Object.getMapFromDB (/home/peps/misc/GetMapped/util/misc-util.js:58:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:72:38)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-15T22:38:12.470Z error: 	routes.js:::/search-emp:::Error thrown to the endpointINVALID_PARAM:: => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:61:24)
+    at new Promise (<anonymous>)
+    at Object.getMapFromDB (/home/peps/misc/GetMapped/util/misc-util.js:58:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:72:38)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)

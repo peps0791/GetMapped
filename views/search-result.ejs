@@ -45,59 +45,17 @@
 
 
         <li class="nav-item" style="margin-left: 10%">
-            <div class="btn-group editMode" data-toggle="buttons">
-                <label class="btn btn-primary">
-                    <input type="radio" name="options" value="ViewMode" checked/> View Mode
-                </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="options" value="EditMode"/> Edit Mode
-                </label>
-            </div>
 
-            <div id="markOptions">
-                <input type="radio" name="optradio" id="laneRadio" value="lanes"/>
-                <label for="laneRadio">Mark Lanes</label>
-
-                <input type="radio" name="optradio" id="seatRadio" value="seats"/>
-                <label for="seatRadio">Mark Seats</label>
-            </div>
-
-
-            <div id="assistant" hidden="true" style="border-color: white; border-style: solid; padding-top: 10%; margin-top: 5%; text-align: center;  margin-right: 10%">
-                <div id="enableAsstDiv" style="margin-left: 10%">
-                    <input class="form-check-input" type="checkbox" value="" id="enableAsstCheckBox">
-                    <label style="color: white;" class="form-check-label" for="enableAsstCheckBox">
-                        Enable Assistance
-                    </label>
-                </div>
-                <h5 style="color: white; margin-top: 5%"><b>Marking Lanes</b></h5>
+            <div id="assistant" style="border-color: white; border-style: solid; padding-top: 10%; margin-top: 5%; text-align: center;  margin-right: 10%">
+                <h5 style="color: white; margin-top: 5%"><b>Directions</b></h5>
                 <div style="margin-top: 10%">
 
-                    <input id="startPt" type="text" placeholder="Lane Start" style="width: 80%;"/>
-                    <input id="endPt" type="text" placeholder="Lane End" style="width: 80%;"/>
-                    <button id="highlightBtn" type="button" class="btn btn-primary" style="margin-bottom: 10%;margin-top: 10%">Mark</button>
+                    <input id="startPt" type="text" placeholder="Starting Pt." style="width: 80%;"/>
+                    <input id="endPt" type="text" placeholder="End Pt." style="width: 80%;"/>
+                    <button onclick="findSourceCoord()"  id="highlightBtn" type="button" class="btn btn-primary" style="margin-bottom: 10%;margin-top: 10%">Get Directions</button>
 
                 </div>
             </div>
-            <div id="seat-assistant" hidden="true" style="border-color: white; border-style: solid; padding-top: 10%; margin-top: 5%; text-align: center;  margin-right: 10%">
-                <h5 style="color: white;"><b>Mark Seats</b></h5>
-                <div>
-                    <h3>Seats</h3>
-                    <input id="seatCoord" type="text" placeholder="Seat Coordinates"/>
-                    <input id="seatNo" type="text" placeholder="Seat Num"/>
-                    <input id="empName" type="text" placeholder="Emp. Name"/>
-                    <input id="empPhone" type="text" placeholder="Emp. Phone"/>
-                    <button class="btn btn-primary"  style="margin-bottom: 10%;margin-top: 10%" id="saveSeatBtn" type="button">Save Seat</button>
-                </div>
-            </div>
-
-        </li>
-
-        <li class="nav-item" style="margin-left: 10%;margin-top: 15%;">
-            <button id="saveMapBtn" type="button" class="btn btn-primary">Save Map</button>
-            <br>
-            <button id="clearAllBtn" type="button" class="btn btn-danger" style="margin-top: 3%">Clear All Markings
-            </button>
         </li>
     </ul>
 
@@ -178,7 +136,6 @@
         let img = document.getElementById("myimg");
         img.onload = img_load_fn;
         $("#myimg").attr("src", 'uploads/' + img_name)
-
     }
 
     function populateMap(response) {
@@ -186,12 +143,18 @@
 
         console.log("nodes ::", response.nodes);
         for (let item of response.nodes) {
-            $("#" + item).toggleClass("highlighted");
+            $("#" + item).toggleClass("silent");
         }
+
+        //mark employee
+        let emp = response.emp;
+        let empSeat = emp.coord;
+        $("#"+empSeat).addClass("destination");
+        $("#endPt").val(emp.seatNo);
     }
 
     populateImage(<%- JSON.stringify(response) %>)
 </script>
-<script defer src="js/uploadnew.js"></script>
+<script defer src="js/search_result.js"></script>
 </body>
 </html>

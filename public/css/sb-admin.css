@@ -399,6 +399,10 @@ table td.highlighted {
   background-color:yellow;
 }
 
+table td.destination {
+  background-color:red;
+}
+
 table td.searchresult {
   background-color:blue;
 }

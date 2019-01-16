@@ -95,6 +95,24 @@ module.exports = {
         });
     },
 
+    getEmployeeFromDB: (empName, empSeat)=>{
+
+        let currentFuncName = 'getEmployeeFromDB()';
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  function called');
+
+        return new Promise(async (resolve, reject)=> {
+            try{
+                let query = {"empName":empName, "seatNo":empSeat};
+                let empDoc = await dbUtil.getFromDB(constants.COLLECTION_EMP, query);
+                resolve(empDoc[0])
+            }catch(err){
+                logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
+                reject(err)
+            }
+        });
+
+    },
+
     /*
    * @name: createNewMap()
    * @description: inserts a new entry of map in the database
@@ -137,7 +155,7 @@ module.exports = {
         return new Promise(async (resolve, reject)=>{
 
             try{
-                let seatDoc = {"coord": coord, "seatNo": seatNo, "empName": empName, "empPhone": empPhone};
+                let seatDoc = {"coord": coord, "seatNo": seatNo, "empName": empName, "empPhone": empPhone, "mapName":mapName};
                 let updateQueryObj = {query :{"mapName":mapName}, values : {"$push": {"nodes": coord}}};
                 await dbUtil.executeTransactionSaveSeat(seatDoc, updateQueryObj);
                 resolve();
