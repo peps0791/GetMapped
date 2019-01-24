@@ -60,11 +60,11 @@ function createRow(empItem){
     row.append(col2);
 
     let col3 = $(document.createElement('td'));
-    col3.html("US");
+    col3.html("development");
     row.append(col3);
 
     let col4 = $(document.createElement('td'));
-    col4.html("25");
+    col4.html(empItem.mapName);
     row.append(col4);
 
     let col5 = $(document.createElement('td'));

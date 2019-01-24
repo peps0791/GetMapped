@@ -29,7 +29,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="/admin-view"><h3><b>Get Mapped: An indoor mapping solution</b></h3></a>
+      <a class="navbar-brand mr-1" href="/admin-view"><h3><b>Way Finder: An indoor mapping solution</b></h3></a>
 
 
 
@@ -48,13 +48,13 @@
         <div class="container-fluid" >
 
           <!-- Page Content -->
-          <h1>Blank Page</h1>
+          <h1 style="text-align: center;">Select View</h1>
 
-          <div class="container" style="display: flex;">
+          <div class="container" style="display: flex;text-align: center;">
             <!--<div class="fixed" style="width: 25%;height: 25%; background-color: #1c7430  " >Admin View</div>
             <div class="fixed" style="width: 25%;height: 25%; background-color:yellowgreen;margin-left: 10% ">Employee View</div>-->
-            <button id="admViewBtn"  type="button" >Admin View</button>
-            <button id="empViewBtn"  type="button" >Employee View</button>
+            <button id="admViewBtn" class="btn-lg btn-primary"  type="button" style="margin-right: 1%;margin-left: 35%;">Admin View</button>
+            <button id="empViewBtn" class="btn-lg btn-primary" type="button" >Employee View</button>
           </div>
         </div>
         <!-- /.container-fluid -->
@@ -63,7 +63,7 @@
         <footer class="sticky-footer" style="width: 100%;">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Your Website 2018</span>
+              <span>Copyright © https://thebotspeaks.com</span>
             </div>
           </div>
         </footer>
@@ -97,7 +97,6 @@
         $("#empViewBtn").click(function(){
             console.log("employee view button clicked");
             window.location.href = "/emp-view";
-
         })
     </script>
   </body>
