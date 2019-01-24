@@ -7841,3 +7841,385 @@
 2019-01-15T23:03:45.095Z info: 	verify-util.js:::validate::: called with parameters "map"
 2019-01-15T23:03:45.095Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
 2019-01-15T23:03:45.099Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:05:00.302Z info: 	db-util.js:::initDB:::initDB() function called
+2019-01-24T17:05:00.420Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2019-01-24T17:05:00.422Z info: 	db-util.js:::initCollections:::initCollections function called 
+2019-01-24T17:05:00.436Z info: 	index.js::::::App server started at port 3000
+2019-01-24T17:05:05.819Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:05:08.897Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:08:01.004Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:08:01.005Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:08:01.005Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:08:01.006Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:08:01.007Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:08:01.017Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:08:01.021Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:08:01.022Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:08:01.023Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:08:01.023Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:08:01.023Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:08:01.028Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:11:45.029Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:11:48.299Z info: 	routes.js:::/admin-view:::/admin-view  endpoint hit
+2019-01-24T17:11:48.300Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2019-01-24T17:11:48.302Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2019-01-24T17:11:48.305Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:11:48.305Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:11:48.316Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:11:48.317Z info: 	routes.js:::/:::maps fetched form DB->map1
+2019-01-24T17:11:48.318Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2019-01-24T17:11:48.319Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2019-01-24T17:11:48.320Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:11:48.321Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:11:48.331Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"},{"_id":"5c3e5ff982960001da019081","coord":"24-28","seatNo":"1B","empName":"peps","empPhone":"3456","mapName":"map1"},{"_id":"5c3e600d82960001da019082","coord":"28-28","seatNo":"1C","empName":"piyush0791","empPhone":"4444","mapName":"map1"},{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:11:48.332Z info: 	routes.js:::/:::employees fetched from DB->[object Object],[object Object],[object Object],[object Object]
+2019-01-24T17:11:53.191Z info: 	routes.js:::/get-map:::/get-map  endpoint hit
+2019-01-24T17:11:53.192Z info: 	routes.js:::/get-map:::map name->map1
+2019-01-24T17:11:53.192Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:11:53.192Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:11:53.192Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:11:53.193Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:11:53.193Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:11:53.193Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:11:53.208Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:12:40.903Z info: 	routes.js:::/admin-view:::/admin-view  endpoint hit
+2019-01-24T17:12:40.904Z info: 	misc-util.js:::getMapsNamesFromDB():::getMapsNamesFromDB()  function called
+2019-01-24T17:12:40.904Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{}
+2019-01-24T17:12:40.905Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:12:40.905Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:12:40.907Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:12:40.907Z info: 	routes.js:::/:::maps fetched form DB->map1
+2019-01-24T17:12:40.908Z info: 	misc-util.js:::getEmployeesFromDB():::getEmployeesFromDB()  function called
+2019-01-24T17:12:40.908Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{}
+2019-01-24T17:12:40.908Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:12:40.908Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:12:40.911Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"},{"_id":"5c3e5ff982960001da019081","coord":"24-28","seatNo":"1B","empName":"peps","empPhone":"3456","mapName":"map1"},{"_id":"5c3e600d82960001da019082","coord":"28-28","seatNo":"1C","empName":"piyush0791","empPhone":"4444","mapName":"map1"},{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:12:40.911Z info: 	routes.js:::/:::employees fetched from DB->[object Object],[object Object],[object Object],[object Object]
+2019-01-24T17:26:38.503Z info: 	db-util.js:::initDB:::initDB() function called
+2019-01-24T17:26:38.607Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2019-01-24T17:26:38.608Z info: 	db-util.js:::initCollections:::initCollections function called 
+2019-01-24T17:26:38.621Z info: 	index.js::::::App server started at port 3000
+2019-01-24T17:26:44.968Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:26:48.414Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:26:55.170Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:26:55.171Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:26:55.173Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:26:55.174Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:26:55.176Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:26:55.196Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:26:55.202Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:26:55.203Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:26:55.204Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:26:55.204Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:26:55.205Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:26:55.211Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:27:04.747Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:27:04.748Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::srcSeat
+2019-01-24T17:27:04.751Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"srcSeat","mapName":"map1"}
+2019-01-24T17:27:04.752Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:27:04.753Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:27:04.759Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2019-01-24T17:28:43.695Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:28:43.696Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::srcSeat
+2019-01-24T17:28:43.697Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"srcSeat","mapName":"map1"}
+2019-01-24T17:28:43.697Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:28:43.698Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:28:43.709Z info: 	db-util.js:::getFromDB:::Result from the server::[]
+2019-01-24T17:28:46.043Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:28:48.544Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:28:54.986Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:28:54.989Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:28:54.990Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:28:54.994Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:28:54.995Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:28:55.001Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:28:55.002Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:28:55.003Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:28:55.003Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:28:55.004Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:28:55.004Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:28:55.009Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:29:03.945Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:29:03.945Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:29:03.947Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:29:03.947Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:29:03.948Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:29:03.953Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:31:37.297Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:31:39.970Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:31:47.918Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:31:47.920Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:31:47.922Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:31:47.928Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:31:47.929Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:31:47.935Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:31:47.937Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:31:47.938Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:31:47.938Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:31:47.939Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:31:47.939Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:31:47.944Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:31:55.227Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:31:55.227Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:31:55.228Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:31:55.228Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:31:55.229Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:31:55.233Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:33:04.130Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:33:06.549Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:33:12.486Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:33:12.489Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:33:12.491Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:33:12.491Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:33:12.492Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:33:12.497Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:33:12.498Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:33:12.498Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:33:12.498Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:33:12.499Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:33:12.499Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:33:12.503Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:34:42.197Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:34:44.870Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:34:52.085Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:34:52.085Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:34:52.085Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:34:52.086Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:34:52.086Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:34:52.090Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:34:52.091Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:34:52.091Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:34:52.091Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:34:52.092Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:34:52.092Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:34:52.095Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:35:01.385Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:35:01.385Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:35:01.386Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:35:01.386Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:35:01.386Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:35:01.391Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:35:13.432Z info: 	db-util.js:::initDB:::initDB() function called
+2019-01-24T17:35:13.538Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2019-01-24T17:35:13.539Z info: 	db-util.js:::initCollections:::initCollections function called 
+2019-01-24T17:35:13.552Z info: 	index.js::::::App server started at port 3000
+2019-01-24T17:35:17.971Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:35:20.484Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:35:26.997Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:35:26.998Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:35:26.999Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:35:27.000Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:35:27.001Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:35:27.016Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:35:27.019Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:35:27.019Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:35:27.020Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:35:27.020Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:35:27.020Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:35:27.024Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:35:34.139Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:35:34.143Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:35:34.149Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:35:34.149Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:35:34.150Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:35:34.154Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:43:10.760Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:43:13.537Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:43:18.865Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:43:18.867Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:43:18.868Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:43:18.869Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:43:18.869Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:43:18.872Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:43:18.874Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:43:18.875Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:43:18.875Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:43:18.876Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:43:18.876Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:43:18.879Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:45:21.581Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:45:24.044Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:45:33.010Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:45:33.011Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:45:33.011Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:45:33.011Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:45:33.011Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:45:33.013Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:45:33.013Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:45:33.013Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:45:33.014Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:45:33.014Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:45:33.014Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:45:33.017Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:45:42.606Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:45:42.607Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:45:42.608Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:45:42.608Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:45:42.609Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:45:42.614Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:46:19.197Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:46:21.622Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:46:27.143Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:46:27.144Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:46:27.144Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:46:27.144Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:46:27.145Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:46:27.146Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:46:27.147Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:46:27.147Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:46:27.147Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:46:27.148Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:46:27.148Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:46:27.150Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:46:36.068Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:46:36.068Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:46:36.069Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:46:36.071Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:46:36.071Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:46:36.075Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:47:48.917Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:47:51.655Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:47:57.216Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:47:57.218Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:47:57.219Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:47:57.220Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:47:57.221Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:47:57.223Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:47:57.224Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:47:57.225Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:47:57.225Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:47:57.225Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:47:57.225Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:47:57.229Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:48:05.703Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:48:05.712Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:48:05.713Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:48:05.717Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:48:05.720Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:48:05.727Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:49:51.445Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:49:55.346Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:50:01.311Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:50:01.320Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:50:01.322Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:50:01.323Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:50:01.325Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:50:01.349Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:50:01.355Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:50:01.357Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:50:01.361Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:50:01.362Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:50:01.363Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:50:01.368Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:50:09.773Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:50:09.774Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:50:09.774Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:50:09.774Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:50:09.774Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:50:09.776Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:51:26.900Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:51:29.449Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:51:34.875Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:51:34.878Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:51:34.878Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:51:34.879Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:51:34.883Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:51:34.886Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:51:34.891Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:51:34.892Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:51:34.893Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:51:34.895Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:51:34.898Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:51:34.903Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:51:42.931Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:51:42.933Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:51:42.935Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:51:42.936Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:51:42.938Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:51:42.947Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:52:08.174Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:52:10.516Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:52:16.412Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:52:16.414Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:52:16.415Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:52:16.415Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:52:16.416Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:52:16.418Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:52:16.418Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:52:16.418Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:52:16.419Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:52:16.419Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:52:16.419Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:52:16.421Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:52:24.031Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:52:24.032Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:52:24.033Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:52:24.034Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:52:24.035Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:52:24.038Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:53:48.485Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:53:51.171Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:53:57.089Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:53:57.090Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:53:57.090Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:53:57.090Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:53:57.090Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:53:57.092Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:53:57.094Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:53:57.100Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:53:57.100Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:53:57.100Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:53:57.101Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:53:57.103Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:54:03.908Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:54:03.910Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:54:03.911Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:54:03.913Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:54:03.913Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:54:03.918Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:54:58.378Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:55:00.928Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:55:06.777Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:55:06.778Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:55:06.778Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:55:06.779Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:55:06.779Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:55:06.781Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:55:06.782Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:55:06.782Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:55:06.782Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:55:06.782Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:55:06.783Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:55:06.785Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:55:13.611Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:55:13.611Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:55:13.612Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:55:13.613Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:55:13.614Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:55:13.617Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:55:48.435Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:55:48.441Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:55:48.447Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:55:48.448Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:55:48.453Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:55:48.466Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]
+2019-01-24T17:57:39.610Z info: 	routes.js:::/:::/  endpoint hit
+2019-01-24T17:57:42.659Z info: 	routes.js:::/emp-view:::/emp-view  endpoint hit
+2019-01-24T17:57:49.829Z info: 	routes.js:::/search-emp:::/search-emp  endpoint hit
+2019-01-24T17:57:49.831Z info: 	misc-util.js:::getEmployeeFromDB():::getEmployeeFromDB()  function called
+2019-01-24T17:57:49.831Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"empName":"piyush","seatNo":"1A"}
+2019-01-24T17:57:49.832Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:57:49.832Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:57:49.834Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fe982960001da019080","coord":"21-25","seatNo":"1A","empName":"piyush","empPhone":"2345","mapName":"map1"}]
+2019-01-24T17:57:49.835Z info: 	misc-util.js:::getMapFromDB():::getMapFromDB()  function called
+2019-01-24T17:57:49.835Z info: 	verify-util.js:::validate::: called with parameters "map1"
+2019-01-24T17:57:49.836Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->map :: queryObj{"mapName":"map1"}
+2019-01-24T17:57:49.836Z info: 	verify-util.js:::validate::: called with parameters "map"
+2019-01-24T17:57:49.836Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:57:49.837Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e5fcb82960001da01907f","mapName":"map1","file-name":"IMG_2109.JPG","nodes":["19-24","19-25","19-26","19-27","19-28","19-29","20-24","20-29","21-24","21-25","21-29","22-24","22-29","23-24","23-29","24-24","24-28","24-29","25-24","25-29","26-24","26-25","26-29","27-29","28-28"]}]
+2019-01-24T17:57:57.146Z info: 	routes.js:::/get-seat:::/get-seat  endpoint hit
+2019-01-24T17:57:57.147Z info: 	misc-util.js:::getSeat():::getSeat()  function called with parameters:: srcSeat::1D
+2019-01-24T17:57:57.148Z info: 	db-util.js:::getFromDB:::getFromDB function called with parameters::collection name->employee :: queryObj{"seatNo":"1D","mapName":"map1"}
+2019-01-24T17:57:57.148Z info: 	verify-util.js:::validate::: called with parameters "employee"
+2019-01-24T17:57:57.149Z info: 	db-util.js:::getConnectionObj:::getConnectionObj function called 
+2019-01-24T17:57:57.153Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c3e601d82960001da019083","coord":"26-25","seatNo":"1D","empName":"nik","empPhone":"5555","mapName":"map1"}]

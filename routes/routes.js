@@ -218,7 +218,6 @@ module.exports = function (app) {
 
         logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_SEAT,  constants.LABEL_API_SAVE_SEAT + '  endpoint hit');
         try{
-
             let coord = req.body.coord;
             let seatNo = req.body.seatNo;
             let empName = req.body.empName;
@@ -227,6 +226,22 @@ module.exports = function (app) {
 
             await miscUtil.insertSeat(coord, seatNo, empName, empPhone, mapName);
             res.status(200).json({'status': "SUCCESS"});
+
+        }catch(err){
+            logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_MAP, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);
+            res.status(500).json({'status': "FAIL"});
+        }
+    });
+
+
+    app.get("/get-seat", async (req, res)=>{
+        logUtil.writeLog(scriptName, constants.LABEL_API_GET_SEAT,  constants.LABEL_API_GET_SEAT + '  endpoint hit');
+        try{
+            let srcSeat = req.query.srcSeat;
+            let mapName = req.query.mapname;
+            let empObj = await miscUtil.getSeat(srcSeat, mapName);
+            console.log(JSON.stringify(empObj));
+            res.status(200).json({'status': "SUCCESS", "empObj":empObj});
 
         }catch(err){
             logUtil.writeLog(scriptName, constants.LABEL_API_SAVE_MAP, 'Error thrown to the endpoint' + err.code + '::' + err.message, true, err);

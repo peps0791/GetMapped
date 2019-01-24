@@ -106,6 +106,9 @@
         let numCols = Math.floor(document.getElementById("myimg").clientWidth / cellSize);
         let numRows = Math.floor(document.getElementById("myimg").clientHeight / cellSize);
 
+        window.numRows = numRows;
+        window.numCols = numCols;
+
         console.log("Rows->" + numRows + " Cols->" + numCols);
 
         let grid = document.getElementById("grid");
@@ -149,12 +152,14 @@
         //mark employee
         let emp = response.emp;
         let empSeat = emp.coord;
+        window.empSeat = empSeat;
         $("#"+empSeat).addClass("destination");
         $("#endPt").val(emp.seatNo);
     }
 
     populateImage(<%- JSON.stringify(response) %>)
 </script>
+<script defer src="js/astar.js"></script>
 <script defer src="js/search_result.js"></script>
 </body>
 </html>

@@ -166,6 +166,24 @@ module.exports = {
         });
     },
 
+    getSeat: (srcSeat, mapName)=>{
+
+        let currentFuncName = 'getSeat()';
+        logUtil.writeLog(scriptName, currentFuncName, currentFuncName+ '  function called with parameters:: srcSeat::'+ srcSeat);
+        return new Promise(async (resolve, reject)=>{
+
+            try{
+                let query = {"seatNo": srcSeat, "mapName":mapName};
+                let empObj = await dbUtil.getFromDB("employee", query);
+                resolve(empObj[0]);
+            }catch(err){
+                logUtil.writeLog(scriptName, currentFuncName, 'Inside Catch block', true, err);
+                reject(err);
+            }
+        });
+
+    },
+
 
     /*
    * @name: removeMap()
