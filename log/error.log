@@ -1,0 +1,573 @@
+2018-12-15T06:20:35.292Z error: 	db-util.js:::initDB:::some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+2018-12-23T08:08:22.910Z error: 	db-util.js:::getFromDB:::Inside Catch block => TypeError: Converting circular structure to JSON
+    at JSON.stringify (<anonymous>)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:23:89)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T08:08:22.912Z error: 	routes.js:::/:::Error thrown to the endpointundefined::Converting circular structure to JSON => TypeError: Converting circular structure to JSON
+    at JSON.stringify (<anonymous>)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:23:89)
+    at /home/peps/misc/GetMapped/util/db-util.js:75:24
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T13:19:02.872Z error: 	db-util.js:::insertInDB:::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:130:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:125:16)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:107:30)
+    at new Promise (<anonymous>)
+    at Object.createNewMap (/home/peps/misc/GetMapped/util/misc-util.js:103:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:80:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-23T13:19:02.876Z error: 	misc-util.js:::createNewMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:130:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:125:16)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:107:30)
+    at new Promise (<anonymous>)
+    at Object.createNewMap (/home/peps/misc/GetMapped/util/misc-util.js:103:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:80:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-23T13:19:02.877Z error: 	routes.js:::/createMap:::Error thrown to the endpointINVALID_PARAM:: => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:130:24)
+    at new Promise (<anonymous>)
+    at Object.insertInDB (/home/peps/misc/GetMapped/util/db-util.js:125:16)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:107:30)
+    at new Promise (<anonymous>)
+    at Object.createNewMap (/home/peps/misc/GetMapped/util/misc-util.js:103:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:80:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-23T13:25:54.372Z error: 	misc-util.js:::createNewMap():::Inside Catch block => ReferenceError: cosole is not defined
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:108:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T13:25:54.373Z error: 	routes.js:::/createMap:::Error thrown to the endpointundefined::cosole is not defined => ReferenceError: cosole is not defined
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:108:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T13:59:52.550Z error: 	misc-util.js:::createNewMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T13:59:52.551Z error: 	routes.js:::/createMap:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T15:32:12.324Z error: 	misc-util.js:::createNewMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T15:32:12.325Z error: 	routes.js:::/createMap:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T15:33:04.662Z error: 	misc-util.js:::createNewMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T15:33:04.662Z error: 	routes.js:::/createMap:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T15:40:55.131Z error: 	misc-util.js:::createNewMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T15:40:55.132Z error: 	routes.js:::/createMap:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T15:42:50.487Z error: 	misc-util.js:::createNewMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T15:42:50.496Z error: 	routes.js:::/createMap:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T15:44:41.270Z error: 	misc-util.js:::createNewMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T15:44:41.274Z error: 	routes.js:::/createMap:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "test-map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.insert (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:844:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-23T15:46:31.642Z error: 	misc-util.js:::createNewMap():::Inside Catch block => Error: DUPLICATE_ITEM_ERROR
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:163:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T15:46:31.650Z error: 	routes.js:::/createMap:::Error thrown to the endpointDB_ERROR::DUPLICATE_ITEM_ERROR => Error: DUPLICATE_ITEM_ERROR
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:163:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T15:48:05.171Z error: 	misc-util.js:::createNewMap():::Inside Catch block => Error: DUPLICATE_ITEM_ERROR
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:163:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T15:48:05.175Z error: 	routes.js:::/createMap:::Error thrown to the endpointDB_ERROR::DUPLICATE_ITEM_ERROR => Error: DUPLICATE_ITEM_ERROR
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:163:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T15:48:48.198Z error: 	misc-util.js:::createNewMap():::Inside Catch block => Error: DUPLICATE_ITEM_ERROR
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:163:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T15:59:22.159Z error: 	misc-util.js:::createNewMap():::Inside Catch block => Error: DUPLICATE_ITEM_ERROR
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:162:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:00:05.261Z error: 	misc-util.js:::createNewMap():::Inside Catch block => Error: DUPLICATE_ITEM_ERROR
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:162:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:22:39.181Z error: 	misc-util.js:::removeMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:139:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:24:39.184Z error: 	misc-util.js:::removeMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:139:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:28:41.656Z error: 	misc-util.js:::removeMap():::Inside Catch block => AssertionError: Unspecified AssertionError
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:146:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T16:28:41.657Z error: 	routes.js:::/remove-map:::Error thrown to the endpointundefined::Unspecified AssertionError => AssertionError: Unspecified AssertionError
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:146:17)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T23:03:11.388Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::assert is not defined => ReferenceError: assert is not defined
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:139:13)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:275:10)
+    at /home/peps/misc/GetMapped/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/home/peps/misc/GetMapped/node_modules/raw-body/index.js:224:16)
+2018-12-23T23:04:15.450Z error: 	db-util.js:::updateDB():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:226:24)
+    at new Promise (<anonymous>)
+    at Object.updateDB (/home/peps/misc/GetMapped/util/db-util.js:220:16)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:175:49)
+    at new Promise (<anonymous>)
+    at Object.updateMap (/home/peps/misc/GetMapped/util/misc-util.js:166:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:145:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-23T23:04:15.453Z error: 	misc-util.js:::removeMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:226:24)
+    at new Promise (<anonymous>)
+    at Object.updateDB (/home/peps/misc/GetMapped/util/db-util.js:220:16)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:175:49)
+    at new Promise (<anonymous>)
+    at Object.updateMap (/home/peps/misc/GetMapped/util/misc-util.js:166:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:145:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-23T23:04:15.454Z error: 	routes.js:::/save-map:::Error thrown to the endpointINVALID_PARAM:: => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:226:24)
+    at new Promise (<anonymous>)
+    at Object.updateDB (/home/peps/misc/GetMapped/util/db-util.js:220:16)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:175:49)
+    at new Promise (<anonymous>)
+    at Object.updateMap (/home/peps/misc/GetMapped/util/misc-util.js:166:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:145:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-23T23:05:07.524Z error: 	misc-util.js:::removeMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:176:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-23T23:05:07.525Z error: 	routes.js:::/save-map:::Error thrown to the endpointINVALID_PARAM:: => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:176:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-24T03:02:27.076Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::Unspecified AssertionError => AssertionError: Unspecified AssertionError
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:140:13)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:275:10)
+    at /home/peps/misc/GetMapped/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/home/peps/misc/GetMapped/node_modules/raw-body/index.js:224:16)
+2018-12-24T03:04:13.710Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::Unspecified AssertionError => AssertionError: Unspecified AssertionError
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:140:13)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:275:10)
+    at /home/peps/misc/GetMapped/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/home/peps/misc/GetMapped/node_modules/raw-body/index.js:224:16)
+2018-12-24T03:08:08.875Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::Unspecified AssertionError => AssertionError: Unspecified AssertionError
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:144:13)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:275:10)
+    at /home/peps/misc/GetMapped/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/home/peps/misc/GetMapped/node_modules/raw-body/index.js:224:16)
+2018-12-24T03:16:08.388Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::Unspecified AssertionError => AssertionError: Unspecified AssertionError
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:144:13)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/index.js:275:10)
+    at /home/peps/misc/GetMapped/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/home/peps/misc/GetMapped/node_modules/raw-body/index.js:224:16)
+2018-12-24T03:18:17.905Z error: 	misc-util.js:::updateMap():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:197:24)
+    at new Promise (<anonymous>)
+    at Object.updateMap (/home/peps/misc/GetMapped/util/misc-util.js:193:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:150:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-24T03:18:17.906Z error: 	routes.js:::/save-map:::Error thrown to the endpointINVALID_PARAM:: => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:197:24)
+    at new Promise (<anonymous>)
+    at Object.updateMap (/home/peps/misc/GetMapped/util/misc-util.js:193:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:150:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/GetMapped/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/GetMapped/node_modules/express/lib/router/layer.js:95:5)
+2018-12-24T11:03:58.705Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:03:58.715Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:11:12.121Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:11:12.121Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:12:55.360Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:12:55.361Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:13:40.881Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:13:40.881Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:14:10.158Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:14:10.158Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:16:36.347Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:16:36.348Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:17:16.580Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:17:16.580Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:20:11.454Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:20:11.454Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:21:09.362Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:21:09.363Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:21:35.567Z error: 	misc-util.js:::renameMap():::Inside Catch block => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T11:21:35.568Z error: 	routes.js:::/rename-map:::Error thrown to the endpoint11000::E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" } => MongoError: E11000 duplicate key error collection: getMappedDB.map index: mapName_1 dup key: { : "map1" }
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at coll.s.topology.update (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:1399:39)
+    at /home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2018-12-24T21:17:54.996Z error: 	misc-util.js:::createNewMap():::Inside Catch block => Error: DUPLICATE_ITEM_ERROR
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:171:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-24T21:18:20.207Z error: 	misc-util.js:::createNewMap():::Inside Catch block => Error: DUPLICATE_ITEM_ERROR
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at col.insertOne.then.catch (/home/peps/misc/GetMapped/util/db-util.js:171:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2018-12-24T23:27:57.041Z error: 	db-util.js:::initDB:::Some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+2018-12-24T23:34:53.068Z error: 	db-util.js:::initDB:::Some error occurred while connecting to db => MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+    at emitOne (events.js:116:13)
+    at Pool.emit (events.js:211:7)
+    at Connection.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+    at Object.onceWrapper (events.js:317:30)
+    at emitTwo (events.js:126:13)
+    at Connection.emit (events.js:214:7)
+    at Socket.<anonymous> (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+2019-01-03T12:18:05.412Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::dbUtil is not defined => ReferenceError: dbUtil is not defined
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:270:36)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-03T12:20:04.455Z error: 	routes.js:::/save-map:::Error thrown to the endpointundefined::the update operation document must contain atomic operators. => MongoError: the update operation document must contain atomic operators.
+    at Function.create (/home/peps/misc/GetMapped/node_modules/mongodb-core/lib/error.js:43:12)
+    at toError (/home/peps/misc/GetMapped/node_modules/mongodb/lib/utils.js:149:22)
+    at checkForAtomicOperators (/home/peps/misc/GetMapped/node_modules/mongodb/lib/operations/collection_ops.js:161:12)
+    at Collection.updateOne (/home/peps/misc/GetMapped/node_modules/mongodb/lib/collection.js:722:15)
+    at Promise (/home/peps/misc/GetMapped/util/db-util.js:242:21)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-15T22:31:25.918Z error: 	routes.js:::/search-emp:::Error thrown to the endpointundefined::map is not defined => ReferenceError: map is not defined
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:71:74)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-15T22:36:20.282Z error: 	routes.js:::/search-emp:::Error thrown to the endpointundefined::map is not defined => ReferenceError: map is not defined
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:71:74)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-15T22:38:12.468Z error: 	misc-util.js:::getMapFromDB():::Inside Catch block => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:61:24)
+    at new Promise (<anonymous>)
+    at Object.getMapFromDB (/home/peps/misc/GetMapped/util/misc-util.js:58:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:72:38)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-15T22:38:12.470Z error: 	routes.js:::/search-emp:::Error thrown to the endpointINVALID_PARAM:: => Error
+    at Object.getErrorObj (/home/peps/misc/GetMapped/util/error-util.js:3:22)
+    at Object.validate (/home/peps/misc/GetMapped/util/verify-util.js:25:27)
+    at Promise (/home/peps/misc/GetMapped/util/misc-util.js:61:24)
+    at new Promise (<anonymous>)
+    at Object.getMapFromDB (/home/peps/misc/GetMapped/util/misc-util.js:58:16)
+    at app.post (/home/peps/misc/GetMapped/routes/routes.js:72:38)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-24T22:24:45.804Z error: 	misc-util.js:::renameMap():::Inside Catch block => ReferenceError: query is not defined
+    at Promise (/home/peps/misc/way-finder/util/misc-util.js:260:87)
+    at new Promise (<anonymous>)
+    at Object.renameMap (/home/peps/misc/way-finder/util/misc-util.js:252:16)
+    at app.post (/home/peps/misc/way-finder/routes/routes.js:290:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/way-finder/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/way-finder/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/way-finder/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/way-finder/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/way-finder/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/way-finder/node_modules/express/lib/router/index.js:335:12)
+2019-01-24T22:24:45.806Z error: 	routes.js:::/rename-map:::Error thrown to the endpointundefined::query is not defined => ReferenceError: query is not defined
+    at Promise (/home/peps/misc/way-finder/util/misc-util.js:260:87)
+    at new Promise (<anonymous>)
+    at Object.renameMap (/home/peps/misc/way-finder/util/misc-util.js:252:16)
+    at app.post (/home/peps/misc/way-finder/routes/routes.js:290:28)
+    at Layer.handle [as handle_request] (/home/peps/misc/way-finder/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/peps/misc/way-finder/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/peps/misc/way-finder/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/peps/misc/way-finder/node_modules/express/lib/router/layer.js:95:5)
+    at /home/peps/misc/way-finder/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/peps/misc/way-finder/node_modules/express/lib/router/index.js:335:12)
+2019-01-24T22:29:40.800Z error: 	misc-util.js:::renameMap():::Inside Catch block => ReferenceError: mapName is not defined
+    at Promise (/home/peps/misc/way-finder/util/db-util.js:294:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-01-24T22:29:40.801Z error: 	routes.js:::/rename-map:::Error thrown to the endpointundefined::mapName is not defined => ReferenceError: mapName is not defined
+    at Promise (/home/peps/misc/way-finder/util/db-util.js:294:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-02-04T00:54:43.153Z error: 	routes.js:::/search-emp:::Error thrown to the endpointundefined::Cannot read property 'mapName' of undefined => TypeError: Cannot read property 'mapName' of undefined
+    at app.post (/home/peps/misc/way-finder/routes/routes.js:69:57)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+2019-02-04T00:55:12.832Z error: 	routes.js:::/search-emp:::Error thrown to the endpointundefined::Cannot read property 'mapName' of undefined => TypeError: Cannot read property 'mapName' of undefined
+    at app.post (/home/peps/misc/way-finder/routes/routes.js:69:57)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)

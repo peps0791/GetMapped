@@ -1,0 +1,30 @@
+CREATE TABLE "FYW_USER_MASTER" 
+   (	"USERNAME" NVARCHAR2(255) NOT NULL ENABLE, 
+	"PASSWD" NVARCHAR2(255) NOT NULL ENABLE
+   );
+   
+  --------------------------------------------
+  
+  CREATE TABLE "FYW_EMPLOYEE_MASTER" 
+   (	"EMPLOYEE_NAME" NVARCHAR2(255) NOT NULL ENABLE, 
+	"EMPLOYEE_SEAT_NUMBER" NVARCHAR2(20) NOT NULL ENABLE, 
+	"EMPLOYEE_EXT_NUMBER" NVARCHAR2(20) NOT NULL ENABLE, 
+	"EMPLOYEE_TEAM" NVARCHAR2(20) NOT NULL ENABLE
+   ) ;
+   
+   -------------------------------------------------
+   
+   CREATE TABLE "FBN"."FYW_SEAT_MASTER" 
+   (	"SEAT_NO" NVARCHAR2(20) NOT NULL ENABLE, 
+	"SEAT_COORDINATES" NVARCHAR2(20) NOT NULL ENABLE, 
+	"MAP_ID" NVARCHAR2(100)
+   )
+
+-------------------------------------------------------------
+CREATE TABLE "FBN"."FYW_MAP_MASTER2" 
+   (	"MAP_MATRIX" CLOB NOT NULL ENABLE, 
+	"MAP_NAME" NVARCHAR2(255), 
+	"MAP_ID" NVARCHAR2(100)
+   )
+   
+   ------------------------------------------------------------------
