@@ -2581,3 +2581,11 @@
 2019-02-04T04:08:59.622Z info: 	db-util.js:::getFromDB:::Result from the server::[{"_id":"5c57a4cc640f4c6fc335cb62","coord":"21-25","seatNo":"1A","empName":"piyush","empTeam":"dev","empPhone":"1111","mapName":"floor-1"}]
 2019-02-04T09:09:47.568Z info: 	db-util.js:::initDB:::initDB() function called
 2019-02-04T09:09:47.690Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2019-02-04T09:24:07.107Z info: 	db-util.js:::initDB:::initDB() function called
+2019-02-04T09:24:07.224Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2019-02-04T09:24:07.225Z info: 	db-util.js:::initCollections:::initCollections function called 
+2019-02-04T09:24:07.240Z info: 	index.js::::::App server started at port 3000
+2019-02-04T10:17:09.661Z info: 	db-util.js:::initDB:::initDB() function called
+2019-02-04T10:17:10.013Z info: 	db-util.js:::initDB:::Connected successfully to the db server.
+2019-02-04T10:17:10.015Z info: 	db-util.js:::initCollections:::initCollections function called 
+2019-02-04T10:17:10.038Z info: 	index.js::::::App server started at port 3000

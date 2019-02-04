@@ -20,6 +20,12 @@ Wayfinder is an indoor mapping solution for helping people navigate indoors. It 
 
 ![Search Demo Video](demo-videos/search.gif)
 
+## Setup
+
+1. Install the node modules using the command ```npm install```.
+2. Install MongoDB 4.0.5.
+3. From the root directory, run ```npm start```.
+4. Navigate to the address ```localhost:3000``` in your browser.
 
 ## Todo
 
